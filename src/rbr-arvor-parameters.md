@@ -13,10 +13,10 @@ to typical Argo 10-day sampling period.
 
 Pseudocode: Set MC1 = 10 and MC2 = 24
 
-Commandline -- the float should respond with the new parameter value. The float
+Commandline - the float should respond with the new parameter value. The float
 will respond even if the change is unsuccessful, showing the currently set value:
 
-```bash
+```text
 !MC 1 10
 >>> <MC1 10>
 !MC 2 24
@@ -41,7 +41,7 @@ and below 250dbar use bins of 25dbar.
 Pseudocode: Change MC17 to 100, and MC18 to 250. Change MC19 to 5, MC20 50 1.
 MC21 can stay at its default value.
 
-```bash
+```text
 !MC 17 100
 >>> <MC17 100>
 !MC 18 250
