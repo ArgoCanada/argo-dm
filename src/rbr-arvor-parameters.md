@@ -53,3 +53,20 @@ Commandline:
 !MC 20 1
 >>> <MC20 1>
 ```
+
+## Keep CTD on all the way to Surface
+
+Relevant parameters:
+
+- MC28: CTD sensor Cut-Off pressure (Pump stop) (default 5)
+
+Suggested example: RBR CTD is unpumped, so no need to turn it off near-surface.
+
+Pseudocode: Set MC28 = 0
+
+Commandline:
+
+```text
+!MC 28 0
+>>> <MC28 0>
+```
