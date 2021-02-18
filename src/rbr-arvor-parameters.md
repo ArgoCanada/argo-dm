@@ -38,7 +38,7 @@ bins. Note that this (I believe) will be the lower limit as all parameter
 values must be integers. From surface to 100dbar use sample bins of 5dbar,
 and below 250dbar use bins of 25dbar.
 
-Pseudocode: Change MC17 to 100, and MC18 to 250. Change MC19 to 5, MC20 50 1.
+Pseudocode: Change MC17 to 100, and MC18 to 250. Change MC19 to 5, MC20 to 1.
 MC21 can stay at its default value.
 
 Commandline:
