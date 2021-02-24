@@ -28,7 +28,7 @@ BGC:
 - 4902552 (serial:AI2632-20CA037 IMEI:300534060221340)
 - 4902553 (serial:AI2632-20CA038 IMEI:300534060229330)
 
-## Findings
+## Initial Data
 
 Raw data:
 
@@ -43,11 +43,29 @@ Raw data:
 
 Processed data:
 
-|wmo    |bytes_per_sbd|sbd_bytes_per_data_pt|nc_bytes_per_data_pt|
-|-------|-------------|---------------------|--------------------|
-|4902543|300          |74.41                |252.09              |
-|4902544|300          |17.97                |222.31              |
-|4902545|300          |17.59                |224.92              |
-|4902546|300          |17.31                |221.35              |
-|4902547|300          |17.93                |223.50              |
-|6903075|300          |10.86                |59.93               |
+|wmo    |pts_per_profile|bytes_per_sbd|sbd_bytes_per_data_pt|nc_bytes_per_data_pt|sbd_bytes_per_profile|
+|-------|---------------|-------------|---------------------|--------------------|---------------------|
+|4902543|129            |300          |74.41                |252.09              |9600                 |
+|4902544|105            |300          |17.97                |222.31              |1890                 |
+|4902545|104            |300          |17.59                |224.92              |1845                 |
+|4902546|105            |300          |17.31                |221.35              |1830                 |
+|4902547|104            |300          |17.93                |223.50              |1875                 |
+|6903075|994            |300          |10.86                |59.93               |10800                |
+
+## Comments
+
+The data requirements do of course go up with increased vertical resolution,
+but it appears that they do not go up linearly (based on only the one float
+for comparison though). The amount of data transmitted in the one coriolis
+profile is about 10x more than in our current configuration, but the the data
+cost is between 5-6x higher.
+
+In terms of data budgeting, if we plan for ~1000 pts from an ARVOR-RBR float,
+and perhaps a slighlty larger file size, then each profile will be about 12kB.
+This would put us in plan GT. It is *pretty* right on the cusp. Early profiles
+appear to need more bandwidth (see high usage per data in 4902543), so plan
+GT would certainly be necessary for the first month say, but we may get away
+with plan G for the remainder of the deployment.
+
+In terms of rapid profiles, I would estimate plan GT would allow for up to
+24 1000pt profiles per month, perhaps slightly fewer in the first month.
