@@ -28,6 +28,10 @@ BGC:
 - 4902552 (serial:AI2632-20CA037 IMEI:300534060221340)
 - 4902553 (serial:AI2632-20CA038 IMEI:300534060229330)
 
+## Workflow
+
+For each float above, get all SBD files for it's IMEI number from the 
+
 ## Initial Data
 
 Raw data:
@@ -41,6 +45,17 @@ Raw data:
 |4902547|AI2600-20CA032|300534060224310|125 |37500   |20   |21   |467340 |2091|core   |64    |arvor   |
 |6903075|AI3500-20FR001|300534060228320|36  |10800   |1    |1    |59572  |994 |core   |64    |arvor   |
 
+wmo, serial, imei: float identification numbers
+nsbd: number of total sbd files
+sbd_size: size of all sbd files in bytes
+nprof: number of profiles for those sbd files
+nfile: number of Argo files (nprof does not capture downcasts)
+nc_size: size of all nc files in bytes
+npts: sum of all `N_LEVELS` dimensions in the nc files
+program: core or bgc Argo
+nparam: number of variables in the nc files
+platform: float type
+
 Processed data:
 
 |wmo    |pts_per_profile|bytes_per_sbd|sbd_bytes_per_data_pt|nc_bytes_per_data_pt|sbd_bytes_per_profile|
@@ -51,6 +66,12 @@ Processed data:
 |4902546|105            |300          |17.31                |221.35              |1830                 |
 |4902547|104            |300          |17.93                |223.50              |1875                 |
 |6903075|994            |300          |10.86                |59.93               |10800                |
+
+pts_per_profile = npts / nprof
+bytes_per_sbd = sbd_size / nsbd
+sbd_bytes_per_data_pt = sbd_size / npts
+nc_bytes_per_data_pt = nc_size / npts
+sbd_bytes_per_profile = sbd_size / nprof
 
 ## Comments
 
