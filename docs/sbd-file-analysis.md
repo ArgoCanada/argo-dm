@@ -46,14 +46,23 @@ Raw data:
 |6903075|AI3500-20FR001|300534060228320|36  |10800   |1    |1    |59572  |994 |core   |64    |arvor   |
 
 wmo, serial, imei: float identification numbers
+
 nsbd: number of total sbd files
+
 sbd_size: size of all sbd files in bytes
+
 nprof: number of profiles for those sbd files
+
 nfile: number of Argo files (nprof does not capture downcasts)
+
 nc_size: size of all nc files in bytes
+
 npts: sum of all `N_LEVELS` dimensions in the nc files
+
 program: core or bgc Argo
+
 nparam: number of variables in the nc files
+
 platform: float type
 
 Processed data:
@@ -68,9 +77,13 @@ Processed data:
 |6903075|994            |300          |10.86                |59.93               |10800                |
 
 pts_per_profile = npts / nprof
+
 bytes_per_sbd = sbd_size / nsbd
+
 sbd_bytes_per_data_pt = sbd_size / npts
+
 nc_bytes_per_data_pt = nc_size / npts
+
 sbd_bytes_per_profile = sbd_size / nprof
 
 ## Comments
