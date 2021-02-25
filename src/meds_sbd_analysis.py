@@ -5,19 +5,19 @@ from netCDF4 import Dataset
 
 import bgcArgoDMQC as bgc
 
-# # some indexing to choose floats
-# # get core and bgc profiles for meds dac
-# gx = bgc.get_index(index='global')
-# bx = bgc.get_index()
-# gx = gx[gx.dac == 'meds']
-# bx = bx[bx.dac == 'meds']
+# some indexing to choose floats
+# get core and bgc profiles for meds dac
+gx = bgc.get_index(index='global')
+bx = bgc.get_index()
+gx = gx[gx.dac == 'meds']
+bx = bx[bx.dac == 'meds']
 
-# # get arvor floats only
-# gx = gx[gx.profiler_type == 844]
-# bx = bx[bx.profiler_type == 844]
+# get arvor floats only
+gx = gx[gx.profiler_type == 844]
+bx = bx[bx.profiler_type == 844]
 
-# # get core files only
-# gx = gx[~gx.wmo.isin(bx.wmo)]
+# get core files only
+gx = gx[~gx.wmo.isin(bx.wmo)]
 
 flts = [4902543,4902544,4902545,4902546,4902547,6903075]
 for f in flts:
