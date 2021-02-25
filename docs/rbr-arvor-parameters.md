@@ -24,11 +24,12 @@ Use the same vertical sampling scheme as floats 6903075 and 6903076. These
 belong to the coriolis DAC and collect approximately 1000pts per profile. The
 sampling intervals are:
 
-|Depth Range     |Bin Size|
-|----------------|--------|
-|Surface-400 dbar|1 dbar  |
-|400-1400 dbar   |2 dbar  |
-|1400-2000 dbar  |5 dbar  |
+|Depth Range     |Bin Size|Number of pts|
+|----------------|--------|-------------|
+|Surface-400 dbar|1 dbar  |400          |
+|400-1400 dbar   |2 dbar  |500          |
+|1400-2000 dbar  |5 dbar  |120          |
+|Total           |        |1020         |
 
 The parameters to set this up are:
 
