@@ -34,13 +34,13 @@ The sampling intervals are:
 
 The parameters to set this up are:
 
-|Mission Parameter|Description                            |Value|
-|-----------------|---------------------------------------|-----|
-|MC17             |Threshold surface/Intermediate Pressure|400  |
-|MC18             |Threshold Intermediate/Bottom Pressure |1400 |
-|MC19             |Thickness of the surface slices        |1    |
-|MC20             |Thickness of the intermediate slices   |2    |
-|MC21             |Thickness of the bottom slices         |5    |
+|Mission Parameter|Description                            |Default Value|New Value|
+|-----------------|---------------------------------------|-------------|---------|
+|MC17             |Threshold surface/Intermediate Pressure|1            |400      |
+|MC18             |Threshold Intermediate/Bottom Pressure |200          |1400     |
+|MC19             |Thickness of the surface slices        |1            |1        |
+|MC20             |Thickness of the intermediate slices   |10           |2        |
+|MC21             |Thickness of the bottom slices         |25           |5        |
 
 Commandline:
 
@@ -59,11 +59,11 @@ as not 1, change it to 1 with `!MC 19 1`.
 Take 5 daily profiles upon deployment, then profile every second day. The
 parameter values will be:
 
-|Mission Parameter|Description                         |Value|
-|-----------------|------------------------------------|-----|
-|MC1              |Number of cycles with cycle period 1|5    |
-|MC2              |Cycle period 1                      |24   |
-|MC3              |Cycle period 2                      |48   |
+|Mission Parameter|Description                         |Default Value|New Value|
+|-----------------|------------------------------------|-------------|---------|
+|MC1              |Number of cycles with cycle period 1|300          |5        |
+|MC2              |Cycle period 1                      |240          |24       |
+|MC3              |Cycle period 2                      |240          |48       |
 
 Commandline:
 
@@ -75,9 +75,9 @@ Commandline:
 
 ### Change Pump Turnoff Depth
 
-Change MC28, CTD sensor Cut-Off pressure (Pump stop), to 0. I think the float
-continues to collect despite the pump turning off so this might basically do
-nothing since there is no pump to turn off.
+Change MC28, CTD sensor Cut-Off pressure (Pump stop), to 0 (from default value
+5). I think the float continues to collect despite the pump turning off so this
+might basically do nothing since there is no pump to turn off.
 
 Comandline:
 
