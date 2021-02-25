@@ -21,8 +21,9 @@ All changes applied with the following commands:
 ### Vertical Sampling Scheme
 
 Use the same vertical sampling scheme as floats 6903075 and 6903076. These
-belong to the coriolis DAC and collect approximately 1000pts per profile. The
-sampling intervals are:
+belong to the coriolis DAC and collect approximately 1000pts per profile
+(usually a little less, as the 1dbar bins tend to be more like 1.1-1.2).
+The sampling intervals are:
 
 |Depth Range     |Bin Size|Number of pts|
 |----------------|--------|-------------|
