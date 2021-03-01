@@ -20,10 +20,12 @@ bx = bx[bx.profiler_type == 844]
 gx = gx[~gx.wmo.isin(bx.wmo)]
 
 flts = [4902543,4902544,4902545,4902546,4902547,6903075]
+flts = [4902549,4902550,4902551,4902552,4902553]
 for f in flts:
+    # bgc.io.get_argo(f, local_path=bgc.ARGO_PATH)
     dac = bgc.io.get_dac(f)
     fpath = Path(bgc.ARGO_PATH) / '{}/{}/profiles'.format(dac,f)
-    files = list(fpath.glob('*.nc'))
+    files = list(fpath.glob('B*.nc'))
     print(f, files[-1], len(files))
     if f == flts[-1]:
         files = [files[-3]]
