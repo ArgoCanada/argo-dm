@@ -9,7 +9,39 @@ for each float will be:
 - Argo program (BGC, core, deep) and parameters (DOXY, full BGC)
 - Platform type (will likely be all ARVOR)
 
-## Planned floats
+## Data Transmission Plan
+
+### Shared Services Data Plans
+
+Plan B: 12kB/mo., $20.85/mo.
+Plan F: 17kB/mo., $25.26/mo.
+Plan G: 30kB/mo., $28.59/mo.
+Plan GT: 300kB/mo. $170.89/mo.
+
+## Background / Data Analysis
+
+IThe following data was generated using an NKE spreadsheet:
+
+|npts|npacket|nsbd|data size (kB)|
+|----|-------|----|--------------|
+|0   |7      |3   |0.9           |
+|18  |9      |3   |0.9           |
+|22  |10     |4   |1.2           |
+|38  |11     |4   |1.2           |
+|98  |15     |5   |1.5           |
+|109 |16     |6   |1.8           |
+|152 |18     |6   |1.8           |
+|185 |21     |7   |2.1           |
+|218 |23     |8   |2.4           |
+|268 |26     |9   |2.7           |
+|352 |32     |11  |3.3           |
+|418 |36     |12  |3.6           |
+|518 |43     |15  |4.5           |
+|685 |54     |18  |5.4           |
+|1018|76     |26  |7.8           |
+|2018|143    |48  |14.4          |
+
+### Planned floats
 
 Core:
 
@@ -28,11 +60,13 @@ BGC:
 - 4902552 (serial:AI2632-20CA037 IMEI:300534060221340)
 - 4902553 (serial:AI2632-20CA038 IMEI:300534060229330)
 
-## Workflow
+### Workflow
 
-For each float above, get all SBD files for it's IMEI number from the 
+For each float above, get all SBD files for it's IMEI number from the Argo
+Canada email address. Look at the size of those files relative to the amount
+of data transmitted by looking at the netCDF files.
 
-## Initial Data
+### Initial Data
 
 Raw data:
 
@@ -44,6 +78,11 @@ Raw data:
 |4902546|AI2600-20CA031|300534060227580|122 |36600   |20   |21   |467952 |2114|core   |64    |arvor   |
 |4902547|AI2600-20CA032|300534060224310|125 |37500   |20   |21   |467340 |2091|core   |64    |arvor   |
 |6903075|AI3500-20FR001|300534060228320|36  |10800   |1    |1    |59572  |994 |core   |64    |arvor   |
+|4902549|AI2632-20CA034|300534060229340|206 |61800   |19   |20   |579772 |1999|bgc    |72    |arvor   |
+|4902550|AI2632-20CA035|300534060120930|52  |15600   |2    |3    |84356  |256 |bgc    |72    |arvor   |
+|4902551|AI2632-20CA036|300534060223320|204 |61200   |18   |19   |518872 |1800|bgc    |72    |arvor   |
+|4902552|AI2632-20CA037|300534060221340|51  |14900   |3    |2    |84408  |257 |bgc    |72    |arvor   |
+|4902553|AI2632-20CA038|300534060229330|53  |15500   |3    |2    |82292  |102 |bgc    |72    |arvor   |
 
 - wmo, serial, imei: float identification numbers
 - nsbd: number of total sbd files
@@ -66,6 +105,11 @@ Processed data:
 |4902546|105            |300          |17.31                |221.35              |1830                 |
 |4902547|104            |300          |17.93                |223.50              |1875                 |
 |6903075|994            |300          |10.86                |59.93               |10800                |
+|4902549|105            |300          |30.92                |290.03              |3253                 |
+|4902550|128            |300          |60.94                |329.51              |7800                 |
+|4902551|100            |300          |34.00                |288.26              |3400                 |
+|4902552|85             |300          |57.97                |328.46              |4967                 |
+|4902553|34             |300          |151.96               |806.78              |5167                 |
 
 - pts_per_profile = npts / nprof
 - bytes_per_sbd = sbd_size / nsbd
@@ -73,7 +117,7 @@ Processed data:
 - nc_bytes_per_data_pt = nc_size / npts
 - sbd_bytes_per_profile = sbd_size / nprof
 
-## Comments
+### Comments
 
 The data requirements do of course go up with increased vertical resolution,
 but it appears that they do not go up linearly (based on only the one float
