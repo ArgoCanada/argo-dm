@@ -10,6 +10,7 @@ All changes applied with the following commands:
 !MC 1 5
 !MC 2 24
 !MC 3 48
+!MC 10 1
 !MC 17 400
 !MC 18 1400
 !MC 19 1
@@ -83,6 +84,18 @@ Comandline:
 
 ```text
 !MC 28 0
+```
+
+### Adjust Sampling Inverval
+
+Change MC10, Ascent sampling frequency (seconds) from 10 to 1. This should not
+impact the volume of data sent back, but rather increase the number of
+observations in each bin.
+
+Commandline:
+
+```text
+!MC 10 1
 ```
 
 ## Planning
