@@ -13,10 +13,10 @@ for each float will be:
 
 ### Shared Services Data Plans
 
-Plan B: 12kB/mo., $20.85/mo.
-Plan F: 17kB/mo., $25.26/mo.
-Plan G: 30kB/mo., $28.59/mo.
-Plan GT: 300kB/mo. $170.89/mo.
+- Plan B: 12kB/mo., $20.85/mo.
+- Plan F: 17kB/mo., $25.26/mo.
+- Plan G: 30kB/mo., $28.59/mo.
+- Plan GT: 300kB/mo. $170.89/mo.
 
 ## Background / Data Analysis
 
