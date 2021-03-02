@@ -25,6 +25,12 @@ generated to approximate the size of SBD files transmitted via Iridium:
 
 ![data plan plot](https://raw.githubusercontent.com/ArgoCanada/argo-dm/master/figures/approximate_data_usage.png?token=ADDT6M5YJFYADQVKWEAUSULAHY5MQ)
 
+The max data points based on a linear regression for each plan are:
+
+- Plan B: 461 (core), 190 (bgc)
+- Plan F: 710 (core), 307 (bgc)
+- Plan G: 1357 (core), 611 (bgc)
+
 ## Background / Data Analysis
 
 ### NKE Data Estimates
