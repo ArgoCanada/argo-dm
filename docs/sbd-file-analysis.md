@@ -23,7 +23,7 @@ for each float will be:
 Using the data in the table in the subsequent section, the following plot was
 generated to approximate the size of SBD files transmitted via Iridium:
 
-![data plan plot](https://raw.githubusercontent.com/ArgoCanada/argo-dm/master/figures/approximate_data_usage.png?token=ADDT6M5YJFYADQVKWEAUSULAHY5MQ)
+![data plan plot](https://raw.githubusercontent.com/ArgoCanada/argo-dm/master/figures/approximate_data_usage.png)
 
 The max data points based on a linear regression for each plan are:
 
