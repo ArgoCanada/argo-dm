@@ -18,9 +18,18 @@ for each float will be:
 - Plan G: 30kB/mo., $28.59/mo.
 - Plan GT: 300kB/mo. $170.89/mo., RBR floats (freq. profiling & high res.)
 
+### Approximating Max Usage
+
+Using the data in the table in the subsequent section, the following plot was
+generated to approximate the size of SBD files transmitted via Iridium:
+
+![data plan plot](https://raw.githubusercontent.com/ArgoCanada/argo-dm/master/figures/approximate_data_usage.png?token=ADDT6M5YJFYADQVKWEAUSULAHY5MQ)
+
 ## Background / Data Analysis
 
-IThe following data was generated using an NKE spreadsheet:
+### NKE Data Estimates
+
+The following data was generated using an NKE spreadsheet:
 
 |npts|npacket|nsbd|data size (kB)|
 |----|-------|----|--------------|
