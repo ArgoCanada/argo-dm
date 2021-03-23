@@ -33,16 +33,19 @@ ax.plot(meds_core_pts, meds_core_data, 'o', color=pal[0], label='MEDS Core')
 ax.plot(coriolis_core_pts, coriolis_core_data, 'o', color=pal[1], label='Coriolis Core')
 ax.plot(meds_bgc_pts, meds_bgc_data, '^', color=pal[0], label='MEDS BGC')
 
+
 cf = np.poly1d(np.polyfit(df.data_kb, df.npts, 1))
 bf = np.poly1d(np.polyfit(df.data_bgc_kb, df.npts, 1))
 
 dplans = [12, 17, 30]
-pnames = ['B', 'F', 'G']
+pnames = ['2', '3', '4']
 for i,d in enumerate(dplans):
     ax.axhline(d/3, color=pal[2+i], label=None)
     ax.axvline(cf(d/3), color=pal[2+i], linestyle='--', label=None)
     ax.axvline(bf(d/3), color=pal[2+i], linestyle='-.', label=None)
     ax.text(800, d/3+0.1, 'Plan {}/3'.format(pnames[i]), color=pal[2+i])
+
+ax.plot([448], [5.7], '*', color='k', markersize=10, label='New High-res MEDS Float')
 
 ax.set_xlabel('Average Number of Points per Profile')
 ax.set_ylabel('SBD File Size per Profile (kB)')
@@ -51,5 +54,5 @@ ax.set_xlim((-5, 1050))
 ax.set_ylim((0,20))
 ax.minorticks_on()
 ax.grid()
-fig.savefig(Path('../figures/approximate_data_usage.png'), bbox_inches='tight', dpi=350)
+fig.savefig(Path('../figures/approximate_data_usage_20210323.png'), bbox_inches='tight', dpi=350)
 plt.close(fig)
