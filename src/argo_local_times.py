@@ -87,13 +87,13 @@ bix['local_hour'] = np.array([dt.hour + dt.minute / 60 for dt in bix.local_time]
 # all core profiles
 g = sns.displot(data=cix, x='local_hour', col='local_year', col_wrap=8, bins=np.arange(0, 25))
 g.fig.tight_layout()
-g.fig.savefig(Path('../figures/core_local_times_by_year.png'), bbox_inches='tight', dpi=350)
+g.fig.savefig(Path('../figures/core_local_times_by_year.png'), bbox_inches='tight', dpi=250)
 plt.close(g.fig)
 
 # all bgc files
 g = sns.displot(data=bix, x='local_hour', col='local_year', col_wrap=8, bins=np.arange(0, 25))
 g.fig.tight_layout()
-g.fig.savefig(Path('../figures/bgc_local_times_by_year.png'), bbox_inches='tight', dpi=350)
+g.fig.savefig(Path('../figures/bgc_local_times_by_year.png'), bbox_inches='tight', dpi=250)
 plt.close(g.fig)
 
 # drop all except 2020
