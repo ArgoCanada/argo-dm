@@ -16,4 +16,3 @@ high_res = df[df.pts > 500]
 idx = fetcher.float(high_res.wmo)
 ix = idx.to_dataframe()
 fig, ax = idx.plot('trajectory')
-
