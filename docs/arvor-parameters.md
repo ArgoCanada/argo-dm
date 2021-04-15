@@ -38,7 +38,7 @@ OPTION C
 
 Total points: 690
 
-Parameters:
+#### Parameters
 
 The resolution is set using the following commands: 
 
@@ -58,9 +58,11 @@ collect profiles at various times of day. This allows the Argo fleet to resolve
 diel cycles in temperature and oxygen, allowing for calculation of primary
 production.
 
+#### Parameters
+
 The relevant parameters for ARVOR floats are MC2 and MC3. MC3 will only matter
 if there is a shift in float cycle timing after a certian number of profiles,
-but for simplicity we will change both to 245 (hours). 
+but for simplicity we will change both to 245 (hours).
 
 ```text
 !MC 2 245
