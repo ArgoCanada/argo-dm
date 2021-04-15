@@ -38,6 +38,18 @@ OPTION C
 
 Total points: 690
 
+Parameters:
+
+The resolution is set using the following commands: 
+
+```text
+!MC 17 [int/shallow threshold]
+!MC 18 [int/deep threshold]
+!MC 19 [shallow bin size]
+!MC 20 [int bin size]
+!MC 21 [deep bin size] 
+```
+
 ### Temporal Resolution
 
 Following the recommendation of *Johnson et al. (in prep.)* and the AST meeting
