@@ -1,3 +1,4 @@
-/sbd/
+*.sbd
+*.bin
 data/
 .DS_Store
