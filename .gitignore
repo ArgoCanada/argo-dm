@@ -1,4 +1,6 @@
 *.sbd
 *.bin
+*.7z
+*.msg
 data/
 .DS_Store
