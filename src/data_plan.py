@@ -44,14 +44,15 @@ rf = np.poly1d(np.polyfit(df.data_rbr_kb, df.npts, 1))
 dplans = [12, 17, 30]
 pnames = ['2', '3', '4']
 for i,d in enumerate(dplans):
-    ax.axhline(d/3, color=pal[2+i], label=None)
-    ax.axvline(cf(d/3), color=pal[2+i], linestyle='-', label=None)
-    ax.axvline(bf(d/3), color=pal[2+i], linestyle='--', label=None)
-    ax.axvline(rf(d/3), color=pal[2+i], linestyle='-.', label=None)
+    # ax.axhline(d/3, color=pal[2+i], label=None)
+    # ax.axvline(cf(d/3), color=pal[2+i], linestyle='-', label=None)
+    # ax.axvline(bf(d/3), color=pal[2+i], linestyle='--', label=None)
+    # ax.axvline(rf(d/3), color=pal[2+i], linestyle='-.', label=None)
     print(cf(d/3), bf(d/3), rf(d/3))
-    ax.text(800, d/3+0.1, 'Plan {}/3'.format(pnames[i]), color=pal[2+i])
+    # ax.text(800, d/3+0.1, 'Plan {}/3'.format(pnames[i]), color=pal[2+i])
 
 ax.plot([448], [3.9], '*', color='k', markersize=10, label='New High-res MEDS Float')
+ax.plot([288], [5.4], '*', color='grey', markersize=10, label='New High-res MEDS DO Float')
 
 ax.set_xlabel('Average Number of Points per Profile')
 ax.set_ylabel('SBD File Size per Profile (kB)')
@@ -60,5 +61,5 @@ ax.set_xlim((-5, 1050))
 ax.set_ylim((0,20))
 ax.minorticks_on()
 ax.grid()
-fig.savefig(Path('../figures/approximate_data_usage_20210422.png'), bbox_inches='tight', dpi=350)
+fig.savefig(Path('../figures/approximate_data_usage_20210427.png'), bbox_inches='tight', dpi=350)
 plt.close(fig)
