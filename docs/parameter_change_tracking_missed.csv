@@ -1,0 +1,10 @@
+,latest_file,date,latitude,longitude,profiler_type,wmo,dac,cycle,time,imei,program,parameter_change_date,email_date,message_drafted,message_sent,message_received_confirmed
+0,meds/4902504/profiles/R4902504_033.nc,20210621045500,59.634,-57.836,844,4902504,meds,33,6/21/2021 4:55,300534060606600,"Argo, Argo Core, Argo Global, AtlantOS",7/1/2021,6/29/2021,Yes,Yes,No
+1,meds/4902538/profiles/R4902538_032.nc,20210621212700,49.836,-129.04,844,4902538,meds,32,6/21/2021 21:27,300534060224320,"Argo, Argo Core, Argo Global",7/1/2021,6/29/2021,Yes,Yes,No
+2,meds/4902442/profiles/R4902442_100.nc,20210622052800,40.824,-53.544,844,4902442,meds,100,6/22/2021 5:28,300234065867330,"Argo, Argo Core, Argo Global, AtlantOS",7/12/2021,7/11/2021,Yes,No,No
+3,meds/4902476/profiles/R4902476_081.nc,20210622053600,6.795,-86.357,844,4902476,meds,81,6/22/2021 5:36,300234066517680,"Argo, Argo Core, Argo Global, Tropical Pacific Observing System",7/12/2021,7/11/2021,Yes,No,No
+4,meds/4902482/profiles/R4902482_068.nc,20210622050800,50.047,-134.406,844,4902482,meds,68,6/22/2021 5:08,300234067672100,"Argo, Argo Core, Argo Global",7/12/2021,7/11/2021,Yes,No,No
+5,meds/4902496/profiles/R4902496_058.nc,20210622043000,42.952,-34.699,844,4902496,meds,58,6/22/2021 4:30,300234067575770,"Argo, Argo Core, Argo Global, AtlantOS",7/12/2021,7/11/2021,Yes,No,No
+6,meds/4902497/profiles/R4902497_058.nc,20210622041200,39.176,-38.71,844,4902497,meds,58,6/22/2021 4:12,300234067577760,"Argo, Argo Core, Argo Global, AtlantOS",7/12/2021,7/11/2021,Yes,No,No
+7,meds/4902527/profiles/R4902527_022.nc,20210622045100,51.202,-46.326,844,4902527,meds,22,6/22/2021 4:51,300534060221430,"Argo, Argo Core, Argo Global, AtlantOS",7/12/2021,7/11/2021,Yes,No,No
+8,meds/4902528/profiles/R4902528_022.nc,20210622043600,49.52,-35.564,844,4902528,meds,22,6/22/2021 4:36,300534060605590,"Argo, Argo Core, Argo Global, AtlantOS",7/12/2021,7/11/2021,Yes,No,No
