@@ -8,6 +8,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set(style='ticks', palette='colorblind')
 
+import gsw
+
 fn1 = list(Path('../sbd/4902533').glob('Ascent*.csv'))
 fn2 = list(Path('../sbd/4902534').glob('Ascent*.csv'))
 
@@ -21,15 +23,16 @@ for f1, f2 in zip(fn1, fn2):
         temp = df['CTD - Temperature (°C)'][:-n]
         psal = df['CTD - Salinity (PSU)'][:-n]
         corr = df['CTD - Salinity correction (°C)'][:-n]
-        for ax, v, label in zip(row[:2], [temp, psal], ['Temperature ({}C)'.format(chr(176)), 'Salinity']):
+        pden = gsw.pot_rho_t_exact(gsw.SA_from_SP(psal, pres, -67.3, 16.6), temp, pres, 0) - 1000
+        for ax, v, label in zip(row, [temp, psal, pden], ['Temperature ({}C)'.format(chr(176)), 'Salinity', 'Potential Density (kg m$^{-3}$)']):
             ax.plot(v, pres, '-', markeredgecolor='k', markeredgewidth=0.2, markersize=10)
             if n == 10:
                 ax.set_xlabel(label)
 
-        row[-1].plot(-np.diff(pres), pres[:-1], '-',  markeredgecolor='k', markeredgewidth=0.2, markersize=10)
-        if n == 10:
-            row[-1].set_xlabel('$\Delta$P (dbar)')
-        row[-1].set_xlim(left=0)
+        # row[-1].plot(-np.diff(pres), pres[:-1], '-',  markeredgecolor='k', markeredgewidth=0.2, markersize=10)
+        # if n == 10:
+        #     row[-1].set_xlabel('$\Delta$P (dbar)')
+        # row[-1].set_xlim(left=0)
         row[0].set_ylabel('Pressure (dbar)')
         row[0].set_ylim((2000, 0))
 
@@ -39,7 +42,7 @@ axes[1,1].set_title('RBR Float 4902534')
 w, h = fig.get_figwidth(), fig.get_figheight()
 fig.set_size_inches(w*4/3, h*2)
 
-fig.savefig(Path('../figures/rbr_profiles_first5.png'), bbox_inches='tight', dpi=250)
+fig.savefig(Path('../figures/rbr_profiles_pden_first5.png'), bbox_inches='tight', dpi=250)
 
 fig, axes = plt.subplots(1, 2)
 
