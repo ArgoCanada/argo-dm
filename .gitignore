@@ -4,3 +4,5 @@
 *.msg
 data/
 .DS_Store
+sbd/
+parameter_change/
