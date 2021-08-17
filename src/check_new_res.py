@@ -17,7 +17,7 @@ import argopy
 
 fetcher = argopy.DataFetcher()
 wmo = 4902540
-ds = fetcher.profile([wmo], [5]).to_xarray()
+ds = fetcher.profile([wmo], [18]).to_xarray()
 dx = fetcher.profile([wmo], [1]).to_xarray().to_dataframe()
 
 fig, axes = plt.subplots(2, 3)
@@ -52,14 +52,15 @@ for ax in axes[:,2]:
     ax.set_yticklabels([])
 
 for ax in axes.flatten():
-    ax.set_ylim((750,0))
+    ax.set_ylim((1200,0))
 
 for ax in axes[0,:]:
     ax.set_xlabel('')
 
 axes[0,0].set_title('Before Param. Change', loc='left', fontweight='bold')
 axes[1,0].set_title('After Param. Change', loc='left', fontweight='bold')
-axes[0,2].set_title('Float {}'.format(wmo), loc='right', fontweight='bold')
+axes[0,2].set_title('Float {}, Cycle 1'.format(wmo), loc='right', fontweight='bold')
+axes[1,2].set_title('Cycle 18'.format(wmo), loc='right', fontweight='bold')
 
 fig.tight_layout()
 fig.savefig(Path('../figures/meds_before_after_res_results.png'), bbox_inches='tight', dpi=350)
