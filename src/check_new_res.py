@@ -16,27 +16,26 @@ import argopy
 # bgc.io.get_argo(4902540, local_path=bgc.ARGO_PATH)
 
 fetcher = argopy.DataFetcher()
-ds = fetcher.profile([4902540], [5]).to_xarray()
-dx = fetcher.float(4902540).to_xarray().to_dataframe()
+wmo = 4902540
+ds = fetcher.profile([wmo], [5]).to_xarray()
+dx = fetcher.profile([wmo], [1]).to_xarray().to_dataframe()
 
 fig, axes = plt.subplots(2, 3)
 
-axes[0,0].plot(ds.TEMP, ds.PRES, 'o', color=sns.color_palette('cmo.thermal')[3], markersize=2)
-axes[0,1].plot(ds.PSAL, ds.PRES, '^', color=sns.color_palette('cmo.haline')[3], markersize=2)
-axes[0,2].plot(np.diff(ds.PRES), ds.PRES[:-1], '.', markersize=2)
+ms = 2
+axes[0,0].plot(dx.TEMP, dx.PRES, 'o', color=sns.color_palette('cmo.thermal')[3], markersize=ms)
+axes[0,1].plot(dx.PSAL, dx.PRES, '^', color=sns.color_palette('cmo.haline')[3], markersize=ms)
+axes[0,2].plot(np.diff(dx.PRES), dx.PRES[:-1], 's', markersize=ms)
 
-for ax, lbl in zip(axes[0,:], ['A', 'B', 'C']):
-    lb = AnchoredText(lbl, loc=1, prop=dict(fontsize=14, fontweight='bold'), frameon=False)
-    ax.add_artist(lb)
+axes[1,0].plot(ds.TEMP, ds.PRES, 'o', color=sns.color_palette('cmo.thermal')[3], markersize=ms)
+axes[1,1].plot(ds.PSAL, ds.PRES, '^', color=sns.color_palette('cmo.haline')[3], markersize=ms)
+axes[1,2].plot(np.diff(ds.PRES), ds.PRES[:-1], 's', markersize=ms)
 
-ds = ds.where(ds.PRES < 300)
-
-axes[1,0].plot(ds.TEMP, ds.PRES, 'o', color=sns.color_palette('cmo.thermal')[3], markersize=2)
-axes[1,1].plot(ds.PSAL, ds.PRES, '^', color=sns.color_palette('cmo.haline')[3], markersize=2)
-axes[1,2].plot(np.diff(ds.PRES), ds.PRES[:-1], '.', markersize=2)
-
-for ax, lbl in zip(axes[1,:], ['D', 'E', 'F']):
-    lb = AnchoredText(lbl, loc=1, prop=dict(fontsize=14, fontweight='bold'), frameon=False)
+for ax, lbl in zip(axes.flatten(), ['A', 'B', 'C', 'D', 'E', 'F']):
+    if lbl == 'A' or lbl == 'D':
+        lb = AnchoredText(lbl, loc=2, prop=dict(fontsize=14, fontweight='bold'), frameon=False)
+    else:
+        lb = AnchoredText(lbl, loc=1, prop=dict(fontsize=14, fontweight='bold'), frameon=False)
     ax.add_artist(lb)
 
 for ax in axes[:,0]:
@@ -49,16 +48,21 @@ for ax in axes[:,1]:
 
 for ax in axes[:,2]:
     ax.set_xlabel('Resolution [$\Delta P$] (dbar)')
-    ax.set_xlim(left=0)
+    ax.set_xlim(left=0, right=30)
     ax.set_yticklabels([])
 
-for ax in axes[0,:]:
-    ax.set_ylim((2000,0))
-    ax.set_xlabel('')
-for ax in axes[1,:]:
-    ax.set_ylim((300,0))
+for ax in axes.flatten():
+    ax.set_ylim((750,0))
 
-fig.savefig(Path('../figures/meds_high_res_results.png'), bbox_inches='tight', dpi=350)
+for ax in axes[0,:]:
+    ax.set_xlabel('')
+
+axes[0,0].set_title('Before Param. Change', loc='left', fontweight='bold')
+axes[1,0].set_title('After Param. Change', loc='left', fontweight='bold')
+axes[0,2].set_title('Float {}'.format(wmo), loc='right', fontweight='bold')
+
+fig.tight_layout()
+fig.savefig(Path('../figures/meds_before_after_res_results.png'), bbox_inches='tight', dpi=350)
 plt.close(fig)
 
 dx = dx[dx.PRES < 300]
