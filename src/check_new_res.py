@@ -5,6 +5,7 @@ from pathlib import Path
 import numpy as np
 
 import matplotlib.pyplot as plt
+from matplotlib.offsetbox import AnchoredText
 import seaborn as sns
 sns.set(style='ticks', palette='colorblind')
 
@@ -24,11 +25,19 @@ axes[0,0].plot(ds.TEMP, ds.PRES, 'o', color=sns.color_palette('cmo.thermal')[3],
 axes[0,1].plot(ds.PSAL, ds.PRES, '^', color=sns.color_palette('cmo.haline')[3], markersize=2)
 axes[0,2].plot(np.diff(ds.PRES), ds.PRES[:-1], '.', markersize=2)
 
+for ax, lbl in zip(axes[0,:], ['A', 'B', 'C']):
+    lb = AnchoredText(lbl, loc=1, prop=dict(fontsize=14, fontweight='bold'), frameon=False)
+    ax.add_artist(lb)
+
 ds = ds.where(ds.PRES < 300)
 
 axes[1,0].plot(ds.TEMP, ds.PRES, 'o', color=sns.color_palette('cmo.thermal')[3], markersize=2)
 axes[1,1].plot(ds.PSAL, ds.PRES, '^', color=sns.color_palette('cmo.haline')[3], markersize=2)
 axes[1,2].plot(np.diff(ds.PRES), ds.PRES[:-1], '.', markersize=2)
+
+for ax, lbl in zip(axes[1,:], ['D', 'E', 'F']):
+    lb = AnchoredText(lbl, loc=1, prop=dict(fontsize=14, fontweight='bold'), frameon=False)
+    ax.add_artist(lb)
 
 for ax in axes[:,0]:
     ax.set_xlabel('Temperature ({}C)'.format(chr(176)))
