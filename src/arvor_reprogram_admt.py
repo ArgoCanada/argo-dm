@@ -5,7 +5,6 @@ from pathlib import Path
 import pandas as pd
 
 import matplotlib.pyplot as plt
-import cmocean.cm as cmo
 import seaborn as sns
 sns.set(style='ticks', palette='colorblind', context='talk')
 
