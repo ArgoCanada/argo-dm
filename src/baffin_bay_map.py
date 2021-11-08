@@ -6,7 +6,6 @@ import numpy as np
 from netCDF4 import Dataset
 
 import matplotlib.pyplot as plt
-import matplotlib.ticker as mticker
 import cmocean.cm as cmo
 import seaborn as sns
 sns.set(style='ticks', context='paper', palette='colorblind')
@@ -62,7 +61,6 @@ for x, y in zip(float_lons, float_lats):
 lon_formatter = LongitudeFormatter(zero_direction_label=True)
 lat_formatter = LatitudeFormatter()
 gl = ax.gridlines(crs=transform, draw_labels=True)
-# gl.xlocator = mticker.FixedLocator([-70, -55, -40])
 gl.right_labels = False
 gl.xformatter = lon_formatter
 gl.yformatter = lat_formatter
