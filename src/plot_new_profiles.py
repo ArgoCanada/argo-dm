@@ -23,7 +23,7 @@ else:
 
 # can manually set number of days from command line
 if len(sys.argv) > 1:
-    day_delta = sys.argv[1]
+    day_delta = int(sys.argv[1])
 
 start_date = today - pd.Timedelta(days=day_delta) - pd.Timedelta(hours=time.hour, minutes=time.minute, seconds=time.second)
 
