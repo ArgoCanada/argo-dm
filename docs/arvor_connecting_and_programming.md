@@ -59,6 +59,6 @@ common commands are:
 6. When you're done, place the magnet back in the "On/Off" position and close
 Tera Term.
 
-![jpg](../figures/chris.jpg)
+![jpg](../figures/arvor-bluetooth-guide/chris.jpg)
 
 Thanks!!
