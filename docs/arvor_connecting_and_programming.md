@@ -1,12 +1,12 @@
 # NKE ARVOR Float: Connecting, Programming, and Troubleshooting via Bluetooth
 
-Author: Christopher Gordon, DFO, (chris.gordon@dfo-mpo.gc.ca)[mailto:chris.gordon@dfo-mpo.gc.ca]
+Author: Christopher Gordon, DFO, [chris.gordon@dfo-mpo.gc.ca](mailto:chris.gordon@dfo-mpo.gc.ca)
 
 This document to guide a user on how to connect to an NKE ARVOR float,
 hopefully simplifying the documentation in the float manual. A simple version
 of the process is that you connect your laptop to the float via bluetooth,
 just as you would headphones, a mouse, etc. Once connected, you will be able to
-use a terminal emulator (I use (Tera Term)[https://ttssh2.osdn.jp/index.html.en])
+use a terminal emulator (I use [Tera Term](https://ttssh2.osdn.jp/index.html.en))
 to query or program the float.
 
 ## Steps
