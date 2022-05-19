@@ -1,6 +1,6 @@
 # NKE ARVOR Float: Connecting, Programming, and Troubleshooting via Bluetooth
 
-Author: Christopher Gordon, DFO, [chris.gordon@dfo-mpo.gc.ca](mailto:chris.gordon@dfo-mpo.gc.ca)
+Christopher Gordon, DFO, [chris.gordon@dfo-mpo.gc.ca](mailto:chris.gordon@dfo-mpo.gc.ca)
 
 This document to guide a user on how to connect to an NKE ARVOR float,
 hopefully simplifying the documentation in the float manual. A simple version
