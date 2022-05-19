@@ -40,7 +40,7 @@ almost always whichever one you didn't pick first. Once you have selected a COM
 Port, press enter a couple times to see if you get any response. If not, close
 Tera Term and try another port.
 
-<img src="../figures/arvor-bluetooth-guide/teraterm.png" alt="tera term" width="300"/>
+<img src="../figures/arvor-bluetooth-guide/teraterm.png" alt="tera term" width="450"/>
 
 5. Before sending any commands, it is good practice to log the session so you 
 can look back if say, you can't remember if you armed the float or not. In
@@ -59,6 +59,6 @@ common commands are:
 6. When you're done, place the magnet back in the "On/Off" position and close
 Tera Term.
 
-<img src="../figures/arvor-bluetooth-guide/chris.jpg" alt="great!!!" width="300"/>
+<img src="../figures/arvor-bluetooth-guide/chris.jpg" alt="great!!!" width="500"/>
 
 Thanks!!
