@@ -18,7 +18,7 @@ to query or program the float.
 up the body of the flaot) to the "Bluetooth" position (just under the white
 "head" of the float)
 
-[pic of each position]
+![jpg](../figures/arvor-bluetooth-guide/magnet_position.jpg)
 
 3. Pair to the float. The name of the float will (annoyingly) not be any of the
 other number associated with the float like serial number, IMEI, or WMO, but
@@ -31,4 +31,34 @@ a limited time window (roughly a minute) to get paired to it. Once you are
 successfully paired the float will realize it is not being deployed and stop
 the launching sequence.
 
-4. Connect a terminal emulator.
+4. Connect a terminal emulator. In Tera Term, a new connection window will open
+immediately upon launching the program. Select "Serial" and then choose the
+appropriate Port. In my experience, its usually COM3 or COM4, but if you
+connect to more without deleting old floats in your Bluetooth setting (or have
+connected to something else with a COM Port) it might be different. It is
+almost always whichever one you didn't pick first. Once you have selected a COM
+Port, press enter a couple times to see if you get any response. If not, close
+Tera Term and try another port.
+
+![png](../figures/arvor-bluetooth-guide/teraterm.png)
+
+5. Before sending any commands, it is good practice to log the session so you 
+can look back if say, you can't remember if you armed the float or not. In
+Tera Term, go to the "File" menu, select "Log..." and choose where to save the
+log text file. Now you're connected and can send the float commands! Some 
+common commands are:
+
+- `?MC`: display all mission parameters
+- `!MC x y`: change mission parameter `x` to value `y`
+- `?AR`: check if the float is armed or not
+- `!AR x`: arm or disarm the float, `x=1` to arm, `x=0` to disarm
+- `!SE`: run a communications check, esablishing connection to GPS and Iridium
+- `!C 0`: run a quick self check (same test it does pre-deployment)
+- `!C 1`: run the same self check, but including communications test
+
+6. When you're done, place the magnet back in the "On/Off" position and close
+Tera Term.
+
+![jpg](../figures/chris.jpg)
+
+Thanks!!
