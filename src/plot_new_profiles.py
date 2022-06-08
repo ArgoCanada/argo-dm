@@ -29,14 +29,16 @@ start_date = today - pd.Timedelta(days=day_delta) - pd.Timedelta(hours=time.hour
 
 # grab core and bgc index
 ix = argo.prof.subset_date(start_date)
-ix = ix[ix.file.str.contains('meds')]
+ix = ix[ix.institution == 'ME']
 bx = argo.bio_prof.subset_date(start_date)
-bx = bx[bx.file.str.contains('meds')]
+bx = bx[bx.institution == 'ME']
 
 # get data, note bgc data will have to be updated/not
 # hard coded once the PROVOR floats are deployed
-core = ix.levels[['PRES', 'TEMP', 'TEMP_QC', 'PSAL', 'PSAL_QC']]
-bgc  = bx.levels[['PRES', 'DOXY', 'DOXY_QC']]
+if not ix.empty:
+    core = ix.levels[['PRES', 'TEMP', 'TEMP_QC', 'PSAL', 'PSAL_QC']]
+if not bx.empty:
+    bgc  = bx.levels[['PRES', 'DOXY', 'DOXY_QC']]
 
 # plot the core data
 for f, pt in zip(ix.file, ix.profiler_type):
