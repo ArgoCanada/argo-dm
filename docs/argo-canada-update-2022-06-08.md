@@ -13,8 +13,9 @@ learned a lot about the deployment procedure.
 drift at 30m. For our initial test, we set the profile frequency to the minimum
 (1 hour), however in the future we plan to leave the floats for a few days and
 so will have them profile less frequently than that (say, 2-3 times per day)
-- Will also program floats to have a certain number of floats so it will be
-waiting at surface in end of life mode for recovery when we go to retrieve it.
+- Will also program floats to perform a certain number of profiles so it will
+be waiting at surface in end of life mode for recovery when we go to retrieve
+it.
 - Flushed CTD with Triton X solution and then distilled water following
 recovery, allowed to dry in the box and then replaced plugs days later.
 - May have discovered some communication issues with ARVOR floats delivered
@@ -22,7 +23,7 @@ in 2022, as sbd messages did not arrive to Argo Canada email accounts but were
 received by NKE. [note: testing tomorrow, update this bullet pt.]
 - Planning to test 2 PROVOR floats later in June, Antoine Poteau at LOV sending
 configuration they use for Ifremer pool testing. Plan to deploy these floats on
-Fall AZMP mission.
+Fall AZMP mission, which will go in late September. 
 
 ## Real Time QC for BGC Floats
 
