@@ -18,9 +18,9 @@ be waiting at surface in end of life mode for recovery when we go to retrieve
 it.
 - Flushed CTD with Triton X solution and then distilled water following
 recovery, allowed to dry in the box and then replaced plugs days later.
-- May have discovered some communication issues with ARVOR floats delivered
-in 2022, as sbd messages did not arrive to Argo Canada email accounts but were
-received by NKE. [note: testing tomorrow, update this bullet pt.]
+- Discovered some communication issues with ARVOR floats delivered in 2022
+where as sbd messages did not arrive to Argo Canada email accounts but were
+received by NKE. Working with NKE to resolve now.
 - Planning to test 2 PROVOR floats later in June, Antoine Poteau at LOV sending
 configuration they use for Ifremer pool testing. Plan to deploy these floats on
 Fall AZMP mission, which will go in late September. 
