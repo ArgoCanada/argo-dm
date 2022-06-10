@@ -41,3 +41,4 @@ published RTQC manual (only does range check and negative spike test).
 - Where to store parameter LAST_DARK_COUNT, the CHLA dark count that may be
 recalculated with each profile, and needs to be fetched from the previous
 profile each time the RTQC is ran.
+- Exhaustive testing.
