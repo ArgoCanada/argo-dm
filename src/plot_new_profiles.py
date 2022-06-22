@@ -59,8 +59,10 @@ for f, pt in zip(ix.file, ix.profiler_type):
     sns.scatterplot(x='PSAL', y='TEMP', data=d, ax=axes[2], linewidth=0.1)
     axes[0].set_title(f'{f}, Npts = {d.loc[d.PRES.notna()].shape[0]}, float type: {pt}', loc='left')
     [ax.set_ylim((2050, -50)) for ax in axes[:2]]
-    fig.set_size_inches(2*fig.get_figwidth(), fig.get_figheight())
-    fig.tight_layout()
+    mngr = plt.get_current_fig_manager()
+    geom = mngr.window.geometry('1500x500+0+100')
+    axes[1].set_ylabel('')
+    axes[1].set_yticklabels([])
     plt.show()
 
 # plot the bgc data
@@ -72,6 +74,8 @@ for f, pt in zip(bx.file, bx.profiler_type):
     sns.scatterplot(x='DOXY', y='PRES', hue='DOXY_QC', data=bgc.loc[f], ax=ax, linewidth=0.1)
     ax.set_ylim((2050, -50))
     ax.set_title(f'{f}, Npts = {bgc.loc[f].loc[bgc.loc[f].DOXY.notna()].shape[0]}, float type: {pt}', loc='left')
+    mngr = plt.get_current_fig_manager()
+    geom = mngr.window.geometry('600x600+0+100')
     plt.show()
 
 plt.close('all')
