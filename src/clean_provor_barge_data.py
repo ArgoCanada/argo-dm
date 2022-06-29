@@ -15,98 +15,34 @@ wmo_numbers = [
 imei = imei_numbers[0]
 wmo = wmo_numbers[0]
 
-rudics_path = Path('../data/provor') / imei
+rudics_path = Path('../data/provor')
 data_files = [
     'CTD Measures (Average).csv',
-    'CTD Measures (Raw data).csv',
     'DO Measures (Raw data).csv',
     'ECO2 Measures (Raw data).csv',
 ]
+sensors = [
+    'ctd',
+    'optode',
+    'ecopuck',
+]
 
-# ctd = pd.read_csv(
-#     rudics_path / data_files[0],
-#     sep=';', encoding='unicode-escape',
-#     lineterminator='\r'
-# )
-# ctd = ctd[(ctd['Mean pressure (dbar)'].notna()) & (ctd['Mean pressure (dbar)'] > 0)]
-# ctd = ctd.drop(['Unnamed: 0', 'Unnamed: 8'], axis=1)
-# ctd = ctd.backfill()
-# ctd = ctd.astype({'Cycle number':int, 'Profile number':int, 'Phase number':int})
-# ctd['1st sample date'] = pd.to_datetime(ctd['1st sample date'])
-
-# oxy = pd.read_csv(
-#     rudics_path / data_files[2],
-#     sep=';', encoding='unicode-escape',
-#     lineterminator='\r'
-# )
-# oxy = oxy[(oxy['Pressure (dbar)'].notna()) & (oxy['Pressure (dbar)'] > 0)]
-# oxy = oxy.drop(['Unnamed: 0', 'Unnamed: 9'], axis=1)
-# oxy = oxy.backfill()
-# oxy = oxy[oxy['Profile number'].notna()]
-# oxy = oxy.astype({'Cycle number':int, 'Profile number':int, 'Phase number':int})
-# oxy['1st sample date'] = pd.to_datetime(oxy['1st sample date'])
-
-# eco = pd.read_csv(
-#     rudics_path / data_files[3],
-#     sep=';', encoding='unicode-escape',
-#     lineterminator='\r'
-# )
-# eco = eco[(eco['Pressure (dbar)'].notna()) & (eco['Pressure (dbar)'] > 0)]
-# eco = eco.drop(['Unnamed: 0', 'Unnamed: 8'], axis=1)
-# eco = eco.fillna(method='backfill')
-# eco = eco.astype({'Cycle number':int, 'Profile number':int, 'Phase number':int})
-# eco['1st sample date'] = pd.to_datetime(eco['1st sample date'])
-
-# ctd.to_hdf(Path(f'../data/provor/{imei}') / f'{wmo}_ctd.h5', key='df', mode='w')
-# oxy.to_hdf(Path(f'../data/provor/{imei}') / f'{wmo}_optode.h5', key='df', mode='w')
-# eco.to_hdf(Path(f'../data/provor/{imei}') / f'{wmo}_ecopuck.h5', key='df', mode='w')
-
-# ctd.to_csv(Path(f'../data/provor/{imei}') / f'{wmo}_ctd.csv')
-# oxy.to_csv(Path(f'../data/provor/{imei}') / f'{wmo}_optode.csv')
-# eco.to_csv(Path(f'../data/provor/{imei}') / f'{wmo}_ecopuck.csv')
-
-imei = imei_numbers[1]
-wmo = wmo_numbers[1]
-
-ctd = pd.read_csv(
-    rudics_path / data_files[1],
-    sep=';', encoding='unicode-escape',
-    lineterminator='\r'
-)
-ctd = ctd[(ctd['Pressure (dbar)'].notna()) & (ctd['Pressure (dbar)'] > 0)]
-ctd = ctd.drop(['Unnamed: 0', 'Unnamed: 8'], axis=1)
-ctd = ctd.backfill()
-ctd = ctd[ctd['Profile number'].notna()]
-ctd = ctd.astype({'Cycle number':int, 'Profile number':int, 'Phase number':int})
-ctd['1st sample date'] = pd.to_datetime(ctd['1st sample date'])
-
-oxy = pd.read_csv(
-    rudics_path / data_files[2],
-    sep=';', encoding='unicode-escape',
-    lineterminator='\r'
-)
-oxy = oxy[(oxy['Pressure (dbar)'].notna()) & (oxy['Pressure (dbar)'] > 0)]
-oxy = oxy.drop(['Unnamed: 0', 'Unnamed: 9'], axis=1)
-oxy = oxy.backfill()
-oxy = oxy[oxy['Profile number'].notna()]
-oxy = oxy.astype({'Cycle number':int, 'Profile number':int, 'Phase number':int})
-oxy['1st sample date'] = pd.to_datetime(oxy['1st sample date'])
-
-eco = pd.read_csv(
-    rudics_path / data_files[3],
-    sep=';', encoding='unicode-escape',
-    lineterminator='\r'
-)
-eco = eco[(eco['Pressure (dbar)'].notna()) & (eco['Pressure (dbar)'] > 0)]
-eco = eco.drop(['Unnamed: 0', 'Unnamed: 8'], axis=1)
-eco = eco.fillna(method='backfill')
-eco = eco.astype({'Cycle number':int, 'Profile number':int, 'Phase number':int})
-eco['1st sample date'] = pd.to_datetime(eco['1st sample date'])
-
-ctd.to_hdf(Path(f'../data/provor/{imei}') / f'{wmo}_ctd.h5', key='df', mode='w')
-oxy.to_hdf(Path(f'../data/provor/{imei}') / f'{wmo}_optode.h5', key='df', mode='w')
-eco.to_hdf(Path(f'../data/provor/{imei}') / f'{wmo}_ecopuck.h5', key='df', mode='w')
-
-ctd.to_csv(Path(f'../data/provor/{imei}') / f'{wmo}_ctd.csv')
-oxy.to_csv(Path(f'../data/provor/{imei}') / f'{wmo}_optode.csv')
-eco.to_csv(Path(f'../data/provor/{imei}') / f'{wmo}_ecopuck.csv')
+for imei, wmo in zip(imei_numbers, wmo_numbers):
+    for f, s in zip(data_files, sensors):
+        df = pd.read_csv(
+            rudics_path / imei / f,
+            sep=';', encoding='unicode-escape',
+            lineterminator='\r'
+        )
+        if s == 'ctd':
+            df = df.rename(columns={'Mean pressure (dbar)':'Pressure (dbar)'})
+        df = df[(df['Pressure (dbar)'].notna()) & (df['Pressure (dbar)'] > 0)]
+        for c in df.columns:
+            if 'Unnamed' in c:
+                df = df.drop(c, axis=1)
+        df = df.backfill()
+        df = df[df['Profile number'].notna()]
+        df = df.astype({'Cycle number':int, 'Profile number':int, 'Phase number':int})
+        df['1st sample date'] = pd.to_datetime(df['1st sample date'])
+        df.to_hdf(Path(f'../data/provor/{imei}') / f'{wmo}_{s}.h5', key='df', mode='w')
+        df.to_csv(Path(f'../data/provor/{imei}') / f'{wmo}_{s}.csv')
