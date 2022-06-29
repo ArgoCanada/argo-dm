@@ -11,7 +11,7 @@ imei_numbers = [
     '300125061360970',
 ]
 
-upload_file = Path('/Users/GordonC/Documents/argo/meds/predeployment-testing/RUDICS_CMD.txt')
+upload_file = Path('/Users/GordonC/Documents/argo/meds/predeployment-testing/EOL.txt')
 
 for imei in imei_numbers:
     ftp.cwd(imei)
