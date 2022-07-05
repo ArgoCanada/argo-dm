@@ -22,10 +22,9 @@ nylon rope before securing the weight, and then tying the nylon rope securely
 around the plastic piece of the float used for deployment. A large shackle was 
 used for the weight at the bottom of the line.
 
-
 <p align="middle">
-    <img src="../figures/loop.jpg" alt="Alpine Butterfly Loop" style="width:200px;"/>
-    <img src="../figures/shackle.jpg" alt="Shackle weight" style="width:200px;"/>
+    <img src="../figures/loop.jpg" alt="Alpine Butterfly Loop" style="width:400px;"/>
+    <img src="../figures/shackle.jpg" alt="Shackle weight" style="width:400px;"/>
 </p>
 
 ## Programming & Data
