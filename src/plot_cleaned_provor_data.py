@@ -49,4 +49,5 @@ for imei, wmo in zip(imei_numbers, wmo_numbers):
     axc2.set_xlabel('Channel 2 (counts)', loc='right')
     fig.tight_layout()
 
-    plt.show()
+    fig.savefig(Path(f'../figures/provor/{wmo}_barge_profiles.png'), bbox_inches='tight', dpi=350)
+    plt.close(fig)
