@@ -16,7 +16,7 @@ For any parties new to the vessel, a general statement of risk provided by the
 ship must be signed and sent to the coxwain.
 3. Ensure all COVID procedures are followed. From the DRDC side, a COVID
 attestation for each party attending should be sent to Richard Pederson
-[Richard.Pederson@ecn.forces.gc.ca](mailto:Richard.Pederson@ecn.forces.gc.ca)
+([Richard.Pederson@ecn.forces.gc.ca](mailto:Richard.Pederson@ecn.forces.gc.ca))
 a few days ahead of attending the barge. For joining a Canadian Coast Guard
 vessel like the Sigma-T, a rapid test must be taken the day of.
 4. Once scheduled times are settled circulate a detailed itinerary to all
