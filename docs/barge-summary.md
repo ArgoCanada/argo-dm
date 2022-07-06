@@ -62,7 +62,7 @@ threshold on the NKE checklist as our "OK to deploy" step. At this point, the
 full self check will have already been completed which includes getting a GPS
 fix and connecting to Iridium.
 
-For the PROVORS, we used the overhead hoist for deployment as they are quite
+For the PROVORs, we used the overhead hoist for deployment as they are quite
 heavy. We lifted the floats using a 5ft strap, which we left on the float
 during the test so it could easily be reused for recovery. The float was
 lowered to water level on the lift, tied the nylon line looped onto the hanging
@@ -71,10 +71,37 @@ the water.
 
 ## Data
 
+Each float collected 6 profiles over the course of 3 days. The floats were set
+to enter end of live mode after 6 profiles (`!PV 0 6`), however in an effort to
+ensure they would be at the surface for recovery, a command file with `!PV 0 0`
+was sent the day before recovery.
+
+The floats did transmit data during their test mission, however the technical 
+packets incicated that there were frequenct communication timeouts. This was
+not totally surprising since the barge is enclosed. Any data that were not
+transmitted during the mission were transmitted following recovery by
+connecting to the float via Bluetooth and sending the command `!SE 1`.
+
+The data collected, shown below, looks reasonable. Keep in mind that we are
+looking for just gross error here - there exist other Bedford Basin monitoring
+data that we could compare to, which will be worth doing, but the goal is not
+to calibrate or validate the sensors, but rather to ensure that the float is
+functioning properly and returning reasonable data from each sensor.
+
 <p align="middle">
     <img src="../figures/provor/4902598_barge_profiles.png" alt="4902598 test profiles" style="width:500px;"/>
     <img src="../figures/provor/4902599_barge_profiles.png" alt="4902599 test profiles" style="width:500px;"/>
 </p>
+
+The temperature and salinity data each show some possible anomalous values
+between 5-10dbar, however I suspect this may be due to the CTD pump turning off
+(though that is supposed to happen at 5dbar depth). Oxygen phase and
+bio-optical variables both look good. The mass of points at the bottom,
+especially visible in the bio-optical channels, is caused by the "hanging" of
+the float on the line since it is trying to profile deeper than the line will
+allow it to go.
+
+Data from each sensor are available [here]().
 
 ## Recovery
 
