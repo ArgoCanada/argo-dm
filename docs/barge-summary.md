@@ -71,6 +71,11 @@ the water.
 
 ## Data
 
+<p align="middle">
+    <img src="../figures/provor/4902598_barge_profiles.png" alt="4902598 test profiles" style="width:600px;"/>
+    <img src="../figures/provor/4902599_barge_profiles.png" alt="4902599 test profiles" style="width:600px;"/>
+</p>
+
 ## Recovery
 
 ## Conclusion and Lessons Learned
