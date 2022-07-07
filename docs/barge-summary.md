@@ -1,6 +1,6 @@
 # Pre-Deployment Testing at DRDC Barge
 
-_Chris Gordon_
+**Chris Gordon**
 
 ## Setup, Programming, and Deployment
 
