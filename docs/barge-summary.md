@@ -33,8 +33,8 @@ For the PROVOR floats, there are a great many more parameters to be changed.
 The file we used was based off pool tests performed at Ifremer in France, the
 file containing all those parameters can be found [here]().
 
-Communication can be a challenge on the barge (as will be discussed in further 
-detail later), so it is recommended that the launch sequence is started
+Iridioum communication can be a challenge on the barge (as will be discussed in 
+further detail later), so it is recommended that the launch sequence is started
 outside. Additionally, the file sent during the launch sequence may not be seen
 on the RUDICS server immediately, so we used the "5 fast eV actions" as our
 threshold on the NKE checklist as our "OK to deploy" step. At this point, the
@@ -56,7 +56,7 @@ ensure they would be at the surface for recovery, a command file with `!PV 0 0`
 was sent the day before recovery.
 
 The floats did transmit data during their test mission, however the technical 
-packets incicated that there were frequenct communication timeouts. This was
+packets incicated that there were frequent communication timeouts. This was
 not totally surprising since the barge is enclosed. Any data that were not
 transmitted during the mission were transmitted following recovery by
 connecting to the float via Bluetooth and sending the command `!SE 1`.
@@ -84,7 +84,7 @@ Data from each sensor are available [here]().
 
 ## Recovery
 
-As on deployment, during recovery the overhead hoise was used. One float did
+As on deployment, during recovery the overhead hoist was used. One float did
 not accept the end of life command file, and so was still "drifting" at about
 30m when we went to recover it. This was not too much of a problem, as we had
 to bring up the line anyway, we were able to bring the float to the surface
