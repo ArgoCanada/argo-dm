@@ -27,11 +27,13 @@ For the programming of ARVOR floats, a shallow drift and profile depth is used.
 The parameters for setting the time for initial surfacing should be set to a
 sufficient time to allow the float to make its initial dive, which can take up
 to 3 hours. The user may select a cycle time that allows for 2-4 profiles per
-day. A file with the parameters used in our testing can be found [here]().
+day. A file with the parameters used in our testing can be found 
+[here](https://github.com/ArgoCanada/argo-dm/blob/main/float-programming/ARVOR_config.sbd).
 
 For the PROVOR floats, there are a great many more parameters to be changed. 
 The file we used was based off pool tests performed at Ifremer in France, the
-file containing all those parameters can be found [here]().
+file containing all those parameters can be found 
+[here](https://github.com/ArgoCanada/argo-dm/blob/main/float-programming/Poteau_PROVOR_config.txt).
 
 Iridioum communication can be a challenge on the barge (as will be discussed in 
 further detail later), so it is recommended that the launch sequence is started
