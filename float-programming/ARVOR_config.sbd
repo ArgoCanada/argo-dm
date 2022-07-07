@@ -1,0 +1,16 @@
+*** total profiles, MC1 won't be accessed but set anyway ***
+!MC 0 6
+!MC 1 6
+*** cycle time, MC3 won't be accessed but set anyway ***
+!MC 2 10
+!MC 3 10
+*** mission day and time in UTC, will depend on your time zone***
+!MC 4 0
+!MC 5 19
+*** drift and profile pressure, MC13, MC14 won't be accessed ***
+!MC 11 30
+!MC 12 30
+!MC 13 30
+!MC 14 30
+*** grounding switch pressure, how much to adjust if grounded ***
+!MC 25 5
