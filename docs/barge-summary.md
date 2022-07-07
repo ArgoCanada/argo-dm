@@ -83,7 +83,7 @@ the float on the line since it is trying to profile deeper than the line will
 allow it to go.
 
 Data from each sensor are available 
-[here](https://github.com/ArgoCanada/argo-dm/tree/main/dat).
+[here](https://github.com/ArgoCanada/argo-dm/tree/main/dat/barge-data-2022-06-27).
 
 ## Recovery
 
