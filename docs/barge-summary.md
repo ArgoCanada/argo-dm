@@ -129,6 +129,8 @@ still running but depth read by CTD unchanging) by securely attaching the float
 to the weighted line. Therefore, care in attaching the float securely is very
 important as the float will attempt to exceed the depth of the line.
 
+<!-- 
+
 ## Annex: Scheduling
 
 Logistics steps required to schedule time at DRDC barge:
@@ -149,3 +151,5 @@ vessel like the Sigma-T, a rapid test must be taken the day of.
 4. Once scheduled times are settled circulate a detailed itinerary to all
 parties involved. At this time, ensure all parties have proper PPE (life vest,
 steel toed shoes, hard hat).
+
+-->
