@@ -35,7 +35,7 @@ The file we used was based off pool tests performed at Ifremer in France, the
 file containing all those parameters can be found 
 [here](https://github.com/ArgoCanada/argo-dm/blob/main/float-programming/Poteau_PROVOR_config.txt).
 
-Iridioum communication can be a challenge on the barge (as will be discussed in 
+Iridium communication can be a challenge on the barge (as will be discussed in 
 further detail later), so it is recommended that the launch sequence is started
 outside. Additionally, the file sent during the launch sequence may not be seen
 on the RUDICS server immediately, so we used the "5 fast eV actions" as our
@@ -48,7 +48,12 @@ heavy. We lifted the floats using a 5ft strap, which we left on the float
 during the test so it could easily be reused for recovery. The float was
 lowered to water level on the lift, tied the nylon line looped onto the hanging
 weigthed line to the plastic hook on the float, and then lowered the float into
-the water.
+the water by hand.
+
+<p align="middle">
+    <img src="../figures/provor/RDA-U-20220623-00004.jpg" alt="deployment photo 1" style="width:500px;"/>
+    <img src="../figures/provor/RDA-U-20220623-00008.jpg" alt="deployment photo 2" style="width:500px;"/>
+</p>
 
 ## Data
 
@@ -94,6 +99,10 @@ to bring up the line anyway, we were able to bring the float to the surface
 using the line it was attached to. One consequence of this was that the
 hydraulic pump activation during the next launch sequence for this float will
 take longer.
+
+<p align="middle">
+    <img src="../figures/provor/RDA-U-20220623-00006.jpg" alt="float in water" style="width:800px;"/>
+</p>
 
 Following recovery the float was hosed down, and the sensors cleaned with
 Triton-X and distilled water. The plugs of the CTD cell were left off for 3-4
