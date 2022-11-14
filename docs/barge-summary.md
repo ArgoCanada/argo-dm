@@ -1,8 +1,8 @@
 # Pre-Deployment Testing at DRDC Barge
 
-**Chris Gordon**
+**Chris Gordon**, Bedford Institute of Oceanography
 
-## Setup, Programming, and Deployment
+## Setup & Programming
 
 The DRDC barge has 4 davits, one on each corner of the moon pool. which are 
 about 3m above the surface of the water. The Bedford Basin in this area is 
@@ -34,6 +34,8 @@ For the PROVOR floats, there are a great many more parameters to be changed.
 The file we used was based off pool tests performed at Ifremer in France, the
 file containing all those parameters can be found 
 [here](https://github.com/ArgoCanada/argo-dm/blob/main/float-programming/Poteau_PROVOR_config.txt).
+Information of on reprogramming the float can be found
+[here](https://github.com/ArgoCanada/argo-dm/blob/main/docs/arvor_provor_connecting_and_programming.md).
 
 Iridium communication can be a challenge on the barge (as will be discussed in 
 further detail later), so it is recommended that the launch sequence is started
@@ -43,12 +45,25 @@ threshold on the NKE checklist as our "OK to deploy" step. At this point, the
 full self check will have already been completed which includes getting a GPS
 fix and connecting to Iridium.
 
+**Full list of materials for one setup**: 
+
+- 1 heavy (~30lbs) shackle
+- 38m kevlar line w/ loops on ends
+- 2 small shackles
+- Rope to attach float to line
+- 5ft lifting straps (PROVOR floats only)
+
+## Deployment
+
 For the PROVORs, we used the overhead hoist for deployment as they are quite
 heavy. We lifted the floats using a 5ft strap, which we left on the float
 during the test so it could easily be reused for recovery. The float was
 lowered to water level on the lift, tied the nylon line looped onto the hanging
 weigthed line to the plastic hook on the float, and then lowered the float into
 the water by hand.
+
+AROVR floats were deployed completely by hand, and the attachment to the
+hanging line was not as robust as they should not "hang" as the PROVORs do.
 
 <p align="middle">
     <img src="../figures/provor/RDA-U-20220623-00004.jpg" alt="deployment photo 1" style="width:500px;"/>
