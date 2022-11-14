@@ -1,0 +1,21 @@
+timeout = 5
+dirname dir "C:\SCRIPT"
+setdir dir
+setsync 1
+;open the files à 1er ligne (0)
+;et met le contenu dans my_file
+fileopen my_file 'MACRO_BASSIN_PM_PV_PC_CTS4_EUROGO.txt' 0
+:loop
+; Read a line from the file
+filereadln my_file line
+if result goto fclose
+;Send the line
+sendln line
+wait ']'
+;pause 1
+; Repeat until the end of the file
+goto loop
+:fclose
+; Close the file
+fileclose my_file
+
