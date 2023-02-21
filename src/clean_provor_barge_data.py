@@ -12,9 +12,6 @@ wmo_numbers = [
     '4902599',
 ]
 
-imei = imei_numbers[0]
-wmo = wmo_numbers[0]
-
 rudics_path = Path('../data/provor')
 data_files = [
     'CTD Measures (Average).csv',
@@ -44,5 +41,5 @@ for imei, wmo in zip(imei_numbers, wmo_numbers):
         df = df[df['Profile number'].notna()]
         df = df.astype({'Cycle number':int, 'Profile number':int, 'Phase number':int})
         df['1st sample date'] = pd.to_datetime(df['1st sample date'])
-        df.to_hdf(Path(f'../data/provor/{imei}') / f'{wmo}_{s}.h5', key='df', mode='w')
-        df.to_csv(Path(f'../data/provor/{imei}') / f'{wmo}_{s}.csv')
+        df.to_hdf(Path(f'../data/provor/{imei}') / f'{wmo}_{s}_full.h5', key='df', mode='w')
+        df.to_csv(Path(f'../data/provor/{imei}') / f'{wmo}_{s}_full.csv')
