@@ -14,9 +14,9 @@ wmo_numbers = [
 
 rudics_path = Path('../data/provor')
 data_files = [
-    'CTD Measures (Average).csv',
-    'DO Measures (Raw data).csv',
-    'ECO2 Measures (Raw data).csv',
+    'CTD Measures (Average) deploy.csv',
+    'DO Measures (Raw data) deploy.csv',
+    'ECO2 Measures (Raw data) deploy.csv',
 ]
 sensors = [
     'ctd',
@@ -26,6 +26,7 @@ sensors = [
 
 for imei, wmo in zip(imei_numbers, wmo_numbers):
     for f, s in zip(data_files, sensors):
+        print(rudics_path / imei / f)
         df = pd.read_csv(
             rudics_path / imei / f,
             sep=';', encoding='unicode-escape',
@@ -33,13 +34,14 @@ for imei, wmo in zip(imei_numbers, wmo_numbers):
         )
         if s == 'ctd':
             df = df.rename(columns={'Mean pressure (dbar)':'Pressure (dbar)'})
+        unfilled_time = df['1st sample date']
+        df = df.fillna(method='ffill')
         df = df[(df['Pressure (dbar)'].notna()) & (df['Pressure (dbar)'] > 0)]
         for c in df.columns:
             if 'Unnamed' in c:
                 df = df.drop(c, axis=1)
-        df = df.backfill()
-        df = df[df['Profile number'].notna()]
         df = df.astype({'Cycle number':int, 'Profile number':int, 'Phase number':int})
         df['1st sample date'] = pd.to_datetime(df['1st sample date'])
+        df['time'] = pd.to_datetime(unfilled_time)
         df.to_hdf(Path(f'../data/provor/{imei}') / f'{wmo}_{s}_full.h5', key='df', mode='w')
         df.to_csv(Path(f'../data/provor/{imei}') / f'{wmo}_{s}_full.csv')

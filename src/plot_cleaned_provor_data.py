@@ -18,12 +18,16 @@ wmo_numbers = [
 
 for imei, wmo in zip(imei_numbers, wmo_numbers):
 
-    ctd = pd.read_hdf(Path(f'../data/provor/{imei}') / f'{wmo}_ctd.h5')
-    oxy = pd.read_hdf(Path(f'../data/provor/{imei}') / f'{wmo}_optode.h5')
-    eco = pd.read_hdf(Path(f'../data/provor/{imei}') / f'{wmo}_ecopuck.h5')
+    ctd = pd.read_hdf(Path(f'../data/provor/{imei}') / f'{wmo}_ctd_test.h5')
+    oxy = pd.read_hdf(Path(f'../data/provor/{imei}') / f'{wmo}_optode_test.h5')
+    eco = pd.read_hdf(Path(f'../data/provor/{imei}') / f'{wmo}_ecopuck_test.h5')
 
     fig, axes = plt.subplots(2, 2, sharey=True)
     deg = chr(176)
+    ctd = ctd.loc[ctd['Phase number'] != 5]
+    oxy = oxy.loc[oxy['Phase number'] != 5]
+    eco = eco.loc[eco['Phase number'] != 5]
+    ctd[f'Temperature ({deg}C)'] = ctd[ctd.columns[5]]
     sns.scatterplot(x=f'Temperature ({deg}C)', y='Pressure (dbar)', hue='Profile number', data=ctd, ax=axes[0,0], palette='colorblind', marker='.', linewidth=0)
     sns.scatterplot(x='Salinity (PSU)', y='Pressure (dbar)', hue='Profile number', data=ctd, ax=axes[0,1], palette='colorblind', legend=False, marker='.', linewidth=0)
     sns.scatterplot(x=f'C1 phase ({deg})', y='Pressure (dbar)', hue='Profile number', data=oxy, ax=axes[1,0], palette='colorblind', legend=False, marker='.', linewidth=0)
@@ -47,6 +51,7 @@ for imei, wmo in zip(imei_numbers, wmo_numbers):
     axes[1,0].set_ylabel('Pressure (dbar)')
     axes[1,1].set_xlabel('Channel 1 (counts)', loc='left')
     axc2.set_xlabel('Channel 2 (counts)', loc='right')
+    fig.set_size_inches(fig.get_figwidth(), 1.5*fig.get_figheight())
     fig.tight_layout()
 
     fig.savefig(Path(f'../figures/provor/{wmo}_barge_profiles.png'), bbox_inches='tight', dpi=350)
