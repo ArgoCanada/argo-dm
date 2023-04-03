@@ -16,7 +16,7 @@ profiler_type = {
     '878':'ARVOR_RBR',
 }
 
-ix = argo.prof.subset_date('2022-01')
+ix = argo.prof.subset_date('2021-01')
 ix = ix.loc[ix.institution == 'ME']
 prof = ix.prof
 ix['wmo'] = [prof.PLATFORM_NUMBER.loc[f,0] for f in prof.index.unique('file')]
@@ -34,7 +34,7 @@ ix['platform'] = [profiler_type[f'{p}'] for p in ix.profiler_type]
 
 fig, ax = plt.subplots()
 sns.histplot(data=ix, x='surface_hour', hue='platform', bins=np.arange(24), multiple='stack', ax=ax)
-ax.set_title('Argo Canada Deployments 2022-present')
+ax.set_title('Argo Canada Deployments 2021-present')
 ax.set_xlabel('Local Hour at Surface')
 ax.set_ylabel('Profiles')
 # ax.set_title('Argo Canada All Floats')
@@ -48,5 +48,5 @@ for wmo in ix['wmo'].unique():
             ix.loc[ix.wmo == wmo].date.iloc[-1],
             ix.loc[ix.wmo == wmo].timezone.iloc[0]
         )
-fig.savefig('../figures/meds-surfacing-times-2022.png', bbox_inches='tight', dpi=250)
+fig.savefig('../figures/meds-surfacing-times-2021.png', bbox_inches='tight', dpi=250)
 plt.close(fig)
