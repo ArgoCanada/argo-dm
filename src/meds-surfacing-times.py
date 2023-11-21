@@ -1,5 +1,6 @@
 
 import numpy as np
+import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set(style='ticks', palette='colorblind')
@@ -11,12 +12,13 @@ import pytz
 import argopandas as argo
 
 profiler_type = {
-    '836':'PROVOR   ',
-    '844':'ARVOR_SBE',
-    '878':'ARVOR_RBR',
+    '836':'PROVOR    ',
+    '838':'ARVOR_DEEP',
+    '844':'ARVOR_SBE ',
+    '878':'ARVOR_RBR ',
 }
 
-ix = argo.prof.subset_date('2021-01')
+ix = argo.prof.subset_date('2022-01')
 ix = ix.loc[ix.institution == 'ME']
 prof = ix.prof
 ix['wmo'] = [prof.PLATFORM_NUMBER.loc[f,0] for f in prof.index.unique('file')]
@@ -34,7 +36,7 @@ ix['platform'] = [profiler_type[f'{p}'] for p in ix.profiler_type]
 
 fig, ax = plt.subplots()
 sns.histplot(data=ix, x='surface_hour', hue='platform', bins=np.arange(24), multiple='stack', ax=ax)
-ax.set_title('Argo Canada Deployments 2021-present')
+ax.set_title('Argo Canada Deployments 2022-present')
 ax.set_xlabel('Local Hour at Surface')
 ax.set_ylabel('Profiles')
 # ax.set_title('Argo Canada All Floats')
@@ -44,9 +46,11 @@ for wmo in ix['wmo'].unique():
         print(
             ix.loc[ix.wmo == wmo].platform.iloc[0],
             wmo, 
+            f'{ix.loc[ix.wmo == wmo].cycle.iloc[-1]:d}\t',
             f'{ix.loc[ix.wmo == wmo].surface_hour.std():.1f}',
             ix.loc[ix.wmo == wmo].date.iloc[-1],
             ix.loc[ix.wmo == wmo].timezone.iloc[0]
         )
-fig.savefig('../figures/meds-surfacing-times-2021.png', bbox_inches='tight', dpi=250)
+today = pd.Timestamp('now').strftime('%d-%b-%y')
+fig.savefig(f'../figures/meds-surfacing-times-{today}.png', bbox_inches='tight', dpi=250)
 plt.close(fig)
