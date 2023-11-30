@@ -1,0 +1,75 @@
+""
+"Cycle number";0;0
+"Session number";0;0
+"Float's hour";12;12
+"Float's minute";17;25
+"Float's second";14;55
+"Float's day";3;3
+"Float's month";6;6
+"Float's year";23;23
+"Float serial number";23001;23001
+"-----MISSION PARAMETERS - Next Cycle-----";;
+"MC0 - Nb of cycles";300;300
+"MC1 - Nb of cycles for Period 1";300;300
+"MC2 - Cycle Period 1 (hour)";245;245
+"MC3 - Cycle Period 2 (hour)";245;245
+"MC4 - Reference Day (day)";2;2
+"MC5 - Estimated time on surface (hour)";6;6
+"MC6 - Delay before mission (minute)";0;0
+"MC7 - Acquisisition mode (1=continious 2=eco 3=mixte 4=spot-sampling)";1;1
+"MC8 - Descent Sampling Period (second)";0;0
+"MC9 - Drift Sampling Period (hour)";12;12
+"MC10 - Ascent Sampling Period (second)";10;10
+"MC11 - Drift Depth of period 1 (dbar)";1000;1000
+"MC12 - Profile Depth of period 1 (dbar)";2000;2000
+"MC13 - Drift Depth of period 2 (dbar)";1000;1000
+"MC14 - Profile Depth of period 2 (dbar)";2000;2000
+"MC15 - Profile alterne period (1=Unused n=1/n alternate profile)";1;1
+"MC16 - Profile alterne depth (dbar)";2000;2000
+"MC17 - Threshold Surface/Intermediate Pressure (dbar)";475;475
+"MC18 - Threshold Intermediate/Bottom Pressure (dbar)";1000;1000
+"MC19 - Surface Slice Thickness (dbar)";1;1
+"MC20 - Intermediate Slice Thickness (dbar)";5;5
+"MC21 - Bottom Slice Thickness (dbar)";10;10
+"MC22 - Iridum End of Life Period (minute)";60;60
+"MC23 - Inter Cycles Wait Period (minute)";0;0
+"MC24 - Grounding mode (0=pressure switch 1=stay grounded)";0;0
+"MC25 - Pressure decreased on grounding (dbar)";100;100
+"MC26 - Delay after grounding (minute)";10;10
+"MC27 - Optode Type (0=none 1=4330 2=3830 3=external)";0;0
+"MC28 - CutOff Pressure of CTD pump sensor (dbar)";5;5
+"MC29 - In air acq.: Alternate cycle number (0=not used 1=all cycles x=1/x alternated profile)";1;1
+"MC30 - In air acq.: Sampling period (second)";30;30
+"MC31 - In air acq.: Acquisition delay (minute)";5;5
+"-----TECHNICAL PARAMETER-----";;
+"TC0 - Max eV activation on Surface (cs)";0;0
+"TC1 - Max volume eV during descent and repositionning (cm3)";0;0
+"TC2 - Max duration pump during repositionning (cs)";30;30
+"TC3 - Duration pump during ascent (cs)";320;320
+"TC4 - Duration Pump during for surfacing (cs)";11000;11000
+"TC5 - Pressure Delta for positionning (+/-) (dbar)";29;29
+"TC6 - Max pressure before emergency ascent (dbar)";18452;18452
+"TC7 - 1st threshold for buoyancy reductione (dbar)";30;30
+"TC8 - 2nd threshold for buoyancy reduction (dbar)";8;8
+"TC9 - Repositionning threshold (dbar)";52;52
+"TC10 - Max volume before detecting grounding (cm3)";1;1
+"TC11 - Grounding pressure (dbar)";7;7
+"TC12 - Pressure delta during drift (+/-) (dbar)";548;548
+"TC13 - Average descent speed (mm/s)";200;200
+"TC14 - Pressure increment (dbar)";50;50
+"TC15 - Ascent End Pressure (dbar)";25;25
+"TC16 - Average ascent speed (mm/sec)";0;0
+"TC17 - Ascent speed control period (min)";0;0
+"TC18 - Ascent speed control pressure (dbar)";10;10
+"TC19 - GPS Session delay (min)";90;90
+"TC20 - Hydraulic message send (0=NoSend 1=Send)";2;2
+"TC21 - Temporisation before reset offset (min)";10;10
+"TC22 - Pumping duration for in air acq surfacing (cs)";45000;45000
+"TC23 - IRIDIUM Session delay (min)";1;1
+"TC24 - Descent speed control period (min)";0;0
+"TC25 - Descent speed control pressure (dbar)";24;24
+"TC26 - Internal vaccum offset on Autotest (mbar)";120;120
+"TC27 - Options indicator (Bit0:SalinityCorrection)";1283;1283
+"TC28 - Coef A";12.8;12.8
+"TC29 - Coef B";-260;-260
+""
