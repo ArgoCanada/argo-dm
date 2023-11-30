@@ -1,0 +1,102 @@
+*** APMT - EMBEDDED TELNET SERVER ***
+For help tape '?help' command
+
+APMT:>?ocr-data
+c1=2148023771, c2=2147492763, c3=2148049499, c4=2147517019
+APMT:>?ocr-data
+c1=2148020946, c2=2147494820, c3=2148046409, c4=2147517504
+APMT:>!param-unlock:1234
+expert mode (unlocked)
+APMT:>!param-temporization-0:1800
+Command okay
+APMT:>!param-pattern_01-2:1000
+Command okay
+APMT:>!param-pattern_01-3:50400
+Command okay
+APMT:>!param-pattern_01-4:16:00:00
+Command okay
+APMT:>!param-sensor_01-1:2
+!Command okay
+APMT:
+Command okay
+APMT:>!param-sensor_01-10:2
+Command okay
+APMT:>!param-sensor_01-19:2
+Command okay
+APMT:>!param-sensor_01-28:2
+Command okay
+APMT:>!param-sensor_01-37:2
+Command okay
+APMT:>param-sensor_02-1:20
+Unknown command
+APMT:>!param-sensor_02-1:20
+Command okay
+APMT:>!param-sensor_02-5:20
+Command okay
+APMT:>!param-sensor_02-10:10
+Command okay
+APMT:>!param-sensor_02-19:10
+Command okay
+APMT:>!param-sensor_02-23:10
+Command okay
+APMT:>!param-sensor_02-28:5-0
+Command okay
+APMT:>?param-sensor_02-28
+5
+APMT:>!param-sensor_02-28:50
+Command okay
+APMT:>!param-sensor_02-32:50
+Command okay
+APMT:>!param-sensor_02-37:100
+Command okay
+APMT:>!param-sensor_02-41:100
+Command okay
+APMT:>!param-sensor_03-1:60
+Command okay
+APMT:>!param-sensor_03-10:2
+Command okay
+APMT:>!param-sensor_03-19:10
+Command okay
+APMT:>!param-sensor_04-1:60
+Command okay
+APMT:>!param-sensor_04-10:2
+Command okay
+APMT:>!param-sensor_04-19:10
+Command okay
+APMT:>!param-sensor_04-19:100
+Command okay
+APMT:>!param-sensor_04-23:100
+Command okay
+APMT:>!param-sensor_04-28:100
+Command okay
+APMT:>!param-sensor_04-32:100
+Command okay
+APMT:>!param-sensor_04-37:2
+Command okay
+APMT:>!param-sensor_04-41:2
+Command okay
+APMT:>!param-sensor_04-42:3
+Command okay
+APMT:>!param-sensor_04-48:150
+Command okay
+APMT:>!param-sensor_04-49:950
+Command okay
+APMT:>?param-pattern_01-1
+1000
+APMT:>?param-sensor_pattern_0
+Command error
+APMT:>?param-pattern_01-2
+1000
+APMT:>?param-pattern_01-3
+50400
+APMT:>?param-pattern_01-4
+16:00:00
+APMT:>?param-pattern_02-0?
+false
+APMT:>?param-pattern_02-0
+false
+APMT:>?ocr-data
+c1=2148026998, c2=2147487744, c3=2148049462, c4=2147516370
+APMT:>?eco-data
+c1=3123, c2=4130
+APMT:>
