@@ -1,0 +1,86 @@
+Header;0
+"-----GENERAL INFORMATION-----";
+"Cycle number";17
+"Session number";0
+"Firmware checksum";0xA847
+"Float serial number";23001
+"-----EMERGENCE REDUCTION-----";
+Day;5
+Month;11
+Year;23
+"Cycle day (day)";155
+"Cycle hour (h)";9.6
+"Fix volume (second)";312
+"Number of valve actions at the surface";17
+"Grounding flag";0
+"-----PARKING DEPTH DESCENT-----";
+"Descent start time (h)";10.0667
+"Float stabilisation time (h)";11.3167
+"End of descent time (h)";19.1
+"Number of valve actions in descent";7
+"Number of pump actions in descent";0
+"Float stabilisation pressure (dbar)";178
+"Max pressure during descent to parking depth (dbar)";990
+"-----PARKING DRIFT PHASE-----";
+"Cycle day (day)";5
+"Number of entrance in drift target range (descent)";1
+"Number of repositions";0
+"Minimum pressure in drift to parking depth (dbar)";982
+"Maximum pressure in drift to parking depth (dbar)";1016
+"Number of valve actions in parking";0
+"Number of pump actions in parking";0
+"-----DESCENT TO PROFILE DEPTH-----";
+"descent start time (h)";20.7167
+"End of descent time (h)";5.66666
+"Number of valve actions in descent";7
+"Number of pump actions in descent";0
+"Max pressure in descent to profile (dbar)";2003
+"-----DRIFT TO PROFILE PHASE-----";
+"Number of entrance in drift target range";1
+"Number of re-positioning in profile stand-by";0
+"Number of valve actions in drift to Profile";0
+"Number of pump actions in drift to Profile";0
+"Minimum pressure in drift to Profile (dbar)";2003
+"Maximum pressure in drift to Profile (dbar)";2022
+"-----ASCENT PHASE-----";
+"Ascent start time (h)";7.75
+"Time at end of ascent (h)";14.1833
+"Number of pump actions in ascent";12
+"-----GENERAL INFORMATIONS-----";
+"Float time : Hour";14
+"Float time : Minute";13
+"Float time : Second";4
+"Float time : Day";15
+"Float time : Month";11
+"Float time : Year";23
+"Pressure sensor offset (cbar)";0
+"Internal pressure (mbar)";585
+"Batteries voltage at Pmax (V)";9.6
+"RTC state indicator (normal=0 failure=1)";0
+"Coherence problem counter";0
+"Dissolved oxygen sensor state (0=Ok 1=Pb 2=None)";2
+"-----GPS DATA-----";
+"GPS latitude (°)";58
+"GPS latitude (minutes)";43
+"GPS latitude (minutes fractions (4th))";476
+"GPS latitude orientation (0=North 1=South)";0
+"GPS longitude (°)";54
+"GPS longitude (minutes)";11
+"GPS longitude (minutes fractions (4th))";6500
+"GPS longitude orientation (0=East 1=West)";1
+"GPS valid fix (1=valid 0=not valid)";1
+"Session duration (second)";35
+""
+"Pumping delay for GPS emergence (s)";0
+"Antenna status (0=DontKnow 1=Ok 2=Short 3=Open)";1
+"-----END OF LIFE-----";
+"End of life flag";0
+Hour;0
+Minute;0
+Second;0
+Day;0
+Month;0
+Year;0
+-----SYSTEM-----;
+"System calendar retiming (Old - New)(Usable only on GPS valid fix) (second)";-20
+""
