@@ -35,10 +35,9 @@ the launching sequence.
 immediately upon launching the program. Select "Serial" and then choose the
 appropriate Port. In my experience, its usually COM3 or COM4, but if you
 connect to more without deleting old floats in your Bluetooth setting (or have
-connected to something else with a COM Port) it might be different. It is
-almost always whichever one you didn't pick first. Once you have selected a COM
-Port, press enter a couple times to see if you get any response. If not, close
-Tera Term and try another port.
+connected to something else with a COM Port) it might be different. Once you have
+selected a COM Port, press enter a couple times to see if you get any response.
+If not, close Tera Term and try another port.
 
 <img src="../figures/arvor-bluetooth-guide/teraterm.png" alt="tera term" width="450"/>
 
@@ -58,7 +57,3 @@ common commands are:
 
 6. When you're done, place the magnet back in the "On/Off" position and close
 Tera Term.
-
-<img src="../figures/arvor-bluetooth-guide/chris.jpg" alt="great!!!" width="500"/>
-
-Thanks!!
