@@ -5,7 +5,7 @@ from pathlib import Path
 import ftplib
 
 site = 'ftp.joubeh.com'
-ftp  = ftplib.FTP(site, user='dfobio', passwd='976143')
+ftp  = ftplib.FTP(site, user='dfobio', passwd=sys.stdin[1])
 
 for imei in ftp.nlst():
     ftp.cwd(imei)
