@@ -1,0 +1,8 @@
+WMO,Float SN,CTD SN,Float Firmware,Status
+4902617,AI3500-22CA001,208579,Upgraded,Failed (transmitting in EOL)
+4902618,AI3500-22CA002,208578,Upgraded,Operational (binned)
+4902619,AI3500-22CA003,208621,Upgraded,Operational (binned)
+4902670,AI3500-23CA001,,As shipped,Operational (1Hz)
+4902671,AI3500-23CA002,,As shipped,Operational (1Hz)
+4902672,AI3500-23CA003,,As shipped,Stored (IOS)
+4902673,AI3500-23CA004,,As shipped,Stored (IOS)
