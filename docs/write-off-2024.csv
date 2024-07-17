@@ -1,0 +1,12 @@
+WMO,Asset Tag,Last Transmission,Days Since,Model,Comment
+4902417,56557,Dec 06 23,211,NOVA,
+4902411,2016861,Jun 09 22,756,NOVA,
+4901809,56562,Nov 24 23,223,NOVA,
+4902395,6042145,Oct 22 23,256,NOVA,
+4902408,6042150,Dec 24 23,192,NOVA,
+4902409,6038013,Jun 15 23,385,NOVA,
+4901820,6038009,Apr 20 23,441,NOVA,
+4902459,6038200,Apr 17 23,444,NOVA,
+4902461,6038202,Sep 03 23,305,NOVA,
+4902533,6045073,May 28 21,1133,ARVOR-RBR,refurbished and re-deployed (so kept same asset tag but new WMO - so WMO looks old) - but then redeploy failed anyway
+4902650,6040919,Dec 16 23,201,ARVOR+DO,failed after 20 cycles in Lab Sea - investigate

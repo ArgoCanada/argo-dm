@@ -28,8 +28,13 @@ for s in asset.ManufSerialNumber:
 asset['WMO'] = wmo_list
 
 ct = pd.Timestamp('now', tz='utc')
-old = pd.Timedelta(days=12)
+old = pd.Timedelta(days=150)
 delta_list = []
+last_writeoff = [
+    6040676, 6035471, 2016821, 6042148, 6042146, 
+    6038196, 6038197, 6042155, 6042157, 6038203,
+    6035472
+]
 
 for wmo, ass in zip(asset.WMO, asset['Inventory number']):
     if np.isnan(float(wmo)):
@@ -41,6 +46,6 @@ for wmo, ass in zip(asset.WMO, asset['Inventory number']):
         else:
             last_date = ix.date.iloc[-1]
             delta_time = ct - last_date
-            if delta_time > old:
+            if delta_time > old and ass not in last_writeoff:
                 print(wmo, ass,  last_date.strftime('%b %d %y'), delta_time.days)
     delta_list.append(delta_time)
