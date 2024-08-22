@@ -36,7 +36,7 @@ last_writeoff = [
     6035472
 ]
 
-for wmo, ass in zip(asset.WMO, asset['Inventory number']):
+for wmo, ass, sn in zip(asset.WMO, asset['Inventory number'], asset['ManufSerialNumber']):
     if np.isnan(float(wmo)):
         delta_time = np.nan
     else:
@@ -47,5 +47,5 @@ for wmo, ass in zip(asset.WMO, asset['Inventory number']):
             last_date = ix.date.iloc[-1]
             delta_time = ct - last_date
             if delta_time > old and ass not in last_writeoff:
-                print(wmo, ass,  last_date.strftime('%b %d %y'), delta_time.days)
+                print(wmo, ass, sn,  last_date.strftime('%b %d %y'), delta_time.days)
     delta_list.append(delta_time)
