@@ -1,6 +1,4 @@
 
-from pathlib import Path
-
 import matplotlib.pyplot as plt
 
 import pandas as pd
@@ -84,7 +82,8 @@ fig.savefig(
 plt.close(fig)
 
 # subset floats that have not reported recently
-fail = ix.loc[ix.delta > pd.Timedelta(days=60)]
+delta = 30
+fail = ix.loc[ix.delta > pd.Timedelta(days=delta)]
 
 xlim = ax.get_xlim()
 ylim = ax.get_ylim()
@@ -100,7 +99,7 @@ plt.setp(ax.get_legend().get_title(), color=textcolor)
 ax.set_yticks([])
 ax.set_ylabel('')
 ax.set_xlim(right=pd.Timestamp('now'))
-ax.set_title('Lifetime of Argo Canada NKE Floats with at least 1 Profile', loc='left', color=textcolor, fontweight='bold')
+ax.set_title(f'Lifetime of Argo Canada NKE Floats with at least 1 Profile, Unreported in last {delta} days', loc='left', color=textcolor, fontweight='bold')
 ax.set_xlabel('')
 ax.set_xlim(xlim)
 ax.set_ylim(ylim)
