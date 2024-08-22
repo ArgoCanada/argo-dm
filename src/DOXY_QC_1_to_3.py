@@ -32,17 +32,17 @@ history = {
     "HISTORY_PARAMETER":"DOXY",
 }
 
-changelog = []
-
-for wmo in wmo_list:
-    files = list((meds / wmo / 'profiles').glob('B*.nc'))
-    for fn in files:
-        sys.stdout.write(f'Checking for DOXY_QC=1 in file {fn.name}...')
-        prof = bgc.prof(file=fn)
-        if ('DOXY_QC' in prof.df.columns) and (prof.df.DOXY_QC == 1).any():
-            sys.stdout.write('found. Updating file...\n')
-            changelog.append(fn)
-            prof.update_field('DOXY_QC', 3, where=prof.DOXY_QC == 1)
-            export_file = prof.update_file(history)
-        else:
-            sys.stdout.write('none found.\n')
+with open('../docs/historical_doxy_qc_1_to_3_07-2024.txt', 'w') as changelog:
+    for wmo in wmo_list:
+        files = list((meds / wmo / 'profiles').glob('B*.nc'))
+        changelog.write(f'[{wmo}]\n')
+        for fn in files:
+            sys.stdout.write(f'Checking for DOXY_QC=1 in file {fn.name}...')
+            prof = bgc.prof(file=fn)
+            if ('DOXY_QC' in prof.df.columns) and (prof.df.DOXY_QC == 1).any():
+                sys.stdout.write('found. Updating file...\n')
+                changelog.write(f'{fn}\n')
+                prof.update_field('DOXY_QC', 3, where=prof.DOXY_QC == 1)
+                export_file = prof.update_file(history)
+            else:
+                sys.stdout.write('none found.\n')
