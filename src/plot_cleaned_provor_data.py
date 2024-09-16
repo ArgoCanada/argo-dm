@@ -4,7 +4,18 @@ import pandas as pd
 
 import matplotlib.pyplot as plt
 import seaborn as sns
-sns.set(style='ticks', palette='colorblind')
+
+facecolor = '#fef7ea'
+textcolor = '#4a0404'
+
+custom_style = {
+    'axes.edgecolor'  : textcolor,
+    'axes.labelcolor' : textcolor,
+    'axes.facecolor'  : facecolor,
+    'xtick.color'     : textcolor,
+    'ytick.color'     : textcolor,
+}
+sns.set_style('ticks', rc=custom_style)
 
 imei_numbers = [
     '300125061656740',
@@ -22,7 +33,7 @@ for imei, wmo in zip(imei_numbers, wmo_numbers):
     oxy = pd.read_hdf(Path(f'../data/provor/{imei}') / f'{wmo}_optode_test.h5')
     eco = pd.read_hdf(Path(f'../data/provor/{imei}') / f'{wmo}_ecopuck_test.h5')
 
-    fig, axes = plt.subplots(2, 2, sharey=True)
+    fig, axes = plt.subplots(2, 2, sharey=True, facecolor=facecolor)
     deg = chr(176)
     ctd = ctd.loc[ctd['Phase number'] != 5]
     oxy = oxy.loc[oxy['Phase number'] != 5]

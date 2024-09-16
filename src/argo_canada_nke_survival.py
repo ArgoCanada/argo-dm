@@ -8,11 +8,11 @@ facecolor = '#fef7ea'
 textcolor = '#4a0404'
 
 custom_style = {
-    'axes.edgecolor': textcolor,
-    'axes.labelcolor': textcolor,
-    'axes.facecolor': facecolor,
-    'xtick.color': textcolor,
-    'ytick.color': textcolor
+    'axes.edgecolor'  : textcolor,
+    'axes.labelcolor' : textcolor,
+    'axes.facecolor'  : facecolor,
+    'xtick.color'     : textcolor,
+    'ytick.color'     : textcolor,
 }
 sns.set_style('ticks', rc=custom_style)
 
@@ -72,7 +72,7 @@ plt.setp(ax.get_legend().get_title(), color=textcolor)
 ax.set_yticks([])
 ax.set_ylabel('')
 ax.set_xlim(right=pd.Timestamp('now'))
-ax.set_title('Lifetime of Argo Canada NKE Floats with at least 1 Profile', loc='left', color=textcolor, fontweight='bold')
+ax.set_title(f'Lifetime of Argo Canada NKE Floats with at least 1 Profile ($N = {ix.wmo.unique().shape[0]}$)', loc='left', color=textcolor, fontweight='bold')
 ax.set_xlabel('')
 fig.set_size_inches(10,4)
 fig.savefig(
@@ -84,6 +84,9 @@ plt.close(fig)
 # subset floats that have not reported recently
 delta = 30
 fail = ix.loc[ix.delta > pd.Timedelta(days=delta)]
+
+exceptions = [4902639]
+fail = fail.loc[~fail.wmo.isin(exceptions)]
 
 xlim = ax.get_xlim()
 ylim = ax.get_ylim()
@@ -99,13 +102,43 @@ plt.setp(ax.get_legend().get_title(), color=textcolor)
 ax.set_yticks([])
 ax.set_ylabel('')
 ax.set_xlim(right=pd.Timestamp('now'))
-ax.set_title(f'Lifetime of Argo Canada NKE Floats with at least 1 Profile, Unreported in last {delta} days', loc='left', color=textcolor, fontweight='bold')
+ax.set_title(f'Lifetime of Argo Canada NKE Floats with at least 1 Profile, Unreported in last {delta} days ($N = {fail.wmo.unique().shape[0]}$)', loc='left', color=textcolor, fontweight='bold')
 ax.set_xlabel('')
 ax.set_xlim(xlim)
 ax.set_ylim(ylim)
 fig.set_size_inches(10,4)
 fig.savefig(
     '../figures/argo-tech-workshop/argo_canada_nke_lifetimes_failed.png', 
+    dpi=350, bbox_inches='tight'
+)
+plt.close(fig)
+
+baffin_floats = [4902530, 4902532]
+ross_floats = [4902664, 4902667, 4902668, 4902669]
+
+fail = fail.loc[~fail.wmo.isin(baffin_floats + ross_floats)]
+
+xlim = ax.get_xlim()
+ylim = ax.get_ylim()
+fig, ax = plt.subplots(facecolor=facecolor)
+g = sns.lineplot(
+    data=fail, x='date', y='count', 
+    hue='platform', units='wmo',
+    palette='muted', linewidth=0.5,
+    sort=False, estimator=None, ax=ax
+)
+plt.setp(ax.get_legend().get_texts(), color=textcolor)
+plt.setp(ax.get_legend().get_title(), color=textcolor)
+ax.set_yticks([])
+ax.set_ylabel('')
+ax.set_xlim(right=pd.Timestamp('now'))
+ax.set_title(f'Lifetime of Argo Canada NKE Floats with at least 1 Profile, Unreported in last {delta} days ($N = {fail.wmo.unique().shape[0]+2}$)', loc='left', color=textcolor, fontweight='bold')
+ax.set_xlabel('')
+ax.set_xlim(xlim)
+ax.set_ylim(ylim)
+fig.set_size_inches(10,4)
+fig.savefig(
+    '../figures/argo-tech-workshop/argo_canada_nke_lifetimes_ice_excepted.png', 
     dpi=350, bbox_inches='tight'
 )
 plt.close(fig)
