@@ -3,10 +3,10 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
-import argopandas as argo
+import argopy
 
-asset_file = Path('/Users/GordonC/Documents/argo/meds/write-offs/ARGO Floats 420104.csv')
-inventory_file = Path('/Users/GordonC/Documents/argo/meds/write-offs/WMOID+SN+IMEI_20230428.csv')
+asset_file = Path('/Users/GordonC/Documents/argo/meds/write-offs/ARGO Floats 420103.csv')
+inventory_file = Path('/Users/GordonC/Documents/argo/meds/write-offs/ArgoCanada.csv')
 
 asset  = pd.read_csv(asset_file)
 invent = pd.read_csv(inventory_file)
@@ -19,7 +19,8 @@ for s in asset.ManufSerialNumber:
         wmo = np.nan
     else:
         sn = 'SN' + s if len(s) < 4 else s
-        wmo_series = invent.loc[invent.Serial == sn].WMOID
+        sn = sn.replace('DE', 'CA')
+        wmo_series = invent.loc[invent.Serial == sn].WMO
         wmo = wmo_series.iloc[0] if wmo_series.shape[0] > 0 else np.nan
         if np.isnan(wmo):
             print(sn, wmo)
@@ -27,25 +28,32 @@ for s in asset.ManufSerialNumber:
 
 asset['WMO'] = wmo_list
 
-ct = pd.Timestamp('now', tz='utc')
+ct = pd.Timestamp('now')
 old = pd.Timedelta(days=150)
-delta_list = []
-last_writeoff = [
-    6040676, 6035471, 2016821, 6042148, 6042146, 
-    6038196, 6038197, 6042155, 6042157, 6038203,
-    6035472
-]
+delta_list = [4902565] # deployed failed floats, no profiles
+last_writeoff = []
+ross_sea = [4902664, 4902665, 4902667, 4902668, 4902669]
+beaufort_sea = [4902659, 4902610, 4902611]
+
+exception_list = last_writeoff+ross_sea+beaufort_sea
+
+argo = argopy.IndexFetcher(mode='expert', src='gdac')
 
 for wmo, ass, sn in zip(asset.WMO, asset['Inventory number'], asset['ManufSerialNumber']):
     if np.isnan(float(wmo)):
         delta_time = np.nan
-    else:
-        ix = argo.float(wmo).prof
+    elif invent.loc[invent.WMO == int(wmo), 'Datestring'].isna().item():
+        delta_time = np.nan
+    elif int(wmo) not in delta_list:
+        ix = argo.float(wmo).to_dataframe()
         if ix.shape[0] == 0:
             delta_time = 0
         else:
-            last_date = ix.date.iloc[-1]
+            last_date = ix.date.max()
             delta_time = ct - last_date
-            if delta_time > old and ass not in last_writeoff:
+            if delta_time > old and int(wmo) not in exception_list:
                 print(wmo, ass, sn,  last_date.strftime('%b %d %y'), delta_time.days)
-    delta_list.append(delta_time)
+    else:
+        print(f'Error: {wmo} not processed.')
+        
+    delta_list.append(int(wmo))
