@@ -6,14 +6,14 @@ from pathlib import Path
 
 import bgcArgoDMQC as bgc
 
-# download last run July 11, 2024 - new profiles appropriately flagged - likely not necessary
+# download last run August 26, 2025 - new profiles appropriately flagged - likely not necessary again?
 download = False
 if download:
     ix = bgc.io.read_index()
-    ix = ix.loc[ix.institution == 'ME']
+    ix = ix.loc[ix.dac == 'meds']
     ix['wmo'] = [int(f.split('/')[1]) for f in ix.file]
-    for wmo in ix.wmo.unique():
-        sys.stdout.write(f'downloading {wmo}...\n')
+    for i, wmo in enumerate(ix.wmo.unique()):
+        sys.stdout.write(f'downloading {wmo} ({i+1} of {ix.wmo.unique().shape[0]})...\n')
         bgc.io.get_argo(wmo, local_path=bgc.io.Path.ARGO_PATH, overwrite=True, mission='B')
 
 # local file location
