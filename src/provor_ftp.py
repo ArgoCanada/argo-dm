@@ -4,7 +4,7 @@ import sys
 from pathlib import Path
 import ftplib
 
-site = 'ftp.joubeh.com'
+site = 'ftp.metocean.com'
 ftp  = ftplib.FTP(site, user='dfobio', passwd=sys.argv[1])
 
 for imei in ftp.nlst():
