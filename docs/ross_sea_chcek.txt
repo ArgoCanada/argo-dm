@@ -1,0 +1,10 @@
+# updated December 19, 2025
+
+WMO     IMEI            Cycle   Last GDAC Date  Recent SBD Emails   Comment
+4902664 300534063892280 49      2025-03-07      2025-07-13
+4902665 300534063792910 1       2024-01-31      2024-02-06          Broken conductivity cell on deployment, suspected ice in cell, EOL/dead
+4902667 300534063795430 24      2024-04-29      2024-10-23          EOL/suspected dead
+4902668 300534064001540 75      2025-12-18      2025-12-18
+4902669 300534064001530 78      2025-12-16      2025-12-16
+4902698 300534064596830 63      2025-04-26      2025-07-16          SBD messages up to cycle 117
+4902704 300534064593840 130     2025-07-21      2025-07-21          

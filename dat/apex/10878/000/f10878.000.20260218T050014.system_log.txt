@@ -1,0 +1,1377 @@
+20241210T192733|0|Firmware|09/06/24 17:59:11 2.18.1 STD IRID Final
+20241210T192733|0|Username|f10878
+20241210T192733|0|Float ID|043-0124
+20241210T192733|5|LOG|archived: f10878.000.20241210T192732.science_log.bin.gz
+20241210T192733|5|LOG|archived: f10878.000.20241210T192732.vitals_log.bin.gz
+20241210T192734|5|LOG|archived: f10878.000.20241210T192732.production_log.txt.gz
+20241210T192734|5|LOG|archived: f10878.000.20241210T192734.system_log.txt.gz
+20241210T192739|5|T_CMD|fs_ls
+20241210T192740|5|T_CMD|fs_cat system.cfg
+20241210T192740|5|T_CMD|fs_cat sensors.cfg
+20241210T192741|5|T_CMD|fs_cat mission.cfg
+20241210T192741|5|T_CMD|fs_cat sample.cfg
+20241210T192742|5|T_CMD|pot_read
+20241210T192753|5|T_CMD|vt_battery
+20241210T192754|5|T_CMD|coul_current
+20241210T192755|5|T_CMD|coul_amphr
+20241210T192755|5|T_CMD|vt_vacuum
+20241210T192756|5|T_CMD|vt_bladder
+20241210T192757|5|T_CMD|pot_read
+20241210T192758|5|T_CMD|m_bye
+20241210T192759|5|PRODUCTION|delaying 30 seconds for SAIL to be disconnected before system reset
+20241210T192830|5|system_start_task|Final Start Type: START_INIT
+20241210T192830|5|sensors_cfg|installed seabird_ctd_41cp sensor
+20241210T192830|5|sensors_cfg|installed iridium9523 device
+20241210T192830|5|sensors_cfg|installed gps15xh device
+20241210T192830|5|mission_cfg|no changes
+20241210T192830|5|sample_cfg|<PARK>
+20241210T192830|5|sample_cfg|SAMPLE PT 2500 4 0 DBAR 1
+20241210T192830|5|sample_cfg|<ASCENT>
+20241210T192830|5|sample_cfg|PROFILE CTD 2000 4 2 1 HZ #Regime:1
+20241210T192831|5|IDLE|will start in 60 seconds
+20241210T192931|5|IDLE|starting
+20241210T192942|5|IDLE|will resume in 60 seconds
+20241210T193042|5|IDLE|resuming
+20241210T193337|5|IDLE|SAIL timeout
+20241211T134448|5|IDLE|will resume in 60 seconds
+20241211T134548|5|IDLE|resuming
+20241211T153110|5|IDLE|SAIL timeout
+20241216T142935|5|IDLE|will resume in 60 seconds
+20241216T143035|5|IDLE|resuming
+20241216T143137|5|T_CMD|sys_verbosity 5
+20241216T143137|0|console_verbosity|0 --> 5
+20241216T143137|5|T_CMD|m_production
+20241216T143137|5|mission_state|IDLE -> PRODUCTION
+20241216T143215|5|T_CMD|iridium_dial_config apf11 iridium 00881600005238 rudics 0017818711053 dialup
+20241216T143215|5|iridium_dial_config|passed
+20241216T143236|5|T_CMD|modem_test secondary
+20241216T143236|5|COMMS|secondary number test start
+20241216T143254|5|COMMS|Modem: Iridium
+20241216T143254|5|COMMS|Model: 9523N
+20241216T143255|5|COMMS|S/N: 300125062398780
+20241216T143255|5|COMMS|SIM ICCID: 8988169234005406525
+20241216T143256|5|COMMS|Call Processor Version: DB23001
+20241216T143256|5|COMMS|Modem DSP Version: 1.7 svn: 2358
+20241216T143256|5|COMMS|Audio DSP Version: 1.7 svn: 2459
+20241216T143256|5|COMMS|DBB Version: 0x0001 (ASIC)
+20241216T143256|5|COMMS|Main RFA Version: 0x0007 (SRFA2)
+20241216T143256|5|COMMS|Aux RFA Version: 0x07ff (Not present)
+20241216T143256|5|COMMS|NVM Version: KVS
+20241216T143256|5|COMMS|BOOT Version: BOOT0fa3/9523NRevE/02/RAW15
+20241216T143257|5|COMMS|get modem info passed
+20241216T143257|5|COMMS|Testing Secondary Number: 0017818711053 (DIALUP)
+20241216T143320|5|COMMS|attempt 1/5 to upload \temp\test.20241216T143257.txt
+20241216T143342|5|COMMS|CSQ=5
+20241216T143439|5|COMMS|uploaded test.20241216T143257.txt
+20241216T143439|5|COMMS|uploaded 66 bytes in 11 secs
+20241216T143443|5|COMMS|connect passed
+20241216T143443|5|COMMS|login passed
+20241216T143443|5|COMMS|file uploaded
+20241216T143444|5|COMMS|send test file passed
+20241216T143507|5|COMMS|attempt 1/5 to download test.20241216T143257.txt
+20241216T143522|5|COMMS|CSQ=5
+20241216T143659|5|COMMS|downloaded test.20241216T143257.txt
+20241216T143659|5|COMMS|downloaded 66 bytes in 4 secs
+20241216T143703|5|COMMS|connect passed
+20241216T143703|5|COMMS|login passed
+20241216T143703|5|COMMS|file downloaded
+20241216T143704|5|COMMS|recv test file passed
+20241216T143704|5|COMMS|file compare size passed
+20241216T143704|5|COMMS|file compare contents passed
+20241216T143704|5|COMMS|secondary number test passed
+20241216T144121|5|T_CMD|modem_chat
+20241216T144328|5|T_CMD| iridium_dial_config f10878 apex_10878 00881600005238 rudics 00881600005238 rudics 
+20241216T144328|5|iridium_dial_config|passed
+20241216T144336|5|T_CMD|m_bye
+20241216T144336|5|PRODUCTION|delaying 30 seconds for SAIL to be disconnected before system reset
+20241216T144407|5|system_start_task|Final Start Type: START_INIT
+20241216T144407|5|sensors_cfg|installed seabird_ctd_41cp sensor
+20241216T144407|5|sensors_cfg|installed iridium9523 device
+20241216T144407|5|sensors_cfg|installed gps15xh device
+20241216T144407|5|mission_cfg|no changes
+20241216T144407|5|sample_cfg|<PARK>
+20241216T144407|5|sample_cfg|SAMPLE PT 2500 4 0 DBAR 1
+20241216T144407|5|sample_cfg|<ASCENT>
+20241216T144407|5|sample_cfg|PROFILE CTD 2000 4 2 1 HZ #Regime:1
+20241216T144408|5|IDLE|will start in 60 seconds
+20241216T144508|5|IDLE|starting
+20241216T144520|5|IDLE|will resume in 60 seconds
+20241216T144620|5|IDLE|resuming
+20241216T144650|5|IDLE|SAIL timeout
+20250128T151039|5|IDLE|will resume in 60 seconds
+20250128T151139|5|IDLE|resuming
+20250128T151147|5|T_CMD|m_console
+20250128T151147|0|console_verbosity|0 --> 5
+20250128T151147|5|mission_state|IDLE -> CONSOLE
+20250128T151202|5|T_CMD|sys_self_test -nosky
+20250128T151204|5|sys_self_test|started
+20250128T151204|5|sys_self_test|Float ID: 043-0124
+20250128T151204|5|sys_self_test|Firmware Version: 09/06/24 17:59:11 2.18.1 STD IRID Final
+20250128T151210|5|vital|Battery Voltage: 15.27 V
+20250128T151211|5|vital|Float Current: 28.5175 mA
+20250128T151211|5|vital|Coulomb Count: 605.1521 mAh
+20250128T151212|5|vital|Bladder Pressure: 7.9 dbar
+20250128T151213|5|vital|Internal Vacuum: 8.0 dbar
+20250128T151217|5|vital|Buoyancy Position: 266 counts
+20250128T151217|5|mission_cfg|ActivateRecoveryMode off
+20250128T151217|5|mission_cfg|AscentRate 0.08
+20250128T151217|5|mission_cfg|AscentStartTimes -1 -1 -1 -1
+20250128T151217|5|mission_cfg|AscentTimeout 521
+20250128T151217|5|mission_cfg|AscentTimerInterval 120
+20250128T151217|5|mission_cfg|BuoyancyNudge 100
+20250128T151217|5|mission_cfg|DeepDescentCount 262
+20250128T151217|5|mission_cfg|DeepDescentPressure 2000.00
+20250128T151217|5|mission_cfg|DeepDescentTimeout 334
+20250128T151217|5|mission_cfg|DeepDescentTimerInterval 300
+20250128T151217|5|mission_cfg|DeepProfileFirst on
+20250128T151217|5|mission_cfg|DownTime 13953
+20250128T151217|5|mission_cfg|EmergencyTimerInterval 3600
+20250128T151217|5|mission_cfg|HyperRetractCount 0
+20250128T151217|5|mission_cfg|HyperRetractPressure 850.00
+20250128T151217|5|mission_cfg|IceMonths 0000
+20250128T151217|5|mission_cfg|IdleTimerInterval 3600
+20250128T151217|5|mission_cfg|InitialBuoyancyNudge 300
+20250128T151217|5|mission_cfg|LeakDetect on
+20250128T151217|5|mission_cfg|LogVerbosity 5
+20250128T151217|5|mission_cfg|MActivationCount 262
+20250128T151217|5|mission_cfg|MActivationPressure 25.00
+20250128T151217|5|mission_cfg|MinBuoyancyCount 147
+20250128T151217|5|mission_cfg|MinVacuum 9.00
+20250128T151217|5|mission_cfg|ParkBuoyancyNudge 16
+20250128T151217|5|mission_cfg|ParkDeadBand 25.00
+20250128T151217|5|mission_cfg|ParkDescentCount 1081
+20250128T151217|5|mission_cfg|ParkDescentTimeout 334
+20250128T151217|5|mission_cfg|ParkDescentTimerInterval 900
+20250128T151217|5|mission_cfg|ParkPressure 1000.00
+20250128T151217|5|mission_cfg|ParkTimerInterval 3600
+20250128T151217|5|mission_cfg|PnPCycleLen 1
+20250128T151217|5|mission_cfg|PreludeSelfTest on
+20250128T151217|5|mission_cfg|PreludeTime 120
+20250128T151217|5|mission_cfg|SurfacePressure 4.00
+20250128T151217|5|mission_cfg|TelemetryDays 0 0
+20250128T151217|5|mission_cfg|TelemetryInterval 900
+20250128T151217|5|mission_cfg|TelemetryTimeout 120
+20250128T151217|5|mission_cfg|UpTime 641
+20250128T151217|5|mission_cfg|VitalsMask 0007
+20250128T151217|5|mission_cfg|Checksum 3475
+20250128T151217|5|sample_cfg|<PARK>
+20250128T151217|5|sample_cfg|SAMPLE PT 2500 4 0 DBAR 1
+20250128T151217|5|sample_cfg|<ASCENT>
+20250128T151217|5|sample_cfg|PROFILE CTD 2000 4 2 1 HZ #Regime:1
+20250128T151217|5|system_cfg|float_id 043-0124
+20250128T151217|5|system_cfg|air_bladder_max 12.00
+20250128T151217|5|system_cfg|buoyancy_pump_min 147
+20250128T151217|5|system_cfg|buoyancy_pump_max 3693
+20250128T151217|5|system_cfg|iridium f10878 apex_10878 00881600005238 RUDICS 00881600005238 RUDICS
+20250128T151217|5|sensors_cfg|sensor seabird_ctd_41cp COM2 B9600
+20250128T151217|5|sensors_cfg|modem iridium9523
+20250128T151217|5|sensors_cfg|gps gps15xh
+20250128T151218|5|sys_self_test|report_settings|passed
+20250128T151218|5|LOG|Number of files in UPLOAD directory: 4
+20250128T151219|5|AIR|test start
+20250128T151219|5|AIR|deflating
+20250128T151225|5|AIR|deflated to 7.90 dbar
+20250128T151226|5|AIR|vacuum pressure: 8.00 dbar
+20250128T151227|5|AIR|bladder pressure: 7.90 dbar
+20250128T151228|5|AIR|battery voltage: 15.27 V
+20250128T151446|5|AIR|inflated to 12.12 dbar after 20 pulses (Time ON:100, OFF:20)
+20250128T151446|5|AIR|inflate test passed
+20250128T151446|5|AIR|pulses: 20
+20250128T151446|5|AIR|energy: 0.312 mAh
+20250128T151446|5|AIR|current avg: 100.371 mA
+20250128T151446|5|AIR|current max: 117.798 mA
+20250128T151446|5|AIR|battery current avg: 119.542 mA
+20250128T151446|5|AIR|battery current max: 149.150 mA
+20250128T151446|5|AIR|battery voltage avg: 15.02 V
+20250128T151446|5|AIR|battery voltage min: 14.92 V
+20250128T151447|5|AIR|vacuum pressure: 7.00 dbar
+20250128T151448|5|AIR|bladder pressure: 12.10 dbar
+20250128T151449|5|AIR|battery voltage: 15.21 V
+20250128T151449|5|AIR|monitor test skipped
+20250128T151449|5|AIR|deflating
+20250128T151455|5|AIR|deflated to 8.45 dbar
+20250128T151455|5|AIR|test passed
+20250128T151456|5|BuoyEngine|test start
+20250128T151500|5|BuoyEngine|adjusting from 266 to 620
+20250128T151655|5|BuoyEngine|destination 621 reached after 01:54
+20250128T151658|5|BuoyEngine|energy: 6.562 mAh
+20250128T151658|5|BuoyEngine|current avg: 167.112 mA
+20250128T151658|5|BuoyEngine|current avg: 190.348 mA
+20250128T151658|5|BuoyEngine|battery current avg: 200.509 mA
+20250128T151658|5|BuoyEngine|battery current max: 221.967 mA
+20250128T151658|5|BuoyEngine|battery voltage avg: 14.87 V
+20250128T151658|5|BuoyEngine|battery voltage min: 14.83 V
+20250128T151702|5|BuoyEngine|adjusting from 620 to 267
+20250128T151857|5|BuoyEngine|destination 267 reached after 01:54
+20250128T151900|5|BuoyEngine|energy: 6.562 mAh
+20250128T151900|5|BuoyEngine|current avg: 168.522 mA
+20250128T151900|5|BuoyEngine|current avg: 174.528 mA
+20250128T151900|5|BuoyEngine|battery current avg: 202.371 mA
+20250128T151900|5|BuoyEngine|battery current max: 210.951 mA
+20250128T151900|5|BuoyEngine|battery voltage avg: 14.79 V
+20250128T151900|5|BuoyEngine|battery voltage min: 14.76 V
+20250128T151902|5|BuoyEngine|test passed
+20250128T151903|5|GPS|test start
+20250128T151921|5|GPS Test|RF Board Max Current: 36.6 mA
+20250128T151921|5|GPS Test|Battery Min Voltage: 15.0 V
+20250128T151921|5|GPS|test passed
+20250128T151922|5|vital|Battery Voltage @ 15.04 V (above 11 V) : PASS
+20250128T151923|5|vital|Internal Vacuum @ 8.03 dbar (below 9.00 dbar) : PASS
+20250128T151924|5|vital|Leak Detection Voltage @ 2.34 V (above 2 V) : PASS
+20250128T151925|5|vital|Relative Humidity @ 6.75 percent (below 75 percent) : PASS
+20250128T151925|5|vital|test|passed
+20250128T151926|5|CTD|test start
+20250128T151927|5|CTD|set_param|>>tswait=20
+20250128T151928|5|CTD|set_param|>>outputpts=1
+20250128T151928|5|CTD|set_param|>>includetransitionbin=0
+20250128T151928|5|CTD|set_param|>>includenbin=1
+20250128T151928|5|CTD|set_param|>>autobinavg=0
+20250128T151928|5|CTD|set_param|>>top_bin_interval=2
+20250128T151929|5|CTD|set_param|>>top_bin_size=2
+20250128T151929|5|CTD|set_param|>>top_bin_max=10
+20250128T151929|5|CTD|set_param|>>middle_bin_interval=2
+20250128T151929|5|CTD|set_param|>>middle_bin_size=2
+20250128T151929|5|CTD|set_param|>>middle_bin_max=20
+20250128T151930|5|CTD|set_param|>>bottom_bin_interval=2
+20250128T151930|5|CTD|set_param|>>bottom_bin_size=2
+20250128T151930|5|CTD|set_param|>>pcutoff=2.00
+20250128T151932|5|CTD|configure passed
+20250128T151943|5|CTD|Model: SBE 41CP
+20250128T151943|5|CTD|Version: 7.2.5
+20250128T151943|5|CTD|Serial Number: 20576
+20250128T151943|5|CTD|Variant: CP UW
+20250128T151943|5|CTD|tswait: 20
+20250128T151943|5|CTD|pcutoff: 2.0
+20250128T151943|5|CTD|automatic bin averaging: no
+20250128T151943|5|CTD|nsamples: 23
+20250128T151943|5|CTD|nbins: 0
+20250128T151943|5|CTD|top bin interval: 2
+20250128T151943|5|CTD|top bin size: 2
+20250128T151943|5|CTD|top bin max: 10
+20250128T151943|5|CTD|middle bin interval: 2
+20250128T151943|5|CTD|middle bin size: 2
+20250128T151943|5|CTD|middle bin max: 20
+20250128T151943|5|CTD|bottom bin interval: 2
+20250128T151943|5|CTD|bottom bin size: 2
+20250128T151943|5|CTD|include transition bin: no
+20250128T151943|5|CTD|include samples per bin: yes
+20250128T151943|5|CTD|real-time output: PTS
+20250128T151943|5|CTD|temperature:  18-Aug-24
+20250128T151943|5|CTD|TA0: -8.973171e-04
+20250128T151943|5|CTD|TA1: 3.011882e-04
+20250128T151943|5|CTD|TA2: -4.167858e-06
+20250128T151943|5|CTD|TA3: 1.572400e-07
+20250128T151943|5|CTD|conductivity:  18-Aug-24
+20250128T151943|5|CTD|G: -1.003707e+00
+20250128T151943|5|CTD|H: 1.443973e-01
+20250128T151943|5|CTD|I: -1.465081e-04
+20250128T151943|5|CTD|J: 3.103273e-05
+20250128T151943|5|CTD|CPCOR: -9.570000e-08
+20250128T151943|5|CTD|CTCOR: 3.250000e-06
+20250128T151943|5|CTD|WBOTC: -1.610807e-06
+20250128T151943|5|CTD|pressure S/N = 12533108, range = 2900 psia:  16-Aug-24
+20250128T151943|5|CTD|PA0: 2.619634e-01
+20250128T151943|5|CTD|PA1: 3.916852e-04
+20250128T151943|5|CTD|PA2: -2.725298e-13
+20250128T151943|5|CTD|PTCA0: -1.073303e+03
+20250128T151943|5|CTD|PTCA1: 6.255007e+01
+20250128T151943|5|CTD|PTCA2: -1.457066e+00
+20250128T151943|5|CTD|PTCB0: 3.173603e+05
+20250128T151943|5|CTD|PTCB1: 3.820602e+01
+20250128T151943|5|CTD|PTCB2: -5.387882e-01
+20250128T151943|5|CTD|PTHA0: 2.865961e+02
+20250128T151943|5|CTD|PTHA1: -6.123337e-05
+20250128T151943|5|CTD|PTHA2: -8.480737e-13
+20250128T151943|5|CTD|POFFSET: 0.000000e+00
+20250128T151943|5|CTD|show passed
+20250128T151944|5|CTD|verify config passed
+20250128T151945|5|CTD|pressure: -0.43 dbar
+20250128T151947|5|CTD|pressure: -0.43 dbar, temperature: 20.0930 degC
+20250128T151947|4|CTD|PTS sample not taken, pressure at surface. -0.43 < 4.00
+20250128T151947|5|CTD|sample passed
+20250128T151947|5|CTD|test passed
+20250128T151948|5|COMMS|modem test start
+20250128T152007|5|COMMS|Modem: Iridium
+20250128T152007|5|COMMS|Model: 9523N
+20250128T152007|5|COMMS|S/N: 300125062398780
+20250128T152007|5|COMMS|SIM ICCID: 8988169234005406525
+20250128T152008|5|COMMS|Call Processor Version: DB23001
+20250128T152008|5|COMMS|Modem DSP Version: 1.7 svn: 2358
+20250128T152009|5|COMMS|Audio DSP Version: 1.7 svn: 2459
+20250128T152009|5|COMMS|DBB Version: 0x0001 (ASIC)
+20250128T152009|5|COMMS|Main RFA Version: 0x0007 (SRFA2)
+20250128T152009|5|COMMS|Aux RFA Version: 0x07ff (Not present)
+20250128T152009|5|COMMS|NVM Version: KVS
+20250128T152009|5|COMMS|BOOT Version: BOOT0fa3/9523NRevE/02/RAW15
+20250128T152010|5|COMMS|get modem info passed
+20250128T152010|4|COMMS|primary and secondary test skipped
+20250128T152010|5|COMMS|modem test passed
+20250128T152011|5|vital|Battery Voltage: 15.06 V
+20250128T152012|5|vital|Float Current: 39.5338 mA
+20250128T152012|5|vital|Coulomb Count: 624.2146 mAh
+20250128T152013|5|vital|Bladder Pressure: 7.9 dbar
+20250128T152015|5|vital|Internal Vacuum: 8.0 dbar
+20250128T152019|5|vital|Buoyancy Position: 267 counts
+20250128T152019|5|sys_self_test|PASSED
+20250128T152135|5|T_CMD|m_bye
+20250128T152135|5|CONSOLE|delaying 30 seconds for SAIL to be disconnected before system reset
+20250128T152206|5|system_start_task|Final Start Type: START_INIT
+20250128T152206|5|sensors_cfg|installed seabird_ctd_41cp sensor
+20250128T152206|5|sensors_cfg|installed iridium9523 device
+20250128T152206|5|sensors_cfg|installed gps15xh device
+20250128T152207|5|mission_cfg|no changes
+20250128T152207|5|sample_cfg|<PARK>
+20250128T152207|5|sample_cfg|SAMPLE PT 2500 4 0 DBAR 1
+20250128T152207|5|sample_cfg|<ASCENT>
+20250128T152207|5|sample_cfg|PROFILE CTD 2000 4 2 1 HZ #Regime:1
+20250128T152207|5|IDLE|will start in 60 seconds
+20250128T152307|5|IDLE|starting
+20250128T152319|5|IDLE|will resume in 60 seconds
+20250128T152419|5|IDLE|resuming
+20250128T152506|5|IDLE|SAIL timeout
+20250603T175647|5|IDLE|adjusting buoyancy to MActivationCount 262
+20250603T175648|5|BuoyEngine|adjusting from 269 to 262
+20250603T175653|5|BuoyEngine|destination 259 reached after 00:02
+20250911T171349|5|IDLE|will resume in 60 seconds
+20250911T171355|5|T_CMD|m_state
+20250911T171434|5|T_CMD|m_state
+20250911T171437|5|T_CMD|m_console
+20250911T171437|0|console_verbosity|0 --> 5
+20250911T171437|5|mission_state|IDLE -> CONSOLE
+20250911T171517|5|T_CMD|iridium_dial_config f10888 apex10888 00881600005131 rudics 00881600005131 rudics
+20250911T171518|5|iridium_dial_config|passed
+20250911T171526|5|T_CMD|fs_cat system.cfg
+20250911T171533|5|T_CMD|modem_test primary
+20250911T171534|5|COMMS|primary number test start
+20250911T171552|5|COMMS|Modem: Iridium
+20250911T171552|5|COMMS|Model: 9523N
+20250911T171552|5|COMMS|S/N: 300125062398780
+20250911T171553|5|COMMS|SIM ICCID: 8988169234005406525
+20250911T171554|5|COMMS|Call Processor Version: DB23001
+20250911T171554|5|COMMS|Modem DSP Version: 1.7 svn: 2358
+20250911T171554|5|COMMS|Audio DSP Version: 1.7 svn: 2459
+20250911T171554|5|COMMS|DBB Version: 0x0001 (ASIC)
+20250911T171554|5|COMMS|Main RFA Version: 0x0007 (SRFA2)
+20250911T171554|5|COMMS|Aux RFA Version: 0x07ff (Not present)
+20250911T171554|5|COMMS|NVM Version: KVS
+20250911T171554|5|COMMS|BOOT Version: BOOT0fa3/9523NRevE/02/RAW15
+20250911T171555|5|COMMS|get modem info passed
+20250911T171555|5|COMMS|Testing Primary Number: 00881600005131 (RUDICS)
+20250911T171618|5|COMMS|attempt 1/5 to upload \temp\test.20250911T171555.txt
+20250911T171632|5|COMMS|CSQ=2
+20250911T171647|4|COMMS|upload aborted, connection lost
+20250911T171647|5|COMMS|attempt 2/5 to upload \temp\test.20250911T171555.txt
+20250911T171702|5|COMMS|CSQ=3
+20250911T171740|4|COMMS|upload aborted, connection lost
+20250911T171740|5|COMMS|attempt 3/5 to upload \temp\test.20250911T171555.txt
+20250911T171744|5|COMMS|CSQ=1
+20250911T171825|4|COMMS|upload aborted, connection lost
+20250911T171825|5|COMMS|attempt 4/5 to upload \temp\test.20250911T171555.txt
+20250911T171828|5|COMMS|CSQ=4
+20250911T171905|4|COMMS|upload aborted, connection lost
+20250911T171905|5|COMMS|attempt 5/5 to upload \temp\test.20250911T171555.txt
+20250911T171908|5|COMMS|CSQ=4
+20250911T171923|4|COMMS|upload aborted, connection lost
+20250911T171923|3|COMMS|connect failed
+20250911T171923|3|COMMS|login failed
+20250911T171923|3|COMMS|file upload failed after 6 attempts
+20250911T171924|3|COMMS|send test file failed
+20250911T171924|3|COMMS|primary number test failed
+20250911T172026|5|T_CMD|m_bye
+20250911T172026|5|CONSOLE|delaying 30 seconds for SAIL to be disconnected before system reset
+20250911T172057|5|system_start_task|Final Start Type: START_INIT
+20250911T172057|5|sensors_cfg|installed seabird_ctd_41cp sensor
+20250911T172057|5|sensors_cfg|installed iridium9523 device
+20250911T172057|5|sensors_cfg|installed gps15xh device
+20250911T172057|5|mission_cfg|no changes
+20250911T172057|5|sample_cfg|<PARK>
+20250911T172057|5|sample_cfg|SAMPLE PT 2500 4 0 DBAR 1
+20250911T172057|5|sample_cfg|<ASCENT>
+20250911T172057|5|sample_cfg|PROFILE CTD 2000 4 2 1 HZ #Regime:1
+20250911T172058|5|IDLE|will start in 60 seconds
+20250911T172158|5|IDLE|starting
+20250911T172216|5|IDLE|will resume in 60 seconds
+20250911T172230|5|T_CMD|m_state
+20250911T172250|5|T_CMD|m_console
+20250911T172250|0|console_verbosity|0 --> 5
+20250911T172250|5|mission_state|IDLE -> CONSOLE
+20250911T172305|5|T_CMD|modem_transfer
+20250911T172340|5|COMMS|CSQ=4
+20250911T172349|4|COMMS|transfer attempt 1/12 aborted, connect failed, connection lost
+20250911T172353|5|COMMS|CSQ=2
+20250911T172404|4|COMMS|transfer attempt 2/12 aborted, connect failed, connection lost
+20250911T172607|5|COMMS|final creg: 2
+20250911T172607|3|COMMS|modem not registered after 12 attempts
+20250911T172607|3|COMMS|transfer attempt 3/12 aborted, registration failed
+20250911T172643|5|T_CMD|m_bye
+20250911T172643|5|CONSOLE|delaying 30 seconds for SAIL to be disconnected before system reset
+20250911T172715|5|system_start_task|Final Start Type: START_INIT
+20250911T172715|5|sensors_cfg|installed seabird_ctd_41cp sensor
+20250911T172715|5|sensors_cfg|installed iridium9523 device
+20250911T172715|5|sensors_cfg|installed gps15xh device
+20250911T172715|5|mission_cfg|no changes
+20250911T172715|5|sample_cfg|<PARK>
+20250911T172715|5|sample_cfg|SAMPLE PT 2500 4 0 DBAR 1
+20250911T172715|5|sample_cfg|<ASCENT>
+20250911T172715|5|sample_cfg|PROFILE CTD 2000 4 2 1 HZ #Regime:1
+20250911T172716|5|IDLE|will start in 60 seconds
+20250911T172816|5|IDLE|starting
+20250911T173512|5|IDLE|will resume in 60 seconds
+20250911T173529|5|T_CMD|m_state
+20250911T173532|5|T_CMD|m_console
+20250911T173532|0|console_verbosity|0 --> 5
+20250911T173532|5|mission_state|IDLE -> CONSOLE
+20250911T173538|5|T_CMD|modem_show
+20250911T173556|5|COMMS|Modem: Iridium
+20250911T173556|5|COMMS|Model: 9523N
+20250911T173556|5|COMMS|S/N: 300125062398780
+20250911T173557|5|COMMS|SIM ICCID: 8988169234005406525
+20250911T173558|5|COMMS|Call Processor Version: DB23001
+20250911T173558|5|COMMS|Modem DSP Version: 1.7 svn: 2358
+20250911T173558|5|COMMS|Audio DSP Version: 1.7 svn: 2459
+20250911T173558|5|COMMS|DBB Version: 0x0001 (ASIC)
+20250911T173558|5|COMMS|Main RFA Version: 0x0007 (SRFA2)
+20250911T173558|5|COMMS|Aux RFA Version: 0x07ff (Not present)
+20250911T173558|5|COMMS|NVM Version: KVS
+20250911T173558|5|COMMS|BOOT Version: BOOT0fa3/9523NRevE/02/RAW15
+20250911T174432|5|T_CMD|m_bye
+20250911T174432|5|CONSOLE|delaying 30 seconds for SAIL to be disconnected before system reset
+20250911T174504|5|system_start_task|Final Start Type: START_INIT
+20250911T174504|5|sensors_cfg|installed seabird_ctd_41cp sensor
+20250911T174504|5|sensors_cfg|installed iridium9523 device
+20250911T174504|5|sensors_cfg|installed gps15xh device
+20250911T174504|5|mission_cfg|no changes
+20250911T174504|5|sample_cfg|<PARK>
+20250911T174504|5|sample_cfg|SAMPLE PT 2500 4 0 DBAR 1
+20250911T174504|5|sample_cfg|<ASCENT>
+20250911T174504|5|sample_cfg|PROFILE CTD 2000 4 2 1 HZ #Regime:1
+20250911T174505|5|IDLE|will start in 60 seconds
+20250911T174605|5|IDLE|starting
+20251010T135911|5|IDLE|will resume in 60 seconds
+20251010T140001|5|T_CMD|m_state
+20251010T140004|5|T_CMD|m_console
+20251010T140004|0|console_verbosity|0 --> 5
+20251010T140004|5|mission_state|IDLE -> CONSOLE
+20251010T140018|5|T_CMD| fs_cat system.cfg
+20251010T140108|5|T_CMD|iridium_dial_config f10887 apex_10887 00881600005135 rudics 00881600005135 rudics
+20251010T140108|5|iridium_dial_config|passed
+20251010T140112|5|T_CMD| fs_cat system.cfg
+20251010T140116|5|T_CMD|m_bye
+20251010T140116|5|CONSOLE|delaying 30 seconds for SAIL to be disconnected before system reset
+20251010T140147|5|system_start_task|Final Start Type: START_INIT
+20251010T140148|5|sensors_cfg|installed seabird_ctd_41cp sensor
+20251010T140148|5|sensors_cfg|installed iridium9523 device
+20251010T140148|5|sensors_cfg|installed gps15xh device
+20251010T140148|5|mission_cfg|no changes
+20251010T140148|5|sample_cfg|<PARK>
+20251010T140148|5|sample_cfg|SAMPLE PT 2500 4 0 DBAR 1
+20251010T140148|5|sample_cfg|<ASCENT>
+20251010T140148|5|sample_cfg|PROFILE CTD 2000 4 2 1 HZ #Regime:1
+20251010T140149|5|IDLE|will start in 60 seconds
+20251010T140249|5|IDLE|starting
+20251010T141400|5|IDLE|will resume in 60 seconds
+20251010T141406|5|T_CMD|m_state
+20251010T141408|5|T_CMD|m_console
+20251010T141408|0|console_verbosity|0 --> 5
+20251010T141408|5|mission_state|IDLE -> CONSOLE
+20251010T141417|5|T_CMD|sys_verbosity 7
+20251010T141417|5|console_verbosity|5 --> 7
+20251010T141428|5|T_CMD|fs_cat system.cfg
+20251010T141439|5|T_CMD|modem_test primary
+20251010T141439|5|COMMS|primary number test start
+20251010T141458|5|COMMS|Modem: Iridium
+20251010T141458|5|COMMS|Model: 9523N
+20251010T141458|5|COMMS|S/N: 300125062398780
+20251010T141458|5|COMMS|SIM ICCID: 8988169234005406525
+20251010T141500|5|COMMS|Call Processor Version: DB23001
+20251010T141500|5|COMMS|Modem DSP Version: 1.7 svn: 2358
+20251010T141500|5|COMMS|Audio DSP Version: 1.7 svn: 2459
+20251010T141500|5|COMMS|DBB Version: 0x0001 (ASIC)
+20251010T141500|5|COMMS|Main RFA Version: 0x0007 (SRFA2)
+20251010T141500|5|COMMS|Aux RFA Version: 0x07ff (Not present)
+20251010T141500|5|COMMS|NVM Version: KVS
+20251010T141500|5|COMMS|BOOT Version: BOOT0fa3/9523NRevE/02/RAW15
+20251010T141501|5|COMMS|get modem info passed
+20251010T141501|5|COMMS|Testing Primary Number: 00881600005135 (RUDICS)
+20251010T141524|5|COMMS|attempt 1/5 to upload \temp\test.20251010T141501.txt
+20251010T141612|5|COMMS|CSQ=5
+20251010T141620|4|COMMS|upload aborted, connection lost
+20251010T141620|5|COMMS|attempt 2/5 to upload \temp\test.20251010T141501.txt
+20251010T141624|5|COMMS|CSQ=5
+20251010T141631|4|COMMS|upload aborted, connection lost
+20251010T141631|5|COMMS|attempt 3/5 to upload \temp\test.20251010T141501.txt
+20251010T141635|5|COMMS|CSQ=5
+20251010T141645|4|COMMS|upload aborted, connection lost
+20251010T141645|5|COMMS|attempt 4/5 to upload \temp\test.20251010T141501.txt
+20251010T141649|5|COMMS|CSQ=5
+20251010T141656|4|COMMS|upload aborted, connection lost
+20251010T141656|5|COMMS|attempt 5/5 to upload \temp\test.20251010T141501.txt
+20251010T141700|5|COMMS|CSQ=5
+20251010T141707|4|COMMS|upload aborted, connection lost
+20251010T141707|3|COMMS|connect failed
+20251010T141707|3|COMMS|login failed
+20251010T141707|3|COMMS|file upload failed after 6 attempts
+20251010T141708|3|COMMS|send test file failed
+20251010T141708|3|COMMS|primary number test failed
+20251010T141724|5|T_CMD|m_bye
+20251010T141725|5|CONSOLE|delaying 30 seconds for SAIL to be disconnected before system reset
+20251010T141756|5|system_start_task|Final Start Type: START_INIT
+20251010T141756|5|sensors_cfg|installed seabird_ctd_41cp sensor
+20251010T141756|5|sensors_cfg|installed iridium9523 device
+20251010T141756|5|sensors_cfg|installed gps15xh device
+20251010T141756|5|mission_cfg|no changes
+20251010T141756|5|sample_cfg|<PARK>
+20251010T141756|5|sample_cfg|SAMPLE PT 2500 4 0 DBAR 1
+20251010T141756|5|sample_cfg|<ASCENT>
+20251010T141756|5|sample_cfg|PROFILE CTD 2000 4 2 1 HZ #Regime:1
+20251010T141757|5|IDLE|will start in 60 seconds
+20251010T141857|5|IDLE|starting
+20251217T153455|5|IDLE|will resume in 60 seconds
+20251217T153525|5|T_CMD|m_state
+20251217T153528|5|T_CMD|m_console
+20251217T153528|0|console_verbosity|0 --> 5
+20251217T153528|5|mission_state|IDLE -> CONSOLE
+20251217T153536|5|T_CMD|fs_cat mission.cfg
+20251217T153627|5|T_CMD|mission_set DownTime 1220
+20251217T153627|5|mission_cfg|staged DownTime from 13953 to 1220
+20251217T153634|5|T_CMD|mission_set UpTime 310
+20251217T153634|5|mission_cfg|staged UpTime from 641 to 310
+20251217T153634|4|mission_cfg|invalid timeout, UpTime 310 must be >= AscentTimeout 521
+20251217T153644|5|T_CMD|mission_set ParkDescentCount 1666
+20251217T153644|5|mission_cfg|staged ParkDescentCount from 1081 to 1666
+20251217T153644|4|mission_cfg|invalid timeout, UpTime 310 must be >= AscentTimeout 521
+20251217T153653|5|T_CMD|mission_set ParkDescentTimeout 200
+20251217T153653|5|mission_cfg|staged ParkDescentTimeout from 334 to 200
+20251217T153653|4|mission_cfg|ParkDescentTimeout 200 should be >= slow park descent time 278 mins
+20251217T153653|5|mission_cfg|slow park descent time = ParkPressure 1000.00 / slow nav rate 0.06
+20251217T153653|4|mission_cfg|invalid timeout, UpTime 310 must be >= AscentTimeout 521
+20251217T153702|5|T_CMD|mission_set ParkPressure 500
+20251217T153702|5|mission_cfg|staged ParkPressure from 1000.00 to 500.00
+20251217T153702|4|mission_cfg|DeepDescentTimeout 334 should be >= slow deep descent time 417 mins
+20251217T153702|5|mission_cfg|slow deep descent time = deep descent distance 1500.00 / slow nav rate 0.06
+20251217T153702|5|mission_cfg|deep descent distance = (DeepDescentPressure 2000.00 - ParkPressure 500.00)
+20251217T153702|4|mission_cfg|invalid timeout, UpTime 310 must be >= AscentTimeout 521
+20251217T153718|5|T_CMD|mission_set PnPCycleLen 0
+20251217T153718|5|mission_cfg|staged PnPCycleLen from 1 to 0
+20251217T153718|4|mission_cfg|DeepDescentTimeout 334 should be >= slow deep descent time 417 mins
+20251217T153718|5|mission_cfg|slow deep descent time = deep descent distance 1500.00 / slow nav rate 0.06
+20251217T153718|5|mission_cfg|deep descent distance = (DeepDescentPressure 2000.00 - ParkPressure 500.00)
+20251217T153718|4|mission_cfg|invalid timeout, UpTime 310 must be >= AscentTimeout 521
+20251217T153733|5|T_CMD|mission)_set DeepDescentCount 1666
+20251217T153743|5|T_CMD|mission_set DeepDescentCount 1666
+20251217T153743|5|mission_cfg|staged DeepDescentCount from 262 to 1666
+20251217T153743|4|mission_cfg|DeepDescentTimeout 334 should be >= slow deep descent time 417 mins
+20251217T153743|5|mission_cfg|slow deep descent time = deep descent distance 1500.00 / slow nav rate 0.06
+20251217T153743|5|mission_cfg|deep descent distance = (DeepDescentPressure 2000.00 - ParkPressure 500.00)
+20251217T153743|4|mission_cfg|invalid timeout, UpTime 310 must be >= AscentTimeout 521
+20251217T153755|5|T_CMD|mission_set DeepDescentPressure 600
+20251217T153755|5|mission_cfg|staged DeepDescentPressure from 2000.00 to 600.00
+20251217T153755|4|mission_cfg|invalid timeout, UpTime 310 must be >= AscentTimeout 521
+20251217T153803|5|T_CMD|mission_set DeepDescentTimeout 5
+20251217T153803|5|mission_cfg|staged DeepDescentTimeout from 334 to 5
+20251217T153803|4|mission_cfg|invalid timeout, DeepDescentTimeout 5 must be >= minimum deep descent time 9 mins
+20251217T153803|5|mission_cfg|minimum deep descent time = (ParkPressure 500.00 - DeepDescentPressure 600.00) / maximum nav rate 0.20
+20251217T153803|4|mission_cfg|DeepDescentTimeout 5 should be >= slow deep descent time 28 mins
+20251217T153803|5|mission_cfg|slow deep descent time = deep descent distance 100.00 / slow nav rate 0.06
+20251217T153803|5|mission_cfg|deep descent distance = (DeepDescentPressure 600.00 - ParkPressure 500.00)
+20251217T153803|4|mission_cfg|invalid timeout, UpTime 310 must be >= AscentTimeout 521
+20251217T153815|5|T_CMD|mission_set AscentRate 0.05
+20251217T153815|5|mission_cfg|staged AscentRate from 0.08 to 0.05
+20251217T153815|4|mission_cfg|invalid timeout, DeepDescentTimeout 5 must be >= minimum deep descent time 9 mins
+20251217T153815|5|mission_cfg|minimum deep descent time = (ParkPressure 500.00 - DeepDescentPressure 600.00) / maximum nav rate 0.20
+20251217T153815|4|mission_cfg|DeepDescentTimeout 5 should be >= slow deep descent time 28 mins
+20251217T153815|5|mission_cfg|slow deep descent time = deep descent distance 100.00 / slow nav rate 0.06
+20251217T153815|5|mission_cfg|deep descent distance = (DeepDescentPressure 600.00 - ParkPressure 500.00)
+20251217T153815|4|mission_cfg|invalid timeout, UpTime 310 must be >= AscentTimeout 521
+20251217T153826|5|T_CMD|mission_set AscentTimeout 200
+20251217T153826|5|mission_cfg|staged AscentTimeout from 521 to 200
+20251217T153826|4|mission_cfg|invalid timeout, DeepDescentTimeout 5 must be >= minimum deep descent time 9 mins
+20251217T153826|5|mission_cfg|minimum deep descent time = (ParkPressure 500.00 - DeepDescentPressure 600.00) / maximum nav rate 0.20
+20251217T153826|4|mission_cfg|DeepDescentTimeout 5 should be >= slow deep descent time 28 mins
+20251217T153826|5|mission_cfg|slow deep descent time = deep descent distance 100.00 / slow nav rate 0.06
+20251217T153826|5|mission_cfg|deep descent distance = (DeepDescentPressure 600.00 - ParkPressure 500.00)
+20251217T153856|5|T_CMD|mission_set DeepDescentTimeout 40
+20251217T153856|5|mission_cfg|staged DeepDescentTimeout from 5 to 40
+20251217T153856|4|mission_cfg|Parameter 'DeepDescentTimeout' already altered
+20251217T153909|5|T_CMD|mission_set SurfacePressure 1
+20251217T153909|5|mission_cfg|staged SurfacePressure from 4.00 to 1.00
+20251217T153912|5|T_CMD|mission_set SurfacePressure 2
+20251217T153912|5|mission_cfg|staged SurfacePressure from 1.00 to 2.00
+20251217T153912|4|mission_cfg|Parameter 'SurfacePressure' already altered
+20251217T153920|5|T_CMD|mission_save
+20251217T153920|5|mission_cfg|AscentRate 0.08 to 0.05
+20251217T153920|5|mission_cfg|AscentTimeout 521 to 200
+20251217T153920|5|mission_cfg|DeepDescentCount 262 to 1666
+20251217T153920|5|mission_cfg|DeepDescentPressure 2000.00 to 600.00
+20251217T153920|5|mission_cfg|DeepDescentTimeout 334 to 40
+20251217T153920|5|mission_cfg|DownTime 13953 to 1220
+20251217T153920|5|mission_cfg|ParkDescentCount 1081 to 1666
+20251217T153920|5|mission_cfg|ParkDescentTimeout 334 to 200
+20251217T153920|5|mission_cfg|ParkPressure 1000.00 to 500.00
+20251217T153920|5|mission_cfg|PnPCycleLen 1 to 0
+20251217T153920|5|mission_cfg|SurfacePressure 4.00 to 2.00
+20251217T153920|5|mission_cfg|UpTime 641 to 310
+20251217T153955|5|T_CMD|fs_cat system.cfg
+20251217T154001|5|T_CMD|fs_cat mission.cfg
+20251217T154035|5|T_CMD|iridium_dial_config f10878 apex_10878 00881600005131 rudics 00881600005131 rudics
+20251217T154035|5|iridium_dial_config|passed
+20251217T154041|5|T_CMD|fs_cat system.cfg
+20251217T154339|5|T_CMD|m_bye
+20251217T154339|5|CONSOLE|delaying 30 seconds for SAIL to be disconnected before system reset
+20251217T154411|5|system_start_task|Final Start Type: START_INIT
+20251217T154411|5|sensors_cfg|installed seabird_ctd_41cp sensor
+20251217T154411|5|sensors_cfg|installed iridium9523 device
+20251217T154411|5|sensors_cfg|installed gps15xh device
+20251217T154411|5|mission_cfg|no changes
+20251217T154411|5|sample_cfg|<PARK>
+20251217T154411|5|sample_cfg|SAMPLE PT 2500 4 0 DBAR 1
+20251217T154411|5|sample_cfg|<ASCENT>
+20251217T154411|5|sample_cfg|PROFILE CTD 2000 4 2 1 HZ #Regime:1
+20251217T154412|5|IDLE|will start in 60 seconds
+20251217T154512|5|IDLE|starting
+20251217T155202|5|IDLE|will resume in 60 seconds
+20251217T155210|5|T_CMD|m_console
+20251217T155210|0|console_verbosity|0 --> 5
+20251217T155210|5|mission_state|IDLE -> CONSOLE
+20251217T155217|5|T_CMD|sys_self_test
+20251217T155219|5|sys_self_test|started
+20251217T155219|5|sys_self_test|Float ID: 043-0124
+20251217T155219|5|sys_self_test|Firmware Version: 09/06/24 17:59:11 2.18.1 STD IRID Final
+20251217T155225|5|vital|Battery Voltage: 15.17 V
+20251217T155226|5|vital|Float Current: 28.7518 mA
+20251217T155226|5|vital|Coulomb Count: 3658.3317 mAh
+20251217T155226|5|vital|Bladder Pressure: 8.1 dbar
+20251217T155228|5|vital|Internal Vacuum: 8.2 dbar
+20251217T155232|5|vital|Buoyancy Position: 261 counts
+20251217T155232|5|mission_cfg|ActivateRecoveryMode off
+20251217T155232|5|mission_cfg|AscentRate 0.05
+20251217T155232|5|mission_cfg|AscentStartTimes -1 -1 -1 -1
+20251217T155232|5|mission_cfg|AscentTimeout 200
+20251217T155232|5|mission_cfg|AscentTimerInterval 120
+20251217T155232|5|mission_cfg|BuoyancyNudge 100
+20251217T155232|5|mission_cfg|DeepDescentCount 1666
+20251217T155232|5|mission_cfg|DeepDescentPressure 600.00
+20251217T155232|5|mission_cfg|DeepDescentTimeout 40
+20251217T155232|5|mission_cfg|DeepDescentTimerInterval 300
+20251217T155232|5|mission_cfg|DeepProfileFirst on
+20251217T155232|5|mission_cfg|DownTime 1220
+20251217T155232|5|mission_cfg|EmergencyTimerInterval 3600
+20251217T155232|5|mission_cfg|HyperRetractCount 0
+20251217T155232|5|mission_cfg|HyperRetractPressure 850.00
+20251217T155232|5|mission_cfg|IceMonths 0000
+20251217T155232|5|mission_cfg|IdleTimerInterval 3600
+20251217T155232|5|mission_cfg|InitialBuoyancyNudge 300
+20251217T155232|5|mission_cfg|LeakDetect on
+20251217T155232|5|mission_cfg|LogVerbosity 5
+20251217T155232|5|mission_cfg|MActivationCount 262
+20251217T155232|5|mission_cfg|MActivationPressure 25.00
+20251217T155232|5|mission_cfg|MinBuoyancyCount 147
+20251217T155232|5|mission_cfg|MinVacuum 9.00
+20251217T155232|5|mission_cfg|ParkBuoyancyNudge 16
+20251217T155232|5|mission_cfg|ParkDeadBand 25.00
+20251217T155232|5|mission_cfg|ParkDescentCount 1666
+20251217T155232|5|mission_cfg|ParkDescentTimeout 200
+20251217T155232|5|mission_cfg|ParkDescentTimerInterval 900
+20251217T155232|5|mission_cfg|ParkPressure 500.00
+20251217T155232|5|mission_cfg|ParkTimerInterval 3600
+20251217T155232|5|mission_cfg|PnPCycleLen 0
+20251217T155232|5|mission_cfg|PreludeSelfTest on
+20251217T155232|5|mission_cfg|PreludeTime 120
+20251217T155232|5|mission_cfg|SurfacePressure 2.00
+20251217T155232|5|mission_cfg|TelemetryDays 0 0
+20251217T155232|5|mission_cfg|TelemetryInterval 900
+20251217T155232|5|mission_cfg|TelemetryTimeout 120
+20251217T155232|5|mission_cfg|UpTime 310
+20251217T155232|5|mission_cfg|VitalsMask 0007
+20251217T155232|5|mission_cfg|Checksum FFBC
+20251217T155232|5|sample_cfg|<PARK>
+20251217T155232|5|sample_cfg|SAMPLE PT 2500 4 0 DBAR 1
+20251217T155232|5|sample_cfg|<ASCENT>
+20251217T155232|5|sample_cfg|PROFILE CTD 2000 4 2 1 HZ #Regime:1
+20251217T155232|5|system_cfg|float_id 043-0124
+20251217T155232|5|system_cfg|air_bladder_max 12.00
+20251217T155232|5|system_cfg|buoyancy_pump_min 147
+20251217T155232|5|system_cfg|buoyancy_pump_max 3693
+20251217T155232|5|system_cfg|iridium f10878 apex_10878 00881600005131 RUDICS 00881600005131 RUDICS
+20251217T155232|5|sensors_cfg|sensor seabird_ctd_41cp COM2 B9600
+20251217T155232|5|sensors_cfg|modem iridium9523
+20251217T155232|5|sensors_cfg|gps gps15xh
+20251217T155233|5|sys_self_test|report_settings|passed
+20251217T155233|5|LOG|Number of files in UPLOAD directory: 4
+20251217T155234|5|AIR|test start
+20251217T155234|5|AIR|deflating
+20251217T155240|5|AIR|deflated to 8.11 dbar
+20251217T155241|5|AIR|vacuum pressure: 8.22 dbar
+20251217T155242|5|AIR|bladder pressure: 8.11 dbar
+20251217T155243|5|AIR|battery voltage: 15.17 V
+20251217T155454|5|AIR|inflated to 12.13 dbar after 19 pulses (Time ON:95, OFF:19)
+20251217T155454|5|AIR|inflate test passed
+20251217T155454|5|AIR|pulses: 19
+20251217T155454|5|AIR|energy: 0.312 mAh
+20251217T155454|5|AIR|current avg: 100.055 mA
+20251217T155454|5|AIR|current max: 116.333 mA
+20251217T155454|5|AIR|battery current avg: 119.025 mA
+20251217T155454|5|AIR|battery current max: 149.150 mA
+20251217T155454|5|AIR|battery voltage avg: 14.91 V
+20251217T155454|5|AIR|battery voltage min: 14.81 V
+20251217T155455|5|AIR|vacuum pressure: 7.20 dbar
+20251217T155456|5|AIR|bladder pressure: 12.12 dbar
+20251217T155457|5|AIR|battery voltage: 15.12 V
+20251217T155457|5|AIR|monitor test skipped
+20251217T155457|5|AIR|deflating
+20251217T155503|5|AIR|deflated to 8.66 dbar
+20251217T155503|5|AIR|test passed
+20251217T155503|5|BuoyEngine|test start
+20251217T155507|5|BuoyEngine|adjusting from 262 to 616
+20251217T155703|5|BuoyEngine|destination 616 reached after 01:54
+20251217T155705|5|BuoyEngine|energy: 6.562 mAh
+20251217T155705|5|BuoyEngine|current avg: 170.518 mA
+20251217T155705|5|BuoyEngine|current avg: 191.831 mA
+20251217T155705|5|BuoyEngine|battery current avg: 203.441 mA
+20251217T155705|5|BuoyEngine|battery current max: 213.920 mA
+20251217T155705|5|BuoyEngine|battery voltage avg: 14.79 V
+20251217T155705|5|BuoyEngine|battery voltage min: 14.74 V
+20251217T155709|5|BuoyEngine|adjusting from 616 to 262
+20251217T155905|5|BuoyEngine|destination 260 reached after 01:54
+20251217T155909|5|BuoyEngine|energy: 6.875 mAh
+20251217T155909|5|BuoyEngine|current avg: 174.463 mA
+20251217T155909|5|BuoyEngine|current avg: 178.977 mA
+20251217T155909|5|BuoyEngine|battery current avg: 206.287 mA
+20251217T155909|5|BuoyEngine|battery current max: 214.467 mA
+20251217T155909|5|BuoyEngine|battery voltage avg: 14.75 V
+20251217T155909|5|BuoyEngine|battery voltage min: 14.73 V
+20251217T155912|5|BuoyEngine|test passed
+20251217T155913|5|GPS|test start
+20251217T155937|5|COMMS|found sky
+20251217T155938|5|GPS|Updating Almanac for 15 minutes
+20251217T161439|5|GPS|Completed Almanac Update on 12/17/2025 16:14:39
+20251217T161439|5|GPS|Next Almanac Update 03/17/2026 16:14:39
+20251217T161448|5|GPS Test|RF Board Max Current: 35.9 mA
+20251217T161448|5|GPS Test|Battery Min Voltage: 15.0 V
+20251217T161448|4|GPS Test|test cancelled
+20251217T161448|4|sys_self_test|cancelled
+20251217T161550|5|T_CMD|[Amodem_test primary
+20251217T161605|5|T_CMD|sys_modem_test primary
+20251217T161607|5|T_CMD|help
+20251217T161609|5|T_CMD|?help
+20251217T161619|5|T_CMD|modem_test primary
+20251217T161619|5|COMMS|primary number test start
+20251217T161638|5|COMMS|Modem: Iridium
+20251217T161638|5|COMMS|Model: 9523N
+20251217T161638|5|COMMS|S/N: 300125062398780
+20251217T161638|5|COMMS|SIM ICCID: 8988169234005406525
+20251217T161640|5|COMMS|Call Processor Version: DB23001
+20251217T161640|5|COMMS|Modem DSP Version: 1.7 svn: 2358
+20251217T161640|5|COMMS|Audio DSP Version: 1.7 svn: 2459
+20251217T161640|5|COMMS|DBB Version: 0x0001 (ASIC)
+20251217T161640|5|COMMS|Main RFA Version: 0x0007 (SRFA2)
+20251217T161640|5|COMMS|Aux RFA Version: 0x07ff (Not present)
+20251217T161640|5|COMMS|NVM Version: KVS
+20251217T161640|5|COMMS|BOOT Version: BOOT0fa3/9523NRevE/02/RAW15
+20251217T161641|5|COMMS|get modem info passed
+20251217T161641|5|COMMS|Testing Primary Number: 00881600005131 (RUDICS)
+20251217T161704|5|COMMS|attempt 1/5 to upload \temp\test.20251217T161641.txt
+20251217T161722|5|COMMS|CSQ=5
+20251217T161730|4|COMMS|upload aborted, connection lost
+20251217T161730|5|COMMS|attempt 2/5 to upload \temp\test.20251217T161641.txt
+20251217T161734|5|COMMS|CSQ=5
+20251217T161742|4|COMMS|upload aborted, connection lost
+20251217T161742|5|COMMS|attempt 3/5 to upload \temp\test.20251217T161641.txt
+20251217T161746|5|COMMS|CSQ=5
+20251217T161754|4|COMMS|upload aborted, connection lost
+20251217T161754|5|COMMS|attempt 4/5 to upload \temp\test.20251217T161641.txt
+20251217T161758|5|COMMS|CSQ=5
+20251217T161805|4|COMMS|upload aborted, connection lost
+20251217T161805|5|COMMS|attempt 5/5 to upload \temp\test.20251217T161641.txt
+20251217T161809|5|COMMS|CSQ=5
+20251217T161818|4|COMMS|upload aborted, connection lost
+20251217T161818|3|COMMS|connect failed
+20251217T161818|3|COMMS|login failed
+20251217T161818|3|COMMS|file upload failed after 6 attempts
+20251217T161819|3|COMMS|send test file failed
+20251217T161819|3|COMMS|primary number test failed
+20251217T161852|5|T_CMD|modem_test primary
+20251217T161852|5|COMMS|primary number test start
+20251217T161911|5|COMMS|Modem: Iridium
+20251217T161911|5|COMMS|Model: 9523N
+20251217T161911|5|COMMS|S/N: 300125062398780
+20251217T161911|5|COMMS|SIM ICCID: 8988169234005406525
+20251217T161913|5|COMMS|Call Processor Version: DB23001
+20251217T161913|5|COMMS|Modem DSP Version: 1.7 svn: 2358
+20251217T161913|5|COMMS|Audio DSP Version: 1.7 svn: 2459
+20251217T161913|5|COMMS|DBB Version: 0x0001 (ASIC)
+20251217T161913|5|COMMS|Main RFA Version: 0x0007 (SRFA2)
+20251217T161913|5|COMMS|Aux RFA Version: 0x07ff (Not present)
+20251217T161913|5|COMMS|NVM Version: KVS
+20251217T161913|5|COMMS|BOOT Version: BOOT0fa3/9523NRevE/02/RAW15
+20251217T161914|5|COMMS|get modem info passed
+20251217T161914|5|COMMS|Testing Primary Number: 00881600005131 (RUDICS)
+20251217T161937|5|COMMS|attempt 1/5 to upload \temp\test.20251217T161914.txt
+20251217T161955|5|COMMS|CSQ=3
+20251217T162005|4|COMMS|upload aborted, connection lost
+20251217T162005|5|COMMS|attempt 2/5 to upload \temp\test.20251217T161914.txt
+20251217T162009|5|COMMS|CSQ=5
+20251217T162018|4|COMMS|upload aborted, connection lost
+20251217T162018|5|COMMS|attempt 3/5 to upload \temp\test.20251217T161914.txt
+20251217T162022|5|COMMS|CSQ=5
+20251217T162030|4|COMMS|upload aborted, connection lost
+20251217T162030|5|COMMS|attempt 4/5 to upload \temp\test.20251217T161914.txt
+20251217T162034|5|COMMS|CSQ=5
+20251217T162044|4|COMMS|upload aborted, connection lost
+20251217T162044|5|COMMS|attempt 5/5 to upload \temp\test.20251217T161914.txt
+20251217T162048|5|COMMS|CSQ=5
+20251217T162057|4|COMMS|upload aborted, connection lost
+20251217T162057|3|COMMS|connect failed
+20251217T162057|3|COMMS|login failed
+20251217T162057|3|COMMS|file upload failed after 6 attempts
+20251217T162058|3|COMMS|send test file failed
+20251217T162058|3|COMMS|primary number test failed
+20251217T162109|5|T_CMD|sys_verbosity 7
+20251217T162109|5|console_verbosity|5 --> 7
+20251217T162110|5|T_CMD|modem_test primary
+20251217T162110|5|COMMS|primary number test start
+20251217T162129|5|COMMS|Modem: Iridium
+20251217T162129|5|COMMS|Model: 9523N
+20251217T162129|5|COMMS|S/N: 300125062398780
+20251217T162130|5|COMMS|SIM ICCID: 8988169234005406525
+20251217T162131|5|COMMS|Call Processor Version: DB23001
+20251217T162131|5|COMMS|Modem DSP Version: 1.7 svn: 2358
+20251217T162131|5|COMMS|Audio DSP Version: 1.7 svn: 2459
+20251217T162131|5|COMMS|DBB Version: 0x0001 (ASIC)
+20251217T162131|5|COMMS|Main RFA Version: 0x0007 (SRFA2)
+20251217T162131|5|COMMS|Aux RFA Version: 0x07ff (Not present)
+20251217T162131|5|COMMS|NVM Version: KVS
+20251217T162131|5|COMMS|BOOT Version: BOOT0fa3/9523NRevE/02/RAW15
+20251217T162132|5|COMMS|get modem info passed
+20251217T162132|5|COMMS|Testing Primary Number: 00881600005131 (RUDICS)
+20251217T162155|5|COMMS|attempt 1/5 to upload \temp\test.20251217T162132.txt
+20251217T162207|5|COMMS|CSQ=5
+20251217T162219|4|COMMS|upload aborted, connection lost
+20251217T162219|5|COMMS|attempt 2/5 to upload \temp\test.20251217T162132.txt
+20251217T162224|5|COMMS|CSQ=3
+20251217T162232|4|COMMS|upload aborted, connection lost
+20251217T162232|5|COMMS|attempt 3/5 to upload \temp\test.20251217T162132.txt
+20251217T162236|5|COMMS|CSQ=5
+20251217T162249|4|COMMS|upload aborted, connection lost
+20251217T162249|5|COMMS|attempt 4/5 to upload \temp\test.20251217T162132.txt
+20251217T162313|5|COMMS|CSQ=4
+20251217T162320|4|COMMS|upload aborted, connection lost
+20251217T162320|5|COMMS|attempt 5/5 to upload \temp\test.20251217T162132.txt
+20251217T162324|5|COMMS|CSQ=5
+20251217T162331|4|COMMS|upload aborted, connection lost
+20251217T162331|3|COMMS|connect failed
+20251217T162331|3|COMMS|login failed
+20251217T162331|3|COMMS|file upload failed after 6 attempts
+20251217T162332|3|COMMS|send test file failed
+20251217T162332|3|COMMS|primary number test failed
+20251217T162343|5|T_CMD|m_bye
+20251217T162343|5|CONSOLE|delaying 30 seconds for SAIL to be disconnected before system reset
+20251217T162414|5|system_start_task|Final Start Type: START_INIT
+20251217T162414|5|sensors_cfg|installed seabird_ctd_41cp sensor
+20251217T162414|5|sensors_cfg|installed iridium9523 device
+20251217T162414|5|sensors_cfg|installed gps15xh device
+20251217T162415|5|mission_cfg|no changes
+20251217T162415|5|sample_cfg|<PARK>
+20251217T162415|5|sample_cfg|SAMPLE PT 2500 4 0 DBAR 1
+20251217T162415|5|sample_cfg|<ASCENT>
+20251217T162415|5|sample_cfg|PROFILE CTD 2000 4 2 1 HZ #Regime:1
+20251217T162416|5|IDLE|will start in 60 seconds
+20251217T162516|5|IDLE|starting
+20251217T193347|5|IDLE|will resume in 60 seconds
+20251217T193357|5|T_CMD|m_state
+20251217T193401|5|T_CMD|m_console
+20251217T193401|0|console_verbosity|0 --> 5
+20251217T193401|5|mission_state|IDLE -> CONSOLE
+20251217T193431|5|T_CMD|iridium_dial_config f10878 apex_10878 00881600005135 rudics 00881600005135 rudics
+20251217T193431|5|iridium_dial_config|passed
+20251217T193437|5|T_CMD|sys_verbosity 7
+20251217T193437|5|console_verbosity|5 --> 7
+20251217T193445|5|T_CMD|modem_test primary
+20251217T193445|5|COMMS|primary number test start
+20251217T193504|5|COMMS|Modem: Iridium
+20251217T193504|5|COMMS|Model: 9523N
+20251217T193504|5|COMMS|S/N: 300125062398780
+20251217T193505|5|COMMS|SIM ICCID: 8988169234005406525
+20251217T193506|5|COMMS|Call Processor Version: DB23001
+20251217T193506|5|COMMS|Modem DSP Version: 1.7 svn: 2358
+20251217T193506|5|COMMS|Audio DSP Version: 1.7 svn: 2459
+20251217T193506|5|COMMS|DBB Version: 0x0001 (ASIC)
+20251217T193506|5|COMMS|Main RFA Version: 0x0007 (SRFA2)
+20251217T193506|5|COMMS|Aux RFA Version: 0x07ff (Not present)
+20251217T193506|5|COMMS|NVM Version: KVS
+20251217T193506|5|COMMS|BOOT Version: BOOT0fa3/9523NRevE/02/RAW15
+20251217T193507|5|COMMS|get modem info passed
+20251217T193507|5|COMMS|Testing Primary Number: 00881600005135 (RUDICS)
+20251217T193530|5|COMMS|attempt 1/5 to upload \temp\test.20251217T193507.txt
+20251217T193546|5|COMMS|CSQ=5
+20251217T193759|4|COMMS|login attempt 2/10 failed, username prompt not received
+20251217T193859|4|COMMS|login attempt 3/10 failed, username prompt not received
+20251217T193959|4|COMMS|login attempt 4/10 failed, username prompt not received
+20251217T194059|4|COMMS|upload aborted, connection lost
+20251217T194101|5|COMMS|attempt 2/5 to upload \temp\test.20251217T193507.txt
+20251217T194134|4|COMMS|CSQ=0
+20251217T194134|3|COMMS|upload aborted, no signal
+20251217T194134|5|COMMS|connect passed
+20251217T194134|3|COMMS|login failed
+20251217T194134|3|COMMS|file upload failed after 2 attempts
+20251217T194135|3|COMMS|send test file failed
+20251217T194136|3|COMMS|primary number test failed
+20251217T194147|5|T_CMD|modem_test primary
+20251217T194147|5|COMMS|primary number test start
+20251217T194205|5|COMMS|Modem: Iridium
+20251217T194205|5|COMMS|Model: 9523N
+20251217T194206|5|COMMS|S/N: 300125062398780
+20251217T194206|5|COMMS|SIM ICCID: 8988169234005406525
+20251217T194207|5|COMMS|Call Processor Version: DB23001
+20251217T194207|5|COMMS|Modem DSP Version: 1.7 svn: 2358
+20251217T194207|5|COMMS|Audio DSP Version: 1.7 svn: 2459
+20251217T194207|5|COMMS|DBB Version: 0x0001 (ASIC)
+20251217T194207|5|COMMS|Main RFA Version: 0x0007 (SRFA2)
+20251217T194207|5|COMMS|Aux RFA Version: 0x07ff (Not present)
+20251217T194207|5|COMMS|NVM Version: KVS
+20251217T194207|5|COMMS|BOOT Version: BOOT0fa3/9523NRevE/02/RAW15
+20251217T194208|5|COMMS|get modem info passed
+20251217T194208|5|COMMS|Testing Primary Number: 00881600005135 (RUDICS)
+20251217T194231|5|COMMS|attempt 1/5 to upload \temp\test.20251217T194208.txt
+20251217T194411|5|COMMS|CSQ=5
+20251217T194434|5|COMMS|uploaded test.20251217T194208.txt
+20251217T194434|5|COMMS|uploaded 67 bytes in 8 secs
+20251217T194438|5|COMMS|connect passed
+20251217T194438|5|COMMS|login passed
+20251217T194438|5|COMMS|file uploaded
+20251217T194439|5|COMMS|send test file passed
+20251217T194502|5|COMMS|attempt 1/5 to download test.20251217T194208.txt
+20251217T194518|5|COMMS|CSQ=5
+20251217T194624|5|COMMS|downloaded test.20251217T194208.txt
+20251217T194624|5|COMMS|downloaded 67 bytes in 6 secs
+20251217T194628|5|COMMS|connect passed
+20251217T194628|5|COMMS|login passed
+20251217T194628|5|COMMS|file downloaded
+20251217T194629|5|COMMS|recv test file passed
+20251217T194629|5|COMMS|file compare size passed
+20251217T194629|5|COMMS|file compare contents passed
+20251217T194629|5|COMMS|primary number test passed
+20251217T194635|5|T_CMD|m_bye
+20251217T194635|5|CONSOLE|delaying 30 seconds for SAIL to be disconnected before system reset
+20251217T194706|5|system_start_task|Final Start Type: START_INIT
+20251217T194706|5|sensors_cfg|installed seabird_ctd_41cp sensor
+20251217T194706|5|sensors_cfg|installed iridium9523 device
+20251217T194706|5|sensors_cfg|installed gps15xh device
+20251217T194706|5|mission_cfg|no changes
+20251217T194706|5|sample_cfg|<PARK>
+20251217T194706|5|sample_cfg|SAMPLE PT 2500 4 0 DBAR 1
+20251217T194706|5|sample_cfg|<ASCENT>
+20251217T194706|5|sample_cfg|PROFILE CTD 2000 4 2 1 HZ #Regime:1
+20251217T194707|5|IDLE|will start in 60 seconds
+20251217T194807|5|IDLE|starting
+20260109T182434|5|IDLE|will resume in 60 seconds
+20260109T182534|5|IDLE|resuming
+20260109T183300|5|T_CMD|m_state
+20260109T183351|5|T_CMD|m_console
+20260109T183351|0|console_verbosity|0 --> 5
+20260109T183351|5|mission_state|IDLE -> CONSOLE
+20260109T183358|5|T_CMD|fs_cat sample.cfg
+20260109T183517|5|T_CMD|fs_ls
+20260109T183601|5|T_CMD|fs_mv sample.cfg sample.old
+20260109T183612|5|T_CMD|sys_capture sample.new
+20260109T183729|5|T_CMD|fs_cat sample.new
+20260109T183737|5|T_CMD|fs mv sample.new sample.cfg
+20260109T183744|5|T_CMD|fs_mv sample.new sample.cfg
+20260109T183749|5|T_CMD|sys_reboot
+20260109T183751|5|system_start_task|Final Start Type: START_INIT
+20260109T183751|5|sensors_cfg|installed seabird_ctd_41cp sensor
+20260109T183751|5|sensors_cfg|installed iridium9523 device
+20260109T183751|5|sensors_cfg|installed gps15xh device
+20260109T183751|5|mission_cfg|no changes
+20260109T183751|5|sample_cfg|<PARK>
+20260109T183751|5|sample_cfg|SAMPLE PT 2500 4 0 DBAR 1
+20260109T183751|5|sample_cfg|<ASCENT>
+20260109T183751|5|sample_cfg|SAMPLE PTS 50 2 1 DBAR 1
+20260109T183751|5|sample_cfg|PROFILE CTD 2000 2 2 1 HZ #Regime:1
+20260109T183752|5|IDLE|will start in 60 seconds
+20260109T183852|5|IDLE|starting
+20260109T183905|5|IDLE|will resume in 60 seconds
+20260109T184002|5|T_CMD|m_console
+20260109T184002|5|mission_state|IDLE -> CONSOLE
+20260109T184235|5|T_CMD|sys_self_test -nosky
+20260109T184237|5|sys_self_test|started
+20260109T184237|5|sys_self_test|Float ID: 043-0124
+20260109T184237|5|sys_self_test|Firmware Version: 09/06/24 17:59:11 2.18.1 STD IRID Final
+20260109T184243|5|vital|Battery Voltage: 15.10 V
+20260109T184244|5|vital|Float Current: 29.4550 mA
+20260109T184244|5|vital|Coulomb Count: 3957.5807 mAh
+20260109T184245|5|vital|Bladder Pressure: 8.2 dbar
+20260109T184246|5|vital|Internal Vacuum: 8.3 dbar
+20260109T184250|5|vital|Buoyancy Position: 262 counts
+20260109T184250|5|mission_cfg|ActivateRecoveryMode off
+20260109T184250|5|mission_cfg|AscentRate 0.05
+20260109T184250|5|mission_cfg|AscentStartTimes -1 -1 -1 -1
+20260109T184250|5|mission_cfg|AscentTimeout 200
+20260109T184250|5|mission_cfg|AscentTimerInterval 120
+20260109T184250|5|mission_cfg|BuoyancyNudge 100
+20260109T184250|5|mission_cfg|DeepDescentCount 1666
+20260109T184250|5|mission_cfg|DeepDescentPressure 600.00
+20260109T184250|5|mission_cfg|DeepDescentTimeout 40
+20260109T184250|5|mission_cfg|DeepDescentTimerInterval 300
+20260109T184250|5|mission_cfg|DeepProfileFirst on
+20260109T184250|5|mission_cfg|DownTime 1220
+20260109T184250|5|mission_cfg|EmergencyTimerInterval 3600
+20260109T184250|5|mission_cfg|HyperRetractCount 0
+20260109T184250|5|mission_cfg|HyperRetractPressure 850.00
+20260109T184250|5|mission_cfg|IceMonths 0000
+20260109T184250|5|mission_cfg|IdleTimerInterval 3600
+20260109T184250|5|mission_cfg|InitialBuoyancyNudge 300
+20260109T184250|5|mission_cfg|LeakDetect on
+20260109T184250|5|mission_cfg|LogVerbosity 5
+20260109T184250|5|mission_cfg|MActivationCount 262
+20260109T184250|5|mission_cfg|MActivationPressure 25.00
+20260109T184250|5|mission_cfg|MinBuoyancyCount 147
+20260109T184250|5|mission_cfg|MinVacuum 9.00
+20260109T184250|5|mission_cfg|ParkBuoyancyNudge 16
+20260109T184250|5|mission_cfg|ParkDeadBand 25.00
+20260109T184250|5|mission_cfg|ParkDescentCount 1666
+20260109T184250|5|mission_cfg|ParkDescentTimeout 200
+20260109T184250|5|mission_cfg|ParkDescentTimerInterval 900
+20260109T184250|5|mission_cfg|ParkPressure 500.00
+20260109T184250|5|mission_cfg|ParkTimerInterval 3600
+20260109T184250|5|mission_cfg|PnPCycleLen 0
+20260109T184250|5|mission_cfg|PreludeSelfTest on
+20260109T184250|5|mission_cfg|PreludeTime 120
+20260109T184250|5|mission_cfg|SurfacePressure 2.00
+20260109T184250|5|mission_cfg|TelemetryDays 0 0
+20260109T184250|5|mission_cfg|TelemetryInterval 900
+20260109T184250|5|mission_cfg|TelemetryTimeout 120
+20260109T184250|5|mission_cfg|UpTime 310
+20260109T184250|5|mission_cfg|VitalsMask 0007
+20260109T184250|5|mission_cfg|Checksum FFBC
+20260109T184250|5|sample_cfg|<PARK>
+20260109T184250|5|sample_cfg|SAMPLE PT 2500 4 0 DBAR 1
+20260109T184250|5|sample_cfg|<ASCENT>
+20260109T184250|5|sample_cfg|SAMPLE PTS 50 2 1 DBAR 1
+20260109T184250|5|sample_cfg|PROFILE CTD 2000 2 2 1 HZ #Regime:1
+20260109T184250|5|system_cfg|float_id 043-0124
+20260109T184250|5|system_cfg|air_bladder_max 12.00
+20260109T184250|5|system_cfg|buoyancy_pump_min 147
+20260109T184250|5|system_cfg|buoyancy_pump_max 3693
+20260109T184250|5|system_cfg|iridium f10878 apex_10878 00881600005135 RUDICS 00881600005135 RUDICS
+20260109T184250|5|sensors_cfg|sensor seabird_ctd_41cp COM2 B9600
+20260109T184250|5|sensors_cfg|modem iridium9523
+20260109T184250|5|sensors_cfg|gps gps15xh
+20260109T184251|5|sys_self_test|report_settings|passed
+20260109T184251|5|LOG|Number of files in UPLOAD directory: 4
+20260109T184252|5|AIR|test start
+20260109T184252|5|AIR|deflating
+20260109T184258|5|AIR|deflated to 8.17 dbar
+20260109T184259|5|AIR|vacuum pressure: 8.24 dbar
+20260109T184300|5|AIR|bladder pressure: 8.16 dbar
+20260109T184301|5|AIR|battery voltage: 15.10 V
+20260109T184512|5|AIR|inflated to 12.13 dbar after 19 pulses (Time ON:95, OFF:19)
+20260109T184512|5|AIR|inflate test passed
+20260109T184512|5|AIR|pulses: 19
+20260109T184512|5|AIR|energy: 0.312 mAh
+20260109T184512|5|AIR|current avg: 99.354 mA
+20260109T184512|5|AIR|current max: 115.967 mA
+20260109T184512|5|AIR|battery current avg: 118.483 mA
+20260109T184512|5|AIR|battery current max: 145.556 mA
+20260109T184512|5|AIR|battery voltage avg: 14.89 V
+20260109T184512|5|AIR|battery voltage min: 14.78 V
+20260109T184513|5|AIR|vacuum pressure: 7.26 dbar
+20260109T184514|5|AIR|bladder pressure: 12.12 dbar
+20260109T184515|5|AIR|battery voltage: 15.07 V
+20260109T184515|5|AIR|monitor test skipped
+20260109T184515|5|AIR|deflating
+20260109T184521|5|AIR|deflated to 8.78 dbar
+20260109T184521|5|AIR|test passed
+20260109T184522|5|BuoyEngine|test start
+20260109T184526|5|BuoyEngine|adjusting from 262 to 617
+20260109T184720|5|BuoyEngine|destination 615 reached after 01:53
+20260109T184724|5|BuoyEngine|energy: 6.250 mAh
+20260109T184724|5|BuoyEngine|current avg: 170.415 mA
+20260109T184724|5|BuoyEngine|current avg: 187.382 mA
+20260109T184724|5|BuoyEngine|battery current avg: 202.421 mA
+20260109T184724|5|BuoyEngine|battery current max: 211.029 mA
+20260109T184724|5|BuoyEngine|battery voltage avg: 14.77 V
+20260109T184724|5|BuoyEngine|battery voltage min: 14.75 V
+20260109T184727|5|BuoyEngine|adjusting from 616 to 261
+20260109T184923|5|BuoyEngine|destination 260 reached after 01:54
+20260109T184928|5|BuoyEngine|energy: 6.562 mAh
+20260109T184928|5|BuoyEngine|current avg: 173.088 mA
+20260109T184928|5|BuoyEngine|current avg: 177.988 mA
+20260109T184928|5|BuoyEngine|battery current avg: 204.731 mA
+20260109T184928|5|BuoyEngine|battery current max: 211.654 mA
+20260109T184928|5|BuoyEngine|battery voltage avg: 14.75 V
+20260109T184928|5|BuoyEngine|battery voltage min: 14.73 V
+20260109T184930|5|BuoyEngine|test passed
+20260109T184931|5|GPS|test start
+20260109T184946|3|read_bytes|COM6 RX Overrun Detected!
+20260109T184948|5|GPS Test|RF Board Max Current: 38.1 mA
+20260109T184948|5|GPS Test|Battery Min Voltage: 14.9 V
+20260109T184948|5|GPS|test passed
+20260109T184950|5|vital|Battery Voltage @ 15.00 V (above 11 V) : PASS
+20260109T184951|5|vital|Internal Vacuum @ 8.27 dbar (below 9.00 dbar) : PASS
+20260109T184952|5|vital|Leak Detection Voltage @ 2.34 V (above 2 V) : PASS
+20260109T184953|5|vital|Relative Humidity @ 8.55 percent (below 75 percent) : PASS
+20260109T184953|5|vital|test|passed
+20260109T184953|5|CTD|test start
+20260109T184955|5|CTD|set_param|>>tswait=20
+20260109T184956|5|CTD|set_param|>>outputpts=1
+20260109T184956|5|CTD|set_param|>>includetransitionbin=0
+20260109T184956|5|CTD|set_param|>>includenbin=1
+20260109T184956|5|CTD|set_param|>>autobinavg=0
+20260109T184956|5|CTD|set_param|>>top_bin_interval=2
+20260109T184957|5|CTD|set_param|>>top_bin_size=2
+20260109T184957|5|CTD|set_param|>>top_bin_max=10
+20260109T184957|5|CTD|set_param|>>middle_bin_interval=2
+20260109T184957|5|CTD|set_param|>>middle_bin_size=2
+20260109T184957|5|CTD|set_param|>>middle_bin_max=20
+20260109T184958|5|CTD|set_param|>>bottom_bin_interval=2
+20260109T184958|5|CTD|set_param|>>bottom_bin_size=2
+20260109T184958|5|CTD|set_param|>>pcutoff=2.00
+20260109T185000|5|CTD|configure passed
+20260109T185011|5|CTD|Model: SBE 41CP
+20260109T185011|5|CTD|Version: 7.2.5
+20260109T185011|5|CTD|Serial Number: 20576
+20260109T185011|5|CTD|Variant: CP UW
+20260109T185011|5|CTD|tswait: 20
+20260109T185011|5|CTD|pcutoff: 2.0
+20260109T185011|5|CTD|automatic bin averaging: no
+20260109T185011|5|CTD|nsamples: 23
+20260109T185011|5|CTD|nbins: 0
+20260109T185011|5|CTD|top bin interval: 2
+20260109T185011|5|CTD|top bin size: 2
+20260109T185011|5|CTD|top bin max: 10
+20260109T185011|5|CTD|middle bin interval: 2
+20260109T185011|5|CTD|middle bin size: 2
+20260109T185011|5|CTD|middle bin max: 20
+20260109T185011|5|CTD|bottom bin interval: 2
+20260109T185011|5|CTD|bottom bin size: 2
+20260109T185011|5|CTD|include transition bin: no
+20260109T185011|5|CTD|include samples per bin: yes
+20260109T185011|5|CTD|real-time output: PTS
+20260109T185011|5|CTD|temperature:  18-Aug-24
+20260109T185011|5|CTD|TA0: -8.973171e-04
+20260109T185011|5|CTD|TA1: 3.011882e-04
+20260109T185011|5|CTD|TA2: -4.167858e-06
+20260109T185011|5|CTD|TA3: 1.572400e-07
+20260109T185011|5|CTD|conductivity:  18-Aug-24
+20260109T185011|5|CTD|G: -1.003707e+00
+20260109T185011|5|CTD|H: 1.443973e-01
+20260109T185011|5|CTD|I: -1.465081e-04
+20260109T185011|5|CTD|J: 3.103273e-05
+20260109T185011|5|CTD|CPCOR: -9.570000e-08
+20260109T185011|5|CTD|CTCOR: 3.250000e-06
+20260109T185011|5|CTD|WBOTC: -1.610807e-06
+20260109T185011|5|CTD|pressure S/N = 12533108, range = 2900 psia:  16-Aug-24
+20260109T185011|5|CTD|PA0: 2.619634e-01
+20260109T185011|5|CTD|PA1: 3.916852e-04
+20260109T185011|5|CTD|PA2: -2.725298e-13
+20260109T185011|5|CTD|PTCA0: -1.073303e+03
+20260109T185011|5|CTD|PTCA1: 6.255007e+01
+20260109T185011|5|CTD|PTCA2: -1.457066e+00
+20260109T185011|5|CTD|PTCB0: 3.173603e+05
+20260109T185011|5|CTD|PTCB1: 3.820602e+01
+20260109T185011|5|CTD|PTCB2: -5.387882e-01
+20260109T185011|5|CTD|PTHA0: 2.865961e+02
+20260109T185011|5|CTD|PTHA1: -6.123337e-05
+20260109T185011|5|CTD|PTHA2: -8.480737e-13
+20260109T185011|5|CTD|POFFSET: 0.000000e+00
+20260109T185011|5|CTD|show passed
+20260109T185012|5|CTD|verify config passed
+20260109T185013|5|CTD|pressure: -0.10 dbar
+20260109T185015|5|CTD|pressure: -0.10 dbar, temperature: 20.3339 degC
+20260109T185015|4|CTD|PTS sample not taken, pressure at surface. -0.10 < 2.00
+20260109T185015|5|CTD|sample passed
+20260109T185015|5|CTD|test passed
+20260109T185016|5|COMMS|modem test start
+20260109T185034|5|COMMS|Modem: Iridium
+20260109T185035|5|COMMS|Model: 9523N
+20260109T185035|5|COMMS|S/N: 300125062398780
+20260109T185035|5|COMMS|SIM ICCID: 8988169234005406525
+20260109T185036|5|COMMS|Call Processor Version: DB23001
+20260109T185036|5|COMMS|Modem DSP Version: 1.7 svn: 2358
+20260109T185036|5|COMMS|Audio DSP Version: 1.7 svn: 2459
+20260109T185036|5|COMMS|DBB Version: 0x0001 (ASIC)
+20260109T185036|5|COMMS|Main RFA Version: 0x0007 (SRFA2)
+20260109T185036|5|COMMS|Aux RFA Version: 0x07ff (Not present)
+20260109T185036|5|COMMS|NVM Version: KVS
+20260109T185036|5|COMMS|BOOT Version: BOOT0fa3/9523NRevE/02/RAW15
+20260109T185037|5|COMMS|get modem info passed
+20260109T185038|4|COMMS|primary and secondary test skipped
+20260109T185038|5|COMMS|modem test passed
+20260109T185039|5|vital|Battery Voltage: 15.04 V
+20260109T185040|5|vital|Float Current: 31.1739 mA
+20260109T185040|5|vital|Coulomb Count: 3976.6432 mAh
+20260109T185041|5|vital|Bladder Pressure: 8.2 dbar
+20260109T185043|5|vital|Internal Vacuum: 8.3 dbar
+20260109T185046|5|vital|Buoyancy Position: 259 counts
+20260109T185046|5|sys_self_test|PASSED
+20260109T185056|5|T_CMD|m_bye
+20260109T185056|5|CONSOLE|delaying 30 seconds for SAIL to be disconnected before system reset
+20260109T185127|5|system_start_task|Final Start Type: START_INIT
+20260109T185127|5|sensors_cfg|installed seabird_ctd_41cp sensor
+20260109T185127|5|sensors_cfg|installed iridium9523 device
+20260109T185127|5|sensors_cfg|installed gps15xh device
+20260109T185128|5|mission_cfg|no changes
+20260109T185128|5|sample_cfg|<PARK>
+20260109T185128|5|sample_cfg|SAMPLE PT 2500 4 0 DBAR 1
+20260109T185128|5|sample_cfg|<ASCENT>
+20260109T185128|5|sample_cfg|SAMPLE PTS 50 2 1 DBAR 1
+20260109T185128|5|sample_cfg|PROFILE CTD 2000 2 2 1 HZ #Regime:1
+20260109T185128|5|IDLE|will start in 60 seconds
+20260109T185149|5|T_CMD|m_bye
+20260109T185149|0|console_verbosity|0 --> 5
+20260109T185149|5|IDLE|delaying 30 seconds for SAIL to be disconnected before system reset
+20260109T185220|5|system_start_task|Final Start Type: START_INIT
+20260109T185220|5|sensors_cfg|installed seabird_ctd_41cp sensor
+20260109T185220|5|sensors_cfg|installed iridium9523 device
+20260109T185220|5|sensors_cfg|installed gps15xh device
+20260109T185220|5|mission_cfg|no changes
+20260109T185220|5|sample_cfg|<PARK>
+20260109T185220|5|sample_cfg|SAMPLE PT 2500 4 0 DBAR 1
+20260109T185220|5|sample_cfg|<ASCENT>
+20260109T185220|5|sample_cfg|SAMPLE PTS 50 2 1 DBAR 1
+20260109T185220|5|sample_cfg|PROFILE CTD 2000 2 2 1 HZ #Regime:1
+20260109T185221|5|IDLE|will start in 60 seconds
+20260109T185321|5|IDLE|starting
+20260121T201342|5|IDLE|adjusting buoyancy to MActivationCount 262
+20260121T201343|5|BuoyEngine|adjusting from 256 to 262
+20260121T201346|5|BuoyEngine|destination 262 reached after 00:02
+20260218T025930|5|IDLE|pressure activated @ 345.66 dbar
+20260218T025930|5|IDLE|awake|count: 944, time: 7801, energy: 295.000000
+20260218T025930|5|IDLE|sleep|count: 943, time: 3391028, energy: 70.646417
+20260218T025930|5|mission_state|IDLE -> PRELUDE
+20260218T025939|5|vital|Internal Vacuum @ 7.92 dbar (below 9.00 dbar) : PASS
+20260218T025940|5|vital|Battery Voltage @ 15.05 V (above 11 V) : PASS
+20260218T025941|5|vital|Leak Detection Voltage @ 2.33 V (above 2 V) : PASS
+20260218T025956|5|vital|RF Board Current @ 0.117 A (below 3 A) : PASS
+20260218T025957|5|pressure_sensor_current_test|current: 0.1 mA
+20260218T025957|5|CTD|test start
+20260218T025957|4|CTD|configuration only run in CONSOLE
+20260218T030008|5|CTD|Model: SBE 41CP
+20260218T030008|5|CTD|Version: 7.2.5
+20260218T030008|5|CTD|Serial Number: 20576
+20260218T030008|5|CTD|Variant: CP UW
+20260218T030008|5|CTD|tswait: 20
+20260218T030008|5|CTD|pcutoff: 2.0
+20260218T030008|5|CTD|automatic bin averaging: no
+20260218T030008|5|CTD|nsamples: 23
+20260218T030008|5|CTD|nbins: 0
+20260218T030008|5|CTD|top bin interval: 2
+20260218T030008|5|CTD|top bin size: 2
+20260218T030008|5|CTD|top bin max: 10
+20260218T030008|5|CTD|middle bin interval: 2
+20260218T030008|5|CTD|middle bin size: 2
+20260218T030008|5|CTD|middle bin max: 20
+20260218T030008|5|CTD|bottom bin interval: 2
+20260218T030008|5|CTD|bottom bin size: 2
+20260218T030008|5|CTD|include transition bin: no
+20260218T030008|5|CTD|include samples per bin: yes
+20260218T030008|5|CTD|real-time output: PTS
+20260218T030008|5|CTD|temperature:  18-Aug-24
+20260218T030008|5|CTD|TA0: -8.973171e-04
+20260218T030008|5|CTD|TA1: 3.011882e-04
+20260218T030008|5|CTD|TA2: -4.167858e-06
+20260218T030008|5|CTD|TA3: 1.572400e-07
+20260218T030008|5|CTD|conductivity:  18-Aug-24
+20260218T030008|5|CTD|G: -1.003707e+00
+20260218T030008|5|CTD|H: 1.443973e-01
+20260218T030008|5|CTD|I: -1.465081e-04
+20260218T030008|5|CTD|J: 3.103273e-05
+20260218T030008|5|CTD|CPCOR: -9.570000e-08
+20260218T030008|5|CTD|CTCOR: 3.250000e-06
+20260218T030008|5|CTD|WBOTC: -1.610807e-06
+20260218T030008|5|CTD|pressure S/N = 12533108, range = 2900 psia:  16-Aug-24
+20260218T030008|5|CTD|PA0: 2.619634e-01
+20260218T030008|5|CTD|PA1: 3.916852e-04
+20260218T030008|5|CTD|PA2: -2.725298e-13
+20260218T030008|5|CTD|PTCA0: -1.073303e+03
+20260218T030008|5|CTD|PTCA1: 6.255007e+01
+20260218T030008|5|CTD|PTCA2: -1.457066e+00
+20260218T030008|5|CTD|PTCB0: 3.173603e+05
+20260218T030008|5|CTD|PTCB1: 3.820602e+01
+20260218T030008|5|CTD|PTCB2: -5.387882e-01
+20260218T030008|5|CTD|PTHA0: 2.865961e+02
+20260218T030008|5|CTD|PTHA1: -6.123337e-05
+20260218T030008|5|CTD|PTHA2: -8.480737e-13
+20260218T030008|5|CTD|POFFSET: 0.000000e+00
+20260218T030008|5|CTD|show passed
+20260218T030008|5|CTD|verify config passed
+20260218T030009|5|CTD|pressure: 353.61 dbar
+20260218T030011|5|CTD|pressure: 353.86 dbar, temperature: 4.9707 degC
+20260218T030034|5|CTD|pressure: 358.63 dbar, temperature: 4.9501 degC, salinity: 34.9031 PSU
+20260218T030034|4|CTD|change in pressure greater than deadband, 5.02 > 2.00 dbar
+20260218T030034|5|CTD|sample passed
+20260218T030034|5|CTD|test passed
+20260218T030037|5|BuoyEngine|adjusting from 264 to 3693
+20260218T031944|5|BuoyEngine|destination 3695 reached after 19:06
+20260218T034953|5|AIR|starting inflation from 7.47 dbar
+20260218T035203|5|AIR|inflated to 12.07 dbar after 19 pulses (Time ON:95, OFF:19)
+20260218T035308|5|COMMS|found sky
+20260218T035309|5|GPS|test start
+20260218T035326|5|GPS Test|RF Board Max Current: 38.1 mA
+20260218T035326|5|GPS Test|Battery Min Voltage: 14.9 V
+20260218T035326|5|GPS|test passed
+20260218T035326|5|COMMS|modem test start
+20260218T035344|5|COMMS|Modem: Iridium
+20260218T035344|5|COMMS|Model: 9523N
+20260218T035344|5|COMMS|S/N: 300125062398780
+20260218T035344|5|COMMS|SIM ICCID: 8988169234005406525
+20260218T035346|5|COMMS|Call Processor Version: DB23001
+20260218T035346|5|COMMS|Modem DSP Version: 1.7 svn: 2358
+20260218T035346|5|COMMS|Audio DSP Version: 1.7 svn: 2459
+20260218T035346|5|COMMS|DBB Version: 0x0001 (ASIC)
+20260218T035346|5|COMMS|Main RFA Version: 0x0007 (SRFA2)
+20260218T035346|5|COMMS|Aux RFA Version: 0x07ff (Not present)
+20260218T035346|5|COMMS|NVM Version: KVS
+20260218T035346|5|COMMS|BOOT Version: BOOT0fa3/9523NRevE/02/RAW15
+20260218T035347|5|COMMS|get modem info passed
+20260218T035347|5|COMMS|Testing Primary Number: 00881600005135 (RUDICS)
+20260218T035410|5|COMMS|attempt 1/5 to upload \temp\test.20260218T035347.txt
+20260218T035428|5|COMMS|CSQ=5
+20260218T035500|5|COMMS|uploaded test.20260218T035347.txt
+20260218T035500|5|COMMS|uploaded 67 bytes in 13 secs
+20260218T035504|5|COMMS|connect passed
+20260218T035504|5|COMMS|login passed
+20260218T035504|5|COMMS|file uploaded
+20260218T035505|5|COMMS|send test file passed
+20260218T035528|5|COMMS|attempt 1/5 to download test.20260218T035347.txt
+20260218T035546|5|COMMS|CSQ=5
+20260218T035642|5|COMMS|downloaded test.20260218T035347.txt
+20260218T035642|5|COMMS|downloaded 67 bytes in 3 secs
+20260218T035646|5|COMMS|connect passed
+20260218T035646|5|COMMS|login passed
+20260218T035646|5|COMMS|file downloaded
+20260218T035647|5|COMMS|recv test file passed
+20260218T035647|5|COMMS|file compare size passed
+20260218T035647|5|COMMS|file compare contents passed
+20260218T035647|5|COMMS|primary test passed
+20260218T035647|5|COMMS|Testing Secondary Number: 00881600005135 (RUDICS)
+20260218T035710|5|COMMS|attempt 1/5 to upload \temp\test.20260218T035647.txt
+20260218T035729|5|COMMS|CSQ=5
+20260218T035756|5|COMMS|uploaded test.20260218T035647.txt
+20260218T035756|5|COMMS|uploaded 67 bytes in 10 secs
+20260218T035800|5|COMMS|connect passed
+20260218T035800|5|COMMS|login passed
+20260218T035800|5|COMMS|file uploaded
+20260218T035801|5|COMMS|send test file passed
+20260218T035824|5|COMMS|attempt 1/5 to download test.20260218T035647.txt
+20260218T035841|5|COMMS|CSQ=5
+20260218T035936|5|COMMS|downloaded test.20260218T035647.txt
+20260218T035936|5|COMMS|downloaded 67 bytes in 2 secs
+20260218T040000|4|COMMS|unable to disconnect safely
+20260218T040000|5|COMMS|connect passed
+20260218T040000|5|COMMS|login passed
+20260218T040000|5|COMMS|file downloaded
+20260218T040001|5|COMMS|recv test file passed
+20260218T040001|5|COMMS|file compare size passed
+20260218T040001|5|COMMS|file compare contents passed
+20260218T040001|5|COMMS|secondary test passed
+20260218T040001|5|COMMS|primary and secondary test passed
+20260218T040001|5|COMMS|modem test passed
+20260218T045933|5|PRELUDE|reached end of PreludeTime after 120 mins
+20260218T045933|5|PRELUDE|                                                Self Test : <<PASS>>
+20260218T050004|5|RMC|Set Clock: 02/18/2026 05:00:04
+20260218T050004|5|GPS|GPS TimeToFix: 27 secs
+20260218T050004|5|GPS|GPS Skew: -6 secs
+20260218T050004|5|GPS|GPS Fix: 02/18/2026 05:00:04,54.47400,-51.86754,9
+20260218T050005|5|GPS|time and location set

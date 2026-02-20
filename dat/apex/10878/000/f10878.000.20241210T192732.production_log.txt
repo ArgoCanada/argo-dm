@@ -1,0 +1,217 @@
+20241210T191416|5|sys_self_test|started
+20241210T191416|5|sys_self_test|Float ID: 043-0124
+20241210T191416|5|sys_self_test|Firmware Version: 09/06/24 17:59:11 2.18.1 STD IRID Final
+20241210T191422|5|vital|Battery Voltage: 15.42 V
+20241210T191423|5|vital|Float Current: 28.9081 mA
+20241210T191423|5|vital|Coulomb Count: 57.6354 mAh
+20241210T191424|5|vital|Bladder Pressure: 7.9 dbar
+20241210T191426|5|vital|Internal Vacuum: 8.0 dbar
+20241210T191429|5|vital|Buoyancy Position: 263 counts
+20241210T191429|5|mission_cfg|ActivateRecoveryMode off
+20241210T191429|5|mission_cfg|AscentRate 0.08
+20241210T191429|5|mission_cfg|AscentStartTimes -1 -1 -1 -1
+20241210T191429|5|mission_cfg|AscentTimeout 521
+20241210T191429|5|mission_cfg|AscentTimerInterval 120
+20241210T191429|5|mission_cfg|BuoyancyNudge 100
+20241210T191429|5|mission_cfg|DeepDescentCount 262
+20241210T191429|5|mission_cfg|DeepDescentPressure 2000.00
+20241210T191429|5|mission_cfg|DeepDescentTimeout 334
+20241210T191429|5|mission_cfg|DeepDescentTimerInterval 300
+20241210T191429|5|mission_cfg|DeepProfileFirst on
+20241210T191429|5|mission_cfg|DownTime 13953
+20241210T191429|5|mission_cfg|EmergencyTimerInterval 3600
+20241210T191429|5|mission_cfg|HyperRetractCount 0
+20241210T191429|5|mission_cfg|HyperRetractPressure 850.00
+20241210T191429|5|mission_cfg|IceMonths 0000
+20241210T191429|5|mission_cfg|IdleTimerInterval 3600
+20241210T191429|5|mission_cfg|InitialBuoyancyNudge 300
+20241210T191429|5|mission_cfg|LeakDetect on
+20241210T191429|5|mission_cfg|LogVerbosity 5
+20241210T191429|5|mission_cfg|MActivationCount 262
+20241210T191429|5|mission_cfg|MActivationPressure 25.00
+20241210T191429|5|mission_cfg|MinBuoyancyCount 147
+20241210T191429|5|mission_cfg|MinVacuum 9.00
+20241210T191429|5|mission_cfg|ParkBuoyancyNudge 16
+20241210T191429|5|mission_cfg|ParkDeadBand 25.00
+20241210T191429|5|mission_cfg|ParkDescentCount 1081
+20241210T191429|5|mission_cfg|ParkDescentTimeout 334
+20241210T191429|5|mission_cfg|ParkDescentTimerInterval 900
+20241210T191429|5|mission_cfg|ParkPressure 1000.00
+20241210T191429|5|mission_cfg|ParkTimerInterval 3600
+20241210T191429|5|mission_cfg|PnPCycleLen 1
+20241210T191429|5|mission_cfg|PreludeSelfTest on
+20241210T191429|5|mission_cfg|PreludeTime 120
+20241210T191429|5|mission_cfg|SurfacePressure 4.00
+20241210T191429|5|mission_cfg|TelemetryDays 0 0
+20241210T191429|5|mission_cfg|TelemetryInterval 900
+20241210T191429|5|mission_cfg|TelemetryTimeout 120
+20241210T191429|5|mission_cfg|UpTime 641
+20241210T191429|5|mission_cfg|VitalsMask 0007
+20241210T191429|5|mission_cfg|Checksum 3475
+20241210T191429|5|sample_cfg|<PARK>
+20241210T191429|5|sample_cfg|SAMPLE PT 2500 4 0 DBAR 1
+20241210T191429|5|sample_cfg|<ASCENT>
+20241210T191429|5|sample_cfg|PROFILE CTD 2000 4 2 1 HZ #Regime:1
+20241210T191429|5|system_cfg|float_id 043-0124
+20241210T191429|5|system_cfg|air_bladder_max 12
+20241210T191429|5|system_cfg|buoyancy_pump_min 147
+20241210T191429|5|system_cfg|buoyancy_pump_max 3693
+20241210T191429|5|system_cfg|iridium f10878 apex_10878 00881600005238 rudics 00881600005238 rudics
+20241210T191429|5|sensors_cfg|sensor seabird_ctd_41cp COM2 B9600
+20241210T191429|5|sensors_cfg|modem iridium9523
+20241210T191429|5|sensors_cfg|gps gps15xh
+20241210T191430|5|sys_self_test|report_settings|passed
+20241210T191431|5|LOG|Number of files in UPLOAD directory: 0
+20241210T191432|5|AIR|test start
+20241210T191432|5|AIR|deflating
+20241210T191438|5|AIR|deflated to 7.91 dbar
+20241210T191438|5|AIR|vacuum pressure: 8.01 dbar
+20241210T191439|5|AIR|bladder pressure: 7.91 dbar
+20241210T191440|5|AIR|battery voltage: 15.42 V
+20241210T191657|5|AIR|inflated to 12.07 dbar after 20 pulses (Time ON:100, OFF:20)
+20241210T191658|5|AIR|inflate test passed
+20241210T191658|5|AIR|pulses: 20
+20241210T191658|5|AIR|energy: 0.312 mAh
+20241210T191658|5|AIR|current avg: 100.718 mA
+20241210T191658|5|AIR|current max: 116.455 mA
+20241210T191658|5|AIR|battery current avg: 119.533 mA
+20241210T191658|5|AIR|battery current max: 146.337 mA
+20241210T191658|5|AIR|battery voltage avg: 15.17 V
+20241210T191658|5|AIR|battery voltage min: 15.13 V
+20241210T191659|5|AIR|vacuum pressure: 7.01 dbar
+20241210T191700|5|AIR|bladder pressure: 12.06 dbar
+20241210T191701|5|AIR|battery voltage: 15.32 V
+20241210T191701|5|AIR|delaying 1 minute for stability before monitoring
+20241210T191801|5|AIR|monitoring bladder pressure for leak every 1 min for 5 mins
+20241210T191802|5|AIR|initial bladder pressure: 12.00 dbar
+20241210T191803|5|AIR|bladder pressure: 12.00 dbar
+20241210T191904|5|AIR|bladder pressure: 11.98 dbar
+20241210T192005|5|AIR|bladder pressure: 11.97 dbar
+20241210T192106|5|AIR|bladder pressure: 11.96 dbar
+20241210T192206|5|AIR|bladder pressure: 11.94 dbar
+20241210T192206|5|AIR|monitor test passed
+20241210T192206|5|AIR|deflating
+20241210T192212|5|AIR|deflated to 8.58 dbar
+20241210T192212|5|AIR|test passed
+20241210T192214|5|BuoyEngine|test start
+20241210T192218|5|BuoyEngine|adjusting from 263 to 617
+20241210T192411|5|BuoyEngine|destination 616 reached after 01:51
+20241210T192414|5|BuoyEngine|energy: 6.250 mAh
+20241210T192414|5|BuoyEngine|current avg: 165.625 mA
+20241210T192414|5|BuoyEngine|current avg: 187.382 mA
+20241210T192414|5|BuoyEngine|battery current avg: 198.829 mA
+20241210T192414|5|BuoyEngine|battery current max: 214.467 mA
+20241210T192414|5|BuoyEngine|battery voltage avg: 14.98 V
+20241210T192414|5|BuoyEngine|battery voltage min: 14.93 V
+20241210T192418|5|BuoyEngine|adjusting from 616 to 262
+20241210T192612|5|BuoyEngine|destination 261 reached after 01:53
+20241210T192615|5|BuoyEngine|energy: 6.562 mAh
+20241210T192615|5|BuoyEngine|current avg: 166.178 mA
+20241210T192615|5|BuoyEngine|current avg: 176.011 mA
+20241210T192615|5|BuoyEngine|battery current avg: 199.041 mA
+20241210T192615|5|BuoyEngine|battery current max: 214.545 mA
+20241210T192615|5|BuoyEngine|battery voltage avg: 14.91 V
+20241210T192615|5|BuoyEngine|battery voltage min: 14.87 V
+20241210T192618|5|BuoyEngine|test passed
+20241210T192619|5|GPS|test start
+20241210T192635|5|GPS Test|RF Board Max Current: 37.4 mA
+20241210T192635|5|GPS Test|Battery Min Voltage: 15.1 V
+20241210T192635|5|GPS|test passed
+20241210T192636|5|vital|Battery Voltage @ 15.17 V (above 11 V) : PASS
+20241210T192637|5|vital|Internal Vacuum @ 7.93 dbar (below 9.00 dbar) : PASS
+20241210T192638|5|vital|Leak Detection Voltage @ 2.34 V (above 2 V) : PASS
+20241210T192639|5|vital|Relative Humidity @ 5.29 percent (below 75 percent) : PASS
+20241210T192639|5|vital|test|passed
+20241210T192640|5|CTD|test start
+20241210T192641|5|CTD|set_param|>>tswait=20
+20241210T192641|5|CTD|set_param|>>outputpts=1
+20241210T192642|5|CTD|set_param|>>includetransitionbin=0
+20241210T192642|5|CTD|set_param|>>includenbin=1
+20241210T192642|5|CTD|set_param|>>autobinavg=0
+20241210T192642|5|CTD|set_param|>>top_bin_interval=2
+20241210T192642|5|CTD|set_param|>>top_bin_size=2
+20241210T192643|5|CTD|set_param|>>top_bin_max=10
+20241210T192643|5|CTD|set_param|>>middle_bin_interval=2
+20241210T192643|5|CTD|set_param|>>middle_bin_size=2
+20241210T192643|5|CTD|set_param|>>middle_bin_max=20
+20241210T192644|5|CTD|set_param|>>bottom_bin_interval=2
+20241210T192644|5|CTD|set_param|>>bottom_bin_size=2
+20241210T192644|5|CTD|set_param|>>pcutoff=2.00
+20241210T192646|5|CTD|configure passed
+20241210T192657|5|CTD|Model: SBE 41CP
+20241210T192657|5|CTD|Version: 7.2.5
+20241210T192657|5|CTD|Serial Number: 20576
+20241210T192657|5|CTD|Variant: CP UW
+20241210T192657|5|CTD|tswait: 20
+20241210T192657|5|CTD|pcutoff: 2.0
+20241210T192657|5|CTD|automatic bin averaging: no
+20241210T192657|5|CTD|nsamples: 23
+20241210T192657|5|CTD|nbins: 0
+20241210T192657|5|CTD|top bin interval: 2
+20241210T192657|5|CTD|top bin size: 2
+20241210T192657|5|CTD|top bin max: 10
+20241210T192657|5|CTD|middle bin interval: 2
+20241210T192657|5|CTD|middle bin size: 2
+20241210T192657|5|CTD|middle bin max: 20
+20241210T192657|5|CTD|bottom bin interval: 2
+20241210T192657|5|CTD|bottom bin size: 2
+20241210T192657|5|CTD|include transition bin: no
+20241210T192657|5|CTD|include samples per bin: yes
+20241210T192657|5|CTD|real-time output: PTS
+20241210T192657|5|CTD|temperature:  18-Aug-24
+20241210T192657|5|CTD|TA0: -8.973171e-04
+20241210T192657|5|CTD|TA1: 3.011882e-04
+20241210T192657|5|CTD|TA2: -4.167858e-06
+20241210T192657|5|CTD|TA3: 1.572400e-07
+20241210T192657|5|CTD|conductivity:  18-Aug-24
+20241210T192657|5|CTD|G: -1.003707e+00
+20241210T192657|5|CTD|H: 1.443973e-01
+20241210T192657|5|CTD|I: -1.465081e-04
+20241210T192657|5|CTD|J: 3.103273e-05
+20241210T192657|5|CTD|CPCOR: -9.570000e-08
+20241210T192657|5|CTD|CTCOR: 3.250000e-06
+20241210T192657|5|CTD|WBOTC: -1.610807e-06
+20241210T192657|5|CTD|pressure S/N = 12533108, range = 2900 psia:  16-Aug-24
+20241210T192657|5|CTD|PA0: 2.619634e-01
+20241210T192657|5|CTD|PA1: 3.916852e-04
+20241210T192657|5|CTD|PA2: -2.725298e-13
+20241210T192657|5|CTD|PTCA0: -1.073303e+03
+20241210T192657|5|CTD|PTCA1: 6.255007e+01
+20241210T192657|5|CTD|PTCA2: -1.457066e+00
+20241210T192657|5|CTD|PTCB0: 3.173603e+05
+20241210T192657|5|CTD|PTCB1: 3.820602e+01
+20241210T192657|5|CTD|PTCB2: -5.387882e-01
+20241210T192657|5|CTD|PTHA0: 2.865961e+02
+20241210T192657|5|CTD|PTHA1: -6.123337e-05
+20241210T192657|5|CTD|PTHA2: -8.480737e-13
+20241210T192657|5|CTD|POFFSET: 0.000000e+00
+20241210T192657|5|CTD|show passed
+20241210T192657|5|CTD|verify config passed
+20241210T192658|5|CTD|pressure: -0.14 dbar
+20241210T192701|5|CTD|pressure: -0.14 dbar, temperature: 6.2209 degC
+20241210T192701|4|CTD|PTS sample not taken, pressure at surface. -0.14 < 4.00
+20241210T192701|5|CTD|sample passed
+20241210T192701|5|CTD|test passed
+20241210T192701|5|COMMS|modem test start
+20241210T192720|5|COMMS|Modem: Iridium
+20241210T192720|5|COMMS|Model: 9523N
+20241210T192720|5|COMMS|S/N: 300125062398780
+20241210T192721|5|COMMS|SIM ICCID: 8988169234005406525
+20241210T192722|5|COMMS|Call Processor Version: DB23001
+20241210T192722|5|COMMS|Modem DSP Version: 1.7 svn: 2358
+20241210T192722|5|COMMS|Audio DSP Version: 1.7 svn: 2459
+20241210T192722|5|COMMS|DBB Version: 0x0001 (ASIC)
+20241210T192722|5|COMMS|Main RFA Version: 0x0007 (SRFA2)
+20241210T192722|5|COMMS|Aux RFA Version: 0x07ff (Not present)
+20241210T192722|5|COMMS|NVM Version: KVS
+20241210T192722|5|COMMS|BOOT Version: BOOT0fa3/9523NRevE/02/RAW15
+20241210T192723|5|COMMS|get modem info passed
+20241210T192723|4|COMMS|primary and secondary test skipped
+20241210T192723|5|COMMS|modem test passed
+20241210T192724|5|vital|Battery Voltage: 15.18 V
+20241210T192725|5|vital|Float Current: 141.1809 mA
+20241210T192725|5|vital|Coulomb Count: 79.1979 mAh
+20241210T192726|5|vital|Bladder Pressure: 7.8 dbar
+20241210T192728|5|vital|Internal Vacuum: 7.9 dbar
+20241210T192732|5|vital|Buoyancy Position: 261 counts
+20241210T192732|5|sys_self_test|PASSED

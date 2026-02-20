@@ -1,0 +1,126 @@
+20000101T000001|0|Firmware|09/06/24 17:59:11 2.18.1 STD IRID Final
+20000101T000001|5|system_start_task|initial powerup detected
+20000101T000001|5|system_start_task|Final Start Type: START_INIT
+20000101T000001|5|sensors_cfg|installed seabird_ctd_41cp sensor
+20000101T000001|5|sensors_cfg|installed iridium9523 device
+20000101T000001|5|sensors_cfg|installed gps15xh device
+20000101T000001|5|mission_cfg|BuoyancyNudge 50 to 100
+20000101T000001|5|mission_cfg|DeepProfileFirst off to on
+20000101T000001|5|mission_cfg|MinBuoyancyCount 262 to 147
+20000101T000002|5|sample_cfg|<PARK>
+20000101T000002|5|sample_cfg|SAMPLE PT 2500 4 0 DBAR 1
+20000101T000002|5|sample_cfg|<ASCENT>
+20000101T000002|5|sample_cfg|PROFILE CTD 2000 4 2 1 HZ #Regime:1
+20000101T000002|5|IDLE|will start in 60 seconds
+20000101T000003|5|T_CMD|sys_verbosity 5
+20000101T000003|0|console_verbosity|0 --> 5
+20000101T000003|5|T_CMD|m_state
+20000101T000005|5|T_CMD|sys_clk_set 2024 12 05 15 59 21
+20241205T155921|5|T_CMD|sys_init_restart
+20241205T155921|5|sys_init_restart|Current coulomb amphr:    0.000000
+20241205T155922|5|system_start_task|Final Start Type: START_INIT
+20241205T155922|5|sensors_cfg|installed seabird_ctd_41cp sensor
+20241205T155922|5|sensors_cfg|installed iridium9523 device
+20241205T155922|5|sensors_cfg|installed gps15xh device
+20241205T155923|5|mission_cfg|BuoyancyNudge 50 to 100
+20241205T155923|5|mission_cfg|DeepProfileFirst off to on
+20241205T155923|5|mission_cfg|MinBuoyancyCount 262 to 147
+20241205T155923|5|sample_cfg|<PARK>
+20241205T155923|5|sample_cfg|SAMPLE PT 2500 4 0 DBAR 1
+20241205T155923|5|sample_cfg|<ASCENT>
+20241205T155923|5|sample_cfg|PROFILE CTD 2000 4 2 1 HZ #Regime:1
+20241205T155924|5|IDLE|will start in 60 seconds
+20241205T155925|5|T_CMD|sys_verbosity 5
+20241205T155925|0|console_verbosity|0 --> 5
+20241205T155925|5|T_CMD|m_console
+20241205T155925|5|mission_state|IDLE -> CONSOLE
+20241205T155928|5|T_CMD|m_state
+20241205T155929|5|T_CMD|sys_reboot
+20241205T155931|5|system_start_task|Final Start Type: START_INIT
+20241205T155931|5|sensors_cfg|installed seabird_ctd_41cp sensor
+20241205T155931|5|sensors_cfg|installed iridium9523 device
+20241205T155931|5|sensors_cfg|installed gps15xh device
+20241205T155931|5|mission_cfg|no changes
+20241205T155931|5|sample_cfg|<PARK>
+20241205T155931|5|sample_cfg|SAMPLE PT 2500 4 0 DBAR 1
+20241205T155931|5|sample_cfg|<ASCENT>
+20241205T155931|5|sample_cfg|PROFILE CTD 2000 4 2 1 HZ #Regime:1
+20241205T155932|5|IDLE|will start in 60 seconds
+20241205T155934|5|T_CMD|m_production
+20241205T155934|5|mission_state|IDLE -> PRODUCTION
+20241205T155937|5|T_CMD|fs_cat system.cfg
+20241205T155937|5|T_CMD|pot_read
+20241205T155939|5|T_CMD|vt_battery
+20241205T155940|5|T_CMD|coul_amphr
+20241205T160718|5|T_CMD|sys_verbosity 5
+20241205T160718|5|T_CMD|m_state
+20241205T160718|5|T_CMD|sys_reboot
+20241205T160720|5|system_start_task|Final Start Type: START_INIT
+20241205T160720|5|sensors_cfg|installed seabird_ctd_41cp sensor
+20241205T160720|5|sensors_cfg|installed iridium9523 device
+20241205T160720|5|sensors_cfg|installed gps15xh device
+20241205T160720|5|mission_cfg|no changes
+20241205T160721|5|sample_cfg|<PARK>
+20241205T160721|5|sample_cfg|SAMPLE PT 2500 4 0 DBAR 1
+20241205T160721|5|sample_cfg|<ASCENT>
+20241205T160721|5|sample_cfg|PROFILE CTD 2000 4 2 1 HZ #Regime:1
+20241205T160721|5|IDLE|will start in 60 seconds
+20241205T160722|5|T_CMD|m_console
+20241205T160723|5|mission_state|IDLE -> CONSOLE
+20241205T160726|5|T_CMD|fs_cat system.cfg
+20241205T160727|5|T_CMD|coul_amphr
+20241205T160727|5|T_CMD|vt_bladder
+20241205T160728|5|T_CMD|vt_vacuum
+20241205T160730|5|T_CMD|vt_vacuum stream
+20241205T160949|5|T_CMD|vt_bladder
+20241205T160950|5|T_CMD|vt_vacuum
+20241205T160951|5|T_CMD|coul_amphr
+20241205T160952|5|T_CMD|m_bye
+20241205T160952|5|CONSOLE|delaying 30 seconds for SAIL to be disconnected before system reset
+20241205T161023|5|system_start_task|Final Start Type: START_INIT
+20241205T161023|5|sensors_cfg|installed seabird_ctd_41cp sensor
+20241205T161023|5|sensors_cfg|installed iridium9523 device
+20241205T161023|5|sensors_cfg|installed gps15xh device
+20241205T161023|5|mission_cfg|no changes
+20241205T161023|5|sample_cfg|<PARK>
+20241205T161023|5|sample_cfg|SAMPLE PT 2500 4 0 DBAR 1
+20241205T161023|5|sample_cfg|<ASCENT>
+20241205T161023|5|sample_cfg|PROFILE CTD 2000 4 2 1 HZ #Regime:1
+20241205T161024|5|IDLE|will start in 60 seconds
+20241205T161124|5|IDLE|starting
+20241205T161126|4|humidity|check|event 1 detected ABOVE 20.0 @ 24.7 rH
+20241205T171132|4|humidity|check|reset BELOW 20.0 @ 17.4 rH
+20241210T190633|5|IDLE|will resume in 60 seconds
+20241210T190733|5|IDLE|resuming
+20241210T191327|5|T_CMD|sys_verbosity 5
+20241210T191327|0|console_verbosity|0 --> 5
+20241210T191328|5|T_CMD|m_production
+20241210T191328|5|mission_state|IDLE -> PRODUCTION
+20241210T191349|5|T_CMD|sys_verbosity 5
+20241210T191349|5|T_CMD|m_state
+20241210T191349|5|T_CMD|sys_reboot
+20241210T191351|5|system_start_task|Final Start Type: START_INIT
+20241210T191351|5|sensors_cfg|installed seabird_ctd_41cp sensor
+20241210T191351|5|sensors_cfg|installed iridium9523 device
+20241210T191351|5|sensors_cfg|installed gps15xh device
+20241210T191352|5|mission_cfg|no changes
+20241210T191352|5|sample_cfg|<PARK>
+20241210T191352|5|sample_cfg|SAMPLE PT 2500 4 0 DBAR 1
+20241210T191352|5|sample_cfg|<ASCENT>
+20241210T191352|5|sample_cfg|PROFILE CTD 2000 4 2 1 HZ #Regime:1
+20241210T191352|5|IDLE|will start in 60 seconds
+20241210T191354|5|T_CMD|m_production
+20241210T191354|5|mission_state|IDLE -> PRODUCTION
+20241210T191357|5|T_CMD|pot_read
+20241210T191409|5|T_CMD|vt_battery
+20241210T191410|5|T_CMD|coul_current
+20241210T191410|5|T_CMD|coul_amphr
+20241210T191410|5|T_CMD|vt_vacuum
+20241210T191412|5|T_CMD|vt_bladder
+20241210T191413|5|T_CMD|pot_read
+20241210T191414|5|T_CMD|fs_ls
+20241210T191414|5|T_CMD|fs_cat system.cfg
+20241210T191415|5|T_CMD|fs_cat sensors.cfg
+20241210T191415|5|T_CMD|fs_cat mission.cfg
+20241210T191416|5|T_CMD|fs_cat sample.cfg
+20241210T191416|5|T_CMD|pt_start -no_sky
