@@ -1,0 +1,183 @@
+20260226T123935|0|Firmware|09/06/24 17:59:11 2.18.1 STD IRID Final
+20260226T123935|0|Username|f10878
+20260226T123935|0|Float ID|043-0124
+20260226T123935|5|LOG|archived: f10878.012.20260226T123934.science_log.bin.gz
+20260226T123936|5|LOG|archived: f10878.012.20260226T123934.vitals_log.bin.gz
+20260226T123936|5|LOG|archived: f10878.012.20260226T123936.system_log.txt.gz
+20260226T123957|5|RMC|Set Clock: 02/26/2026 12:39:57
+20260226T123957|5|GPS|GPS TimeToFix: 11 secs
+20260226T123957|5|GPS|GPS Skew: 1 secs
+20260226T123957|5|GPS|GPS Fix: 02/26/2026 12:39:57,53.58750,-51.38100,9
+20260226T123958|5|GPS|time and location set
+20260226T124029|5|COMMS|CSQ=4
+20260226T124153|5|COMMS|downloaded mission.cfg
+20260226T124153|5|COMMS|downloaded 245 bytes in 5 secs
+20260226T124153|5|mission_cfg|DeepDescentCount 278 to 262
+20260226T124153|5|mission_cfg|ParkDescentCount 1094 to 1081
+20260226T124158|5|get_upload_file_entries|There are 3 file(s) to be uploaded
+20260226T124312|5|COMMS|uploaded: f10878.012.20260226T123934.science_log.bin.gz, 12634 bytes in 70 secs
+20260226T124342|5|COMMS|uploaded: f10878.012.20260226T123936.system_log.txt.gz, 3007 bytes in 26 secs
+20260226T124359|5|COMMS|uploaded: f10878.012.20260226T123934.vitals_log.bin.gz, 400 bytes in 11 secs
+20260226T124403|4|COMMS|logout unsuccessful, connection lost
+20260226T124429|5|RMC|Set Clock: 02/26/2026 12:44:29
+20260226T124429|5|GPS|GPS TimeToFix: 15 secs
+20260226T124429|5|GPS|GPS Skew: 1 secs
+20260226T124429|5|GPS|GPS Fix: 02/26/2026 12:44:29,53.58687,-51.38195,10
+20260226T124430|5|GPS|time and location set
+20260226T124431|5|SURFACE|awake|count: 1, time: 840, energy: 31.875000
+20260226T124431|5|SURFACE|sleep|count: 0, time: 0, energy: 0.000000
+20260226T124431|5|mission_state|SURFACE -> PARKDESCENT
+20260226T124433|5|PARKDESCENT|Starting Mission No.: 13
+20260226T124433|5|mission_cfg|ActivateRecoveryMode off
+20260226T124433|5|mission_cfg|AscentRate 0.08
+20260226T124433|5|mission_cfg|AscentStartTimes -1 -1 -1 -1
+20260226T124433|5|mission_cfg|AscentTimeout 521
+20260226T124433|5|mission_cfg|AscentTimerInterval 120
+20260226T124433|5|mission_cfg|BuoyancyNudge 100
+20260226T124433|5|mission_cfg|DeepDescentCount 262
+20260226T124433|5|mission_cfg|DeepDescentPressure 2000.00
+20260226T124433|5|mission_cfg|DeepDescentTimeout 334
+20260226T124433|5|mission_cfg|DeepDescentTimerInterval 300
+20260226T124433|5|mission_cfg|DeepProfileFirst on
+20260226T124433|5|mission_cfg|DownTime 799
+20260226T124433|5|mission_cfg|EmergencyTimerInterval 3600
+20260226T124433|5|mission_cfg|HyperRetractCount 0
+20260226T124433|5|mission_cfg|HyperRetractPressure 850.00
+20260226T124433|5|mission_cfg|IceMonths 0000
+20260226T124433|5|mission_cfg|IdleTimerInterval 3600
+20260226T124433|5|mission_cfg|InitialBuoyancyNudge 300
+20260226T124433|5|mission_cfg|LeakDetect on
+20260226T124433|5|mission_cfg|LogVerbosity 5
+20260226T124433|5|mission_cfg|MActivationCount 262
+20260226T124433|5|mission_cfg|MActivationPressure 25.00
+20260226T124433|5|mission_cfg|MinBuoyancyCount 147
+20260226T124433|5|mission_cfg|MinVacuum 9.00
+20260226T124433|5|mission_cfg|ParkBuoyancyNudge 16
+20260226T124433|5|mission_cfg|ParkDeadBand 25.00
+20260226T124433|5|mission_cfg|ParkDescentCount 1081
+20260226T124433|5|mission_cfg|ParkDescentTimeout 334
+20260226T124433|5|mission_cfg|ParkDescentTimerInterval 900
+20260226T124433|5|mission_cfg|ParkPressure 1000.00
+20260226T124433|5|mission_cfg|ParkTimerInterval 3600
+20260226T124433|5|mission_cfg|PnPCycleLen 1
+20260226T124433|5|mission_cfg|PreludeSelfTest on
+20260226T124433|5|mission_cfg|PreludeTime 120
+20260226T124433|5|mission_cfg|SurfacePressure 2.00
+20260226T124433|5|mission_cfg|TelemetryDays 0 0
+20260226T124433|5|mission_cfg|TelemetryInterval 900
+20260226T124433|5|mission_cfg|TelemetryTimeout 120
+20260226T124433|5|mission_cfg|UpTime 641
+20260226T124433|5|mission_cfg|VitalsMask 0007
+20260226T124433|5|mission_cfg|Checksum 8A02
+20260226T124433|5|sample_cfg|<PARK>
+20260226T124433|5|sample_cfg|SAMPLE PT 2500 4 0 DBAR 1
+20260226T124433|5|sample_cfg|<ASCENT>
+20260226T124433|5|sample_cfg|SAMPLE PTS 50 2 1 DBAR 1
+20260226T124433|5|sample_cfg|PROFILE CTD 2000 2 2 1 HZ #Regime:1
+20260226T124436|5|PARKDESCENT|surface pressure offset updated from -0.33 to -0.12 dbar
+20260226T124442|5|AIR|deflated to 8.11 dbar
+20260226T124442|5|PARKDESCENT|adjusting buoyancy to ParkDescentCount 1081
+20260226T124443|5|BuoyEngine|adjusting from 2765 to 1081
+20260226T125413|5|BuoyEngine|destination 1082 reached after 09:28
+20260226T150521|5|PARKDESCENT|ParkPressure reached @ 1002.09 dbar after 141 mins
+20260226T150521|5|PARKDESCENT|awake|count: 12, time: 662, energy: 34.062500
+20260226T150521|5|PARKDESCENT|sleep|count: 11, time: 7788, energy: 0.162250
+20260226T150521|5|mission_state|PARKDESCENT -> PARK
+20260226T160526|4|PARK|deep 1 @ 1221.29 dbar
+20260226T170530|4|PARK|deep 2 @ 1256.36 dbar
+20260226T180534|4|PARK|deep 3 @ 1256.19 dbar
+20260226T180536|5|BuoyEngine|adjusting from 1081 to 1096
+20260226T180543|5|BuoyEngine|destination 1095 reached after 00:06
+20260226T180543|5|mission_cfg|ParkDescentCount 1081 to 1095
+20260226T190538|4|PARK|deep 1 @ 1238.16 dbar
+20260226T200542|4|PARK|deep 2 @ 1234.67 dbar
+20260226T202935|5|PARK|awake|count: 7, time: 70, energy: 2.812500
+20260226T202935|5|PARK|sleep|count: 6, time: 19388, energy: 0.403917
+20260226T202935|5|mission_state|PARK -> DEEPDESCENT
+20260226T202940|5|DEEPDESCENT|adjusting buoyancy to DeepDescentCount 262
+20260226T202941|5|BuoyEngine|adjusting from 1094 to 262
+20260226T203405|5|BuoyEngine|destination 262 reached after 04:22
+20260226T221922|5|DEEPDESCENT|DeepDescentPressure reached @ 2002.49 dbar after 110 mins
+20260226T221922|5|DEEPDESCENT|increasing DeepDescentCount by 16
+20260226T221922|5|mission_cfg|DeepDescentCount 262 to 278
+20260226T221923|5|DEEPDESCENT|awake|count: 23, time: 428, energy: 6.562500
+20260226T221923|5|DEEPDESCENT|sleep|count: 22, time: 6160, energy: 0.128333
+20260226T221923|5|mission_state|DEEPDESCENT -> ASCENT
+20260226T221930|5|BuoyEngine|adjusting from 262 to 562
+20260226T222124|5|BuoyEngine|destination 563 reached after 01:53
+20260226T222228|5|ASCENT|slow ascent rate 1: -0.0161 dbar/sec @ 2009.79 dbar
+20260226T222230|5|BuoyEngine|adjusting from 562 to 662
+20260226T222310|5|BuoyEngine|destination 663 reached after 00:38
+20260226T222414|5|ASCENT|slow ascent rate 2: -0.0761 dbar/sec @ 2003.09 dbar
+20260226T222416|5|BuoyEngine|adjusting from 663 to 764
+20260226T222456|5|BuoyEngine|destination 764 reached after 00:38
+20260226T222500|5|CTD|start_profile|CP Started
+20260226T222533|5|CTD|start_profile|current: 18.653565 mA @ 14.599 V
+20260226T230720|5|ASCENT|slow ascent rate 3: -0.0743 dbar/sec @ 1766.37 dbar
+20260226T230722|5|BuoyEngine|adjusting from 764 to 858
+20260226T230758|5|BuoyEngine|destination 857 reached after 00:34
+20260226T232720|5|ASCENT|slow ascent rate 3: -0.0695 dbar/sec @ 1664.84 dbar
+20260226T232722|5|BuoyEngine|adjusting from 858 to 951
+20260226T232759|5|BuoyEngine|destination 952 reached after 00:35
+20260226T234924|5|ASCENT|slow ascent rate 3: -0.0718 dbar/sec @ 1554.03 dbar
+20260226T234926|5|BuoyEngine|adjusting from 951 to 1047
+20260226T235002|5|BuoyEngine|destination 1047 reached after 00:34
+20260227T001341|5|ASCENT|slow ascent rate 3: -0.0731 dbar/sec @ 1429.59 dbar
+20260227T001343|5|BuoyEngine|adjusting from 1047 to 1147
+20260227T001420|5|BuoyEngine|destination 1146 reached after 00:34
+20260227T004001|5|ASCENT|slow ascent rate 3: -0.0735 dbar/sec @ 1291.02 dbar
+20260227T004003|5|BuoyEngine|adjusting from 1146 to 1246
+20260227T004040|5|BuoyEngine|destination 1245 reached after 00:35
+20260227T005607|5|ASCENT|slow ascent rate 3: -0.0724 dbar/sec @ 1208.49 dbar
+20260227T005609|5|BuoyEngine|adjusting from 1246 to 1346
+20260227T005647|5|BuoyEngine|destination 1348 reached after 00:36
+20260227T012025|5|ASCENT|slow ascent rate 3: -0.0749 dbar/sec @ 1080.31 dbar
+20260227T012027|5|BuoyEngine|adjusting from 1348 to 1448
+20260227T012104|5|BuoyEngine|destination 1448 reached after 00:36
+20260227T015458|5|ASCENT|slow ascent rate 3: -0.0715 dbar/sec @ 899.35 dbar
+20260227T015500|5|BuoyEngine|adjusting from 1448 to 1548
+20260227T015535|5|BuoyEngine|destination 1548 reached after 00:34
+20260227T021305|5|ASCENT|slow ascent rate 3: -0.0737 dbar/sec @ 807.95 dbar
+20260227T021307|5|BuoyEngine|adjusting from 1548 to 1647
+20260227T021342|5|BuoyEngine|destination 1648 reached after 00:34
+20260227T023721|5|ASCENT|slow ascent rate 3: -0.0690 dbar/sec @ 680.89 dbar
+20260227T023723|5|BuoyEngine|adjusting from 1648 to 1749
+20260227T023759|5|BuoyEngine|destination 1749 reached after 00:35
+20260227T025326|5|ASCENT|slow ascent rate 3: -0.0719 dbar/sec @ 599.38 dbar
+20260227T025328|5|BuoyEngine|adjusting from 1749 to 1848
+20260227T025402|5|BuoyEngine|destination 1845 reached after 00:33
+20260227T030726|5|ASCENT|slow ascent rate 3: -0.0743 dbar/sec @ 529.45 dbar
+20260227T030728|5|BuoyEngine|adjusting from 1844 to 1944
+20260227T030802|5|BuoyEngine|destination 1941 reached after 00:33
+20260227T034554|5|ASCENT|slow ascent rate 3: -0.0786 dbar/sec @ 327.76 dbar
+20260227T034556|5|BuoyEngine|adjusting from 1941 to 2040
+20260227T034631|5|BuoyEngine|destination 2042 reached after 00:34
+20260227T040352|5|ASCENT|slow ascent rate 3: -0.0682 dbar/sec @ 236.70 dbar
+20260227T040354|5|BuoyEngine|adjusting from 2034 to 2142
+20260227T040429|5|BuoyEngine|destination 2142 reached after 00:34
+20260227T041747|5|ASCENT|slow ascent rate 3: -0.0777 dbar/sec @ 168.38 dbar
+20260227T041749|5|BuoyEngine|adjusting from 2142 to 2243
+20260227T041824|5|BuoyEngine|destination 2244 reached after 00:34
+20260227T043747|5|ASCENT|slow ascent rate 3: -0.0728 dbar/sec @ 64.16 dbar
+20260227T043749|5|BuoyEngine|adjusting from 2243 to 2339
+20260227T043821|5|BuoyEngine|destination 2338 reached after 00:31
+20260227T044907|5|CTD|stop_profile|current: 12.589518 mA @ 14.928 V
+20260227T044918|3|CTD|stop_profile|Stop CP attempt 1 failed, error:-1
+20260227T044924|5|CTD|stop_profile|CP Already Stopped
+20260227T044927|5|ASCENT|SurfacePressure reached @ 1.04 dbar after 390 mins
+20260227T044927|5|ASCENT|awake|count: 237, time: 2633, energy: 127.187500
+20260227T044927|5|ASCENT|sleep|count: 236, time: 20854, energy: 107.828836
+20260227T044927|5|mission_state|ASCENT -> SURFACE
+20260227T044934|5|BuoyEngine|adjusting from 2341 to 2642
+20260227T045116|5|BuoyEngine|destination 2640 reached after 01:40
+20260227T045117|5|AIR|starting inflation from 7.46 dbar
+20260227T045354|5|AIR|inflated to 12.00 dbar after 23 pulses (Time ON:115, OFF:23)
+20260227T045419|5|COMMS|found sky
+20260227T045656|5|CTD|bin_average|samples=23024 bins=1000 maxP=1998.85
+20260227T045753|4|CTD|download_profile|Empty Bin Count: 3
+20260227T045756|5|SURFACE|Completing Mission No.: 13
+20260227T045834|5|RMC|Set Clock: 02/27/2026 04:58:34
+20260227T045834|5|GPS|GPS TimeToFix: 30 secs
+20260227T045834|5|GPS|GPS Skew: 1 secs
+20260227T045834|5|GPS|GPS Fix: 02/27/2026 04:58:34,53.50621,-51.38227,10
+20260227T045835|5|GPS|time and location set
