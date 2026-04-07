@@ -37,12 +37,11 @@ def apex_to_dataframe(fn):
                 data['sample'].append(line_list[0])
     
     return pd.DataFrame(data)
+       
 
-            
-
-datadir = Path('/Users/GordonC/Documents/data/Argo/apex/')
+datadir = Path('../dat/apex/')
 sn = 10878
-cycle = 1
+cycle = 24
 
 fn = list((datadir / f'{sn}' / f'{cycle:03d}').glob('*science*'))[0]
 
@@ -52,5 +51,5 @@ fig, axes = plt.subplots(1, 2, sharey=True)
 for ax, v in zip(axes, ('TEMP', 'PSAL')):
     sns.scatterplot(data=df, x=v, y='PRES', hue='sample', ax=ax)
 
-ax.set_ylim((620, -20))
+ax.set_ylim((2020, -20))
 plt.show()

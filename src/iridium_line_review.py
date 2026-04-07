@@ -32,8 +32,10 @@ argo = argo.loc[argo.IMEI.notna()]
 argo['IMEI'] = argo.IMEI.astype(int)
 argo = argo.set_index('IMEI')
 
-lines['active'] = lines.shape[0]*[' ']
+lines['plan'] = lines.shape[0]*[' ']
+lines['rate'] = lines.shape[0]*[pd.NA]
 
+rates = {'b':21.45, 'f':23.54, 'z':27.47+30*0.86}
 
 for j in lines.index:
     imei = lines.loc[j, 'imei']
@@ -48,10 +50,31 @@ for j in lines.index:
             print('argopy fetch failed')
             latest = -1
 
-        print()
-        if latest == 2026:
-            lines.loc[j, 'active'] = 'y'
+        if lines.loc[j, 'active'] not in ['n', 'y']:
+            print()
+            if latest == 2026:
+                lines.loc[j, 'active'] = 'y'
+            else:
+                lines.loc[j, 'active'] = input('Active? (y/n): ')
+        
+        fltinfo = argo.loc[imei].iloc[0] if len(argo.loc[imei].shape) > 1 else argo.loc[imei]
+
+        if fltinfo['Serial'].split('-')[0] == 'AI2600':
+            lines.loc[j, 'plan'] = 'b'
+        elif fltinfo['Serial'].split('-')[0] == 'AI2632':
+            lines.loc[j, 'plan'] = 'f'
+        elif fltinfo['Serial'].split('-')[0][0] == 'P':
+            lines.loc[j, 'plan'] = 'z'
+        elif fltinfo['Model'] == 'NOVA-CTD':
+            lines.loc[j, 'plan'] = 'b'
+        elif fltinfo['Model'] == 'DOVA':
+            lines.loc[j, 'plan'] = 'b'
         else:
-            lines.loc[j, 'active'] = input('Active? (y/n): ')
+            lines.loc[j, 'plan'] = input('Plan? (b/f/z): ')
+
+lines = lines.loc[lines.plan.isin(['b', 'f', 'z'])]
+lines['rate'] = [rates[p] for p in lines.plan]
+        
+        
 
 lines.to_csv('../data/tracking/iridium_cost_centre_review.csv')
