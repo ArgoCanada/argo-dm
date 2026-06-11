@@ -29,7 +29,7 @@ def apex_to_dataframe(fn):
 
             if lead == 'Message':
                 mode = line_list[2]
-            elif lead in ('CTD_CP', 'CTD_PTS') and mode.strip() in ('CP Started', 'Surface Mission'):
+            elif lead in ('CTD_CP', 'CTD_PTS') and mode.strip() in ('CP Started', 'CP Stopped', 'Surface Mission'):
                 data['TIME'].append(pd.Timestamp(line_list[1]))
                 data['PRES'].append(float(line_list[2]))
                 data['TEMP'].append(float(line_list[3]))
@@ -49,7 +49,7 @@ df = apex_to_dataframe(fn)
 
 fig, axes = plt.subplots(1, 2, sharey=True)
 for ax, v in zip(axes, ('TEMP', 'PSAL')):
-    sns.scatterplot(data=df, x=v, y='PRES', hue='sample', ax=ax)
+    sns.scatterplot(data=df, x=v, y='PRES', hue='sample', linewidth=0.25, ax=ax)
 
 ax.set_ylim((2020, -20))
 plt.show()

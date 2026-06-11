@@ -1,0 +1,127 @@
+20000101T000001|0|Firmware|11/11/25 15:09:08 2.19.2 STD IRID Final
+20000101T000001|5|system_start_task|initial powerup detected
+20000101T000001|5|system_start_task|Final Start Type: START_INIT
+20000101T000001|5|sensors_cfg|installed rbr_logger sensor
+20000101T000001|5|sensors_cfg|installed iridium9523 device
+20000101T000001|5|sensors_cfg|installed gps15xh device
+20000101T000001|5|mission_cfg|BuoyancyNudge 50 to 100
+20000101T000001|5|mission_cfg|DeepProfileFirst off to on
+20000101T000001|5|mission_cfg|MinBuoyancyCount 262 to 147
+20000101T000002|5|sample_cfg|<PARK>
+20000101T000002|5|sample_cfg|SAMPLE PTSCI 2500 0 0 DBAR 1
+20000101T000002|5|sample_cfg|<ASCENT>
+20000101T000002|5|sample_cfg|SAMPLE PTSCI 50 2 1 DBAR 1
+20000101T000002|5|sample_cfg|PROFILE LGR 2000 0 2 1 HZ #Regime:1
+20000101T000002|5|IDLE|will start in 60 seconds
+20000101T000003|5|T_CMD|sys_verbosity 5
+20000101T000003|0|console_verbosity|0 --> 5
+20000101T000003|5|T_CMD|m_state
+20000101T000005|5|T_CMD|sys_clk_set 2026 02 21 15 59 29
+20260221T155929|5|T_CMD|sys_init_restart
+20260221T155929|5|sys_init_restart|Current coulomb amphr:    0.000000
+20260221T155930|5|system_start_task|Final Start Type: START_INIT
+20260221T155930|5|sensors_cfg|installed rbr_logger sensor
+20260221T155930|5|sensors_cfg|installed iridium9523 device
+20260221T155930|5|sensors_cfg|installed gps15xh device
+20260221T155931|5|mission_cfg|BuoyancyNudge 50 to 100
+20260221T155931|5|mission_cfg|DeepProfileFirst off to on
+20260221T155931|5|mission_cfg|MinBuoyancyCount 262 to 147
+20260221T155931|5|sample_cfg|<PARK>
+20260221T155931|5|sample_cfg|SAMPLE PTSCI 2500 0 0 DBAR 1
+20260221T155931|5|sample_cfg|<ASCENT>
+20260221T155931|5|sample_cfg|SAMPLE PTSCI 50 2 1 DBAR 1
+20260221T155931|5|sample_cfg|PROFILE LGR 2000 0 2 1 HZ #Regime:1
+20260221T155932|5|IDLE|will start in 60 seconds
+20260221T155932|5|T_CMD|sys_verbosity 5
+20260221T155933|0|console_verbosity|0 --> 5
+20260221T155933|5|T_CMD|m_console
+20260221T155933|5|mission_state|IDLE -> CONSOLE
+20260221T155936|5|T_CMD|m_state
+20260221T155937|5|T_CMD|sys_reboot
+20260221T155939|5|system_start_task|Final Start Type: START_INIT
+20260221T155939|5|sensors_cfg|installed rbr_logger sensor
+20260221T155939|5|sensors_cfg|installed iridium9523 device
+20260221T155939|5|sensors_cfg|installed gps15xh device
+20260221T155939|5|mission_cfg|no changes
+20260221T155939|5|sample_cfg|<PARK>
+20260221T155939|5|sample_cfg|SAMPLE PTSCI 2500 0 0 DBAR 1
+20260221T155939|5|sample_cfg|<ASCENT>
+20260221T155939|5|sample_cfg|SAMPLE PTSCI 50 2 1 DBAR 1
+20260221T155939|5|sample_cfg|PROFILE LGR 2000 0 2 1 HZ #Regime:1
+20260221T155940|5|IDLE|will start in 60 seconds
+20260221T155942|5|T_CMD|m_production
+20260221T155942|5|mission_state|IDLE -> PRODUCTION
+20260221T155945|5|T_CMD|fs_cat system.cfg
+20260221T155945|5|T_CMD|pot_read
+20260221T155947|5|T_CMD|vt_battery
+20260221T155948|5|T_CMD|coul_amphr
+20260221T160350|5|T_CMD|sys_verbosity 5
+20260221T160351|5|T_CMD|m_state
+20260221T160351|5|T_CMD|sys_reboot
+20260221T160353|5|system_start_task|Final Start Type: START_INIT
+20260221T160353|5|sensors_cfg|installed rbr_logger sensor
+20260221T160353|5|sensors_cfg|installed iridium9523 device
+20260221T160353|5|sensors_cfg|installed gps15xh device
+20260221T160353|5|mission_cfg|no changes
+20260221T160353|5|sample_cfg|<PARK>
+20260221T160353|5|sample_cfg|SAMPLE PTSCI 2500 0 0 DBAR 1
+20260221T160353|5|sample_cfg|<ASCENT>
+20260221T160353|5|sample_cfg|SAMPLE PTSCI 50 2 1 DBAR 1
+20260221T160353|5|sample_cfg|PROFILE LGR 2000 0 2 1 HZ #Regime:1
+20260221T160354|5|IDLE|will start in 60 seconds
+20260221T160355|5|T_CMD|m_console
+20260221T160355|5|mission_state|IDLE -> CONSOLE
+20260221T160359|5|T_CMD|fs_cat system.cfg
+20260221T160400|5|T_CMD|coul_amphr
+20260221T160400|5|T_CMD|vt_bladder
+20260221T160401|5|T_CMD|vt_vacuum
+20260221T160402|5|T_CMD|vt_vacuum stream
+20260221T160522|5|T_CMD|vt_bladder
+20260221T160523|5|T_CMD|vt_vacuum
+20260221T160525|5|T_CMD|coul_amphr
+20260221T160525|5|T_CMD|m_bye
+20260221T160525|5|CONSOLE|delaying 30 seconds for SAIL to be disconnected before system reset
+20260221T160557|5|system_start_task|Final Start Type: START_INIT
+20260221T160557|5|sensors_cfg|installed rbr_logger sensor
+20260221T160557|5|sensors_cfg|installed iridium9523 device
+20260221T160557|5|sensors_cfg|installed gps15xh device
+20260221T160557|5|mission_cfg|no changes
+20260221T160557|5|sample_cfg|<PARK>
+20260221T160557|5|sample_cfg|SAMPLE PTSCI 2500 0 0 DBAR 1
+20260221T160557|5|sample_cfg|<ASCENT>
+20260221T160557|5|sample_cfg|SAMPLE PTSCI 50 2 1 DBAR 1
+20260221T160557|5|sample_cfg|PROFILE LGR 2000 0 2 1 HZ #Regime:1
+20260221T160558|5|IDLE|will start in 60 seconds
+20260221T160645|5|T_CMD|sys_verbosity 5
+20260221T160645|0|console_verbosity|0 --> 5
+20260221T160645|5|T_CMD|m_production
+20260221T160645|5|mission_state|IDLE -> PRODUCTION
+20260221T160700|5|T_CMD|sys_verbosity 5
+20260221T160700|5|T_CMD|m_state
+20260221T160701|5|T_CMD|sys_reboot
+20260221T160702|5|system_start_task|Final Start Type: START_INIT
+20260221T160702|5|sensors_cfg|installed rbr_logger sensor
+20260221T160703|5|sensors_cfg|installed iridium9523 device
+20260221T160703|5|sensors_cfg|installed gps15xh device
+20260221T160703|5|mission_cfg|no changes
+20260221T160703|5|sample_cfg|<PARK>
+20260221T160703|5|sample_cfg|SAMPLE PTSCI 2500 0 0 DBAR 1
+20260221T160703|5|sample_cfg|<ASCENT>
+20260221T160703|5|sample_cfg|SAMPLE PTSCI 50 2 1 DBAR 1
+20260221T160703|5|sample_cfg|PROFILE LGR 2000 0 2 1 HZ #Regime:1
+20260221T160704|5|IDLE|will start in 60 seconds
+20260221T160705|5|T_CMD|m_production
+20260221T160705|5|mission_state|IDLE -> PRODUCTION
+20260221T160709|5|T_CMD|pot_read
+20260221T160720|5|T_CMD|vt_battery
+20260221T160722|5|T_CMD|coul_current
+20260221T160722|5|T_CMD|coul_amphr
+20260221T160722|5|T_CMD|vt_vacuum
+20260221T160723|5|T_CMD|vt_bladder
+20260221T160725|5|T_CMD|pot_read
+20260221T160726|5|T_CMD|fs_ls
+20260221T160727|5|T_CMD|fs_cat system.cfg
+20260221T160727|5|T_CMD|fs_cat sensors.cfg
+20260221T160727|5|T_CMD|fs_cat mission.cfg
+20260221T160728|5|T_CMD|fs_cat sample.cfg
+20260221T160729|5|T_CMD|pt_start -no_sky
