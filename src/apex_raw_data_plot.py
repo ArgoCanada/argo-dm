@@ -6,9 +6,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-def apex_to_dataframe(fn):
+def apex_to_dataframe(fn=None, kind='sbe'):
 
     data = dict(
+        CYCLE=[],
         TIME=[],
         PRES=[],
         TEMP=[],
@@ -16,36 +17,43 @@ def apex_to_dataframe(fn):
         sample=[]
     )
 
-    with open(fn) as fid:
-        lead = ' '
-        mode = ''
+    leads = ('CTD_CP', 'CTD_PTS') if kind == 'sbe' else ('LGR_PTSCI', 'LGR_CP_PTSCI')
+    modes = ('CP Started', 'CP Stopped', 'Surface Mission') if kind == 'sbe' else ('CP started', 'CP stopped', 'Surface Mission')
 
-        while lead != '':
+    if fn is not None:
+        with open(fn) as fid:
+            lead = ' '
+            mode = ''
 
-            line = fid.readline()
+            while lead != '':
 
-            line_list = line.split(',')
-            lead = line_list[0]
+                line = fid.readline()
 
-            if lead == 'Message':
-                mode = line_list[2]
-            elif lead in ('CTD_CP', 'CTD_PTS') and mode.strip() in ('CP Started', 'CP Stopped', 'Surface Mission'):
-                data['TIME'].append(pd.Timestamp(line_list[1]))
-                data['PRES'].append(float(line_list[2]))
-                data['TEMP'].append(float(line_list[3]))
-                data['PSAL'].append(float(line_list[4]))
-                data['sample'].append(line_list[0])
+                line_list = line.split(',')
+                lead = line_list[0]
+
+                print(mode, lead)
+                print(mode in modes, lead in leads)
+
+                if lead == 'Message':
+                    mode = line_list[2].strip()
+                    print(mode)
+                elif lead in leads and mode in modes:
+                    data['TIME'].append(pd.Timestamp(line_list[1]))
+                    data['PRES'].append(float(line_list[2]))
+                    data['TEMP'].append(float(line_list[3]))
+                    data['PSAL'].append(float(line_list[4]))
+                    data['sample'].append(line_list[0])
+                data['CYCLE'] = len(data['TIME'])*[int(fn.name.split('.')[1])]
     
     return pd.DataFrame(data)
        
 
-datadir = Path('../dat/apex/')
-sn = 10878
-cycle = 24
+sn = 11421
+kind = 'rbr'
+datadir = Path(f'../dat/apex/{sn}')
 
-fn = list((datadir / f'{sn}' / f'{cycle:03d}').glob('*science*'))[0]
-
-df = apex_to_dataframe(fn)
+df = pd.concat([apex_to_dataframe(list(cyc.glob('*science*'))[0], kind=kind) if int(cyc.name) > 0 else apex_to_dataframe() for cyc in datadir.glob('*')])
 
 fig, axes = plt.subplots(1, 2, sharey=True)
 for ax, v in zip(axes, ('TEMP', 'PSAL')):
