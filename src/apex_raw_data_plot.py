@@ -32,12 +32,8 @@ def apex_to_dataframe(fn=None, kind='sbe'):
                 line_list = line.split(',')
                 lead = line_list[0]
 
-                print(mode, lead)
-                print(mode in modes, lead in leads)
-
                 if lead == 'Message':
                     mode = line_list[2].strip()
-                    print(mode)
                 elif lead in leads and mode in modes:
                     data['TIME'].append(pd.Timestamp(line_list[1]))
                     data['PRES'].append(float(line_list[2]))
