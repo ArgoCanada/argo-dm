@@ -56,4 +56,5 @@ for ax, v in zip(axes, ('TEMP', 'PSAL')):
     sns.scatterplot(data=df, x=v, y='PRES', hue='sample', linewidth=0.25, ax=ax)
 
 ax.set_ylim((2020, -20))
+ax.set_xlim((34.5, 35))
 plt.show()
