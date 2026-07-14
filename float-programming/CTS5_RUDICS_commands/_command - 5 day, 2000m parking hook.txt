@@ -1,0 +1,7 @@
+!param-pattern_01-1:2000
+!param-pattern_01-3:449280
+!param-sensor_04-14:100
+!param-sensor_04-23:100
+!param-sensor_04-32:100
+!param-sensor_04-41:2
+!param-sensor_04-49:1950
