@@ -57,4 +57,4 @@ for ax, v in zip(axes, ('TEMP', 'PSAL')):
 
 ax.set_ylim((2020, -20))
 ax.set_xlim((34.5, 35))
-plt.show()
+fig.savefig(f'../figures/apex_{sn}.png', dpi=350, bbox_inches='tight')
